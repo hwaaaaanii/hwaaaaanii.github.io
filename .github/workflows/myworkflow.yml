@@ -1,0 +1,38 @@
+name: Jekyll site CI
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+
+    - name: Setup Ruby
+      uses: ruby/setup-ruby@v1
+      with:
+        ruby-version: 2.7 # 프로젝트에 맞는 Ruby 버전을 사용하세요
+
+    - name: Install dependencies
+      run: |
+        gem install bundler
+        bundle install
+
+    - name: Build Jekyll site
+      run: bundle exec jekyll build
+
+    - name: Check build
+      run: ls -l _site
+
+    # (선택 사항) HTML-Proofer를 사용하여 빌드된 사이트 검증
+    - name: Test with HTML-Proofer
+      run: |
+        gem install html-proofer
+        htmlproofer ./_site --disable-external
+
