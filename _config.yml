@@ -16,7 +16,8 @@ timezone: Asia/Seoul
 
 title: Hwaaaaanii # the main title
 
-tagline: KAIST, M.S in Data Science, Data Intelligence System Lab (DISL.) # it will display as the sub-title
+tagline: Welcome to Jeonghwan Choi's Portfolio! Explore the <a href="#about">About</a> section to learn more about me and this site. <br><br> KAIST, M.S in Data Science, Data Intelligence System Lab (DISL.) # it will display as the sub-title
+
 
 description: >- # used by seo meta and the atom feed
   Welcome to Hwaaaaanii's Github Blog. 
@@ -39,7 +40,7 @@ social:
   links:
     # The first element serves as the copyright owner's link
     - https://www.linkedin.com/in/jeonghwan-choi-6b5b30249?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app # change to your twitter homepage
-    # - https://github.com/username # change to your github homepage
+    # - https://github.com/hwaaaaanii # change to your github homepage
     # Uncomment below to add more social links
     # - https://www.facebook.com/username
     # - https://www.linkedin.com/in/username
