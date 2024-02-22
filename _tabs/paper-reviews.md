@@ -1,6 +1,6 @@
 ---
 layout: categories
-url: /categories/paper-review/
+url: 
 icon: fas fa-stream
 order: 1
 ---

@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Paper Review
+title: CV
 permalink: /categories/paper-review/
 ---
 
