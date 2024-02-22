@@ -1,9 +1,11 @@
 ---
 layout: page
-title: "Welcome to Jeonghwan Choi's Github Blog."
+title: "About me"
 icon: fas fa-info-circle
 order: 4
 ---
+
+# **Welcome to Jeonghwan Choi's Github Blog.**
 
 This blog serves as my platform for sharing insights on projects, research and development, and paper reviews related to the field of Artificial Intelligence.
 
