@@ -128,17 +128,6 @@ paginate: 10
 # The base URL of your site
 baseurl: ""
 
-tabs:
-  - title: Home
-    url: /
-  - title: Paper Reviews
-    url: hwaaaaanii.github.io/categories/paper-review/
-  - title: Projects
-    url: /projects/
-  - title: Archives
-    url: /archives/
-  - title: About
-    url: /about/
 
 
 
