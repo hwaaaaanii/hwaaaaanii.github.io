@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Paper Review
-permalink: /paper-review/
+permalink: /paper-reviews/
 ---
 
 Here are my paper reviews.
