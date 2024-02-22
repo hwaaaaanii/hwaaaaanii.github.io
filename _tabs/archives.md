@@ -1,5 +1,5 @@
 ---
 layout: archives
-icon: fas fa-archive
+icon: fas fa-solid fa-layer-group
 order: 3
 ---

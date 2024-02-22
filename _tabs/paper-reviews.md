@@ -1,6 +1,6 @@
 ---
 layout: categories
 url: 
-icon: fas fa-stream
+icon: fas fa-solid fa-newspaper
 order: 1
 ---
