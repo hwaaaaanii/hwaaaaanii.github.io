@@ -1,66 +1,99 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<html>
-<head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <meta http-equiv="Content-Style-Type" content="text/css">
-  <title></title>
-  <meta name="Generator" content="Cocoa HTML Writer">
-  <meta name="CocoaVersion" content="2487.4">
-  <style type="text/css">
-    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Times; color: #0000e9; -webkit-text-stroke: #0000e9}
-    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Times; color: #0000e9; -webkit-text-stroke: #0000e9; min-height: 14.0px}
-    span.s1 {text-decoration: underline ; font-kerning: none}
-  </style>
-</head>
-<body>
-<p class="p1"><span class="s1"><a href="file:///Users/hwaaaaanii/Desktop/gitblog./hwaaaaanii.github.io/_includes/%7B%7B%20'/'%20%7C%20relative_url%20%7D%7D">{%- if site.avatar != empty and site.avatar -%}</a></span></p>
-<p class="p1"><span class="s1"><a href="file:///Users/hwaaaaanii/Desktop/gitblog./hwaaaaanii.github.io/_includes/%7B%7B%20'/'%20%7C%20relative_url%20%7D%7D"><span class="Apple-converted-space">  </span>{%- capture avatar_url -%}</a></span></p>
-<p class="p1"><span class="s1"><a href="file:///Users/hwaaaaanii/Desktop/gitblog./hwaaaaanii.github.io/_includes/%7B%7B%20'/'%20%7C%20relative_url%20%7D%7D"><span class="Apple-converted-space">    </span>{% include img-url.html src=site.avatar %}</a></span></p>
-<p class="p1"><span class="s1"><a href="file:///Users/hwaaaaanii/Desktop/gitblog./hwaaaaanii.github.io/_includes/%7B%7B%20'/'%20%7C%20relative_url%20%7D%7D"><span class="Apple-converted-space">  </span>{%- endcapture -%}</a></span></p>
-<p class="p1"><span class="s1"><a href="file:///Users/hwaaaaanii/Desktop/gitblog./hwaaaaanii.github.io/_includes/%7B%7B%20'/'%20%7C%20relative_url%20%7D%7D"><span class="Apple-converted-space">  </span>&lt;img src="{{ avatar_url }}" alt="avatar" class="sidebar-avatar"/&gt;</a></span></p>
-<p class="p1"><span class="s1"><a href="file:///Users/hwaaaaanii/Desktop/gitblog./hwaaaaanii.github.io/_includes/%7B%7B%20'/'%20%7C%20relative_url%20%7D%7D">{%- endif -%}</a></span></p>
-<p class="p2"><span class="s1"><a href="file:///Users/hwaaaaanii/Desktop/gitblog./hwaaaaanii.github.io/_includes/%7B%7B%20'/'%20%7C%20relative_url%20%7D%7D"></a></span><br></p>
-<p class="p1"><span class="s1"><a href="file:///Users/hwaaaaanii/Desktop/gitblog./hwaaaaanii.github.io/_includes/%7B%7B%20'/'%20%7C%20relative_url%20%7D%7D">&lt;h1 class="sidebar-title"&gt;{{ site.title | escape }}&lt;/h1&gt;</a></span></p>
-<p class="p1"><span class="s1"><a href="file:///Users/hwaaaaanii/Desktop/gitblog./hwaaaaanii.github.io/_includes/%7B%7B%20'/'%20%7C%20relative_url%20%7D%7D">&lt;p class="sidebar-tagline"&gt;{{ site.tagline | escape }}&lt;/p&gt;</a></span></p>
-<p class="p2"><span class="s1"><a href="file:///Users/hwaaaaanii/Desktop/gitblog./hwaaaaanii.github.io/_includes/%7B%7B%20'/'%20%7C%20relative_url%20%7D%7D"></a></span><br></p>
-<p class="p1"><span class="s1"><a href="file:///Users/hwaaaaanii/Desktop/gitblog./hwaaaaanii.github.io/_includes/%7B%7B%20'/'%20%7C%20relative_url%20%7D%7D">&lt;nav class="sidebar-nav"&gt;</a></span></p>
-<p class="p1"><span class="s1"><a href="file:///Users/hwaaaaanii/Desktop/gitblog./hwaaaaanii.github.io/_includes/%7B%7B%20'/'%20%7C%20relative_url%20%7D%7D"><span class="Apple-converted-space">  </span>&lt;ul class="sidebar-nav-list"&gt;</a></span></p>
-<p class="p1"><span class="s1"><a href="file:///Users/hwaaaaanii/Desktop/gitblog./hwaaaaanii.github.io/_includes/%7B%7B%20'/'%20%7C%20relative_url%20%7D%7D"><span class="Apple-converted-space">    </span>{%- for tab in site.tabs -%}</a></span></p>
-<p class="p1"><span class="s1"><a href="file:///Users/hwaaaaanii/Desktop/gitblog./hwaaaaanii.github.io/_includes/%7B%7B%20'/'%20%7C%20relative_url%20%7D%7D"><span class="Apple-converted-space">      </span>{%- capture tab_name %}{{ tab.url | split: '/' | last }}{% endcapture %}</a></span></p>
-<p class="p1"><span class="s1"><a href="file:///Users/hwaaaaanii/Desktop/gitblog./hwaaaaanii.github.io/_includes/%7B%7B%20'/'%20%7C%20relative_url%20%7D%7D"><span class="Apple-converted-space">      </span>{%- if site.data.locales[include.lang].tabs[tab_name] -%}</a></span></p>
-<p class="p1"><span class="s1"><a href="file:///Users/hwaaaaanii/Desktop/gitblog./hwaaaaanii.github.io/_includes/%7B%7B%20'/'%20%7C%20relative_url%20%7D%7D"><span class="Apple-converted-space">        </span>{%- assign tab_title = site.data.locales[include.lang].tabs[tab_name] -%}</a></span></p>
-<p class="p1"><span class="s1"><a href="file:///Users/hwaaaaanii/Desktop/gitblog./hwaaaaanii.github.io/_includes/%7B%7B%20'/'%20%7C%20relative_url%20%7D%7D"><span class="Apple-converted-space">      </span>{%- else -%}</a></span></p>
-<p class="p1"><span class="s1"><a href="file:///Users/hwaaaaanii/Desktop/gitblog./hwaaaaanii.github.io/_includes/%7B%7B%20'/'%20%7C%20relative_url%20%7D%7D"><span class="Apple-converted-space">        </span>{%- assign tab_title = tab.title -%}</a></span></p>
-<p class="p1"><span class="s1"><a href="file:///Users/hwaaaaanii/Desktop/gitblog./hwaaaaanii.github.io/_includes/%7B%7B%20'/'%20%7C%20relative_url%20%7D%7D"><span class="Apple-converted-space">      </span>{%- endif -%}</a></span></p>
-<p class="p1"><span class="s1"><a href="file:///Users/hwaaaaanii/Desktop/gitblog./hwaaaaanii.github.io/_includes/%7B%7B%20'/'%20%7C%20relative_url%20%7D%7D"><span class="Apple-converted-space">      </span>&lt;li class="sidebar-nav-item"&gt;</a></span></p>
-<p class="p1"><span class="s1"><a href="file:///Users/hwaaaaanii/Desktop/gitblog./hwaaaaanii.github.io/_includes/%7B%7B%20'/'%20%7C%20relative_url%20%7D%7D"><span class="Apple-converted-space">        </span>&lt;a href="{{ tab.url | relative_url }}" class="sidebar-nav-link"&gt;</a></span></p>
-<p class="p1"><span class="s1"><a href="file:///Users/hwaaaaanii/Desktop/gitblog./hwaaaaanii.github.io/_includes/%7B%7B%20'/'%20%7C%20relative_url%20%7D%7D"><span class="Apple-converted-space">          </span>{{- tab_title | upcase -}}</a></span></p>
-<p class="p1"><span class="s1"><a href="file:///Users/hwaaaaanii/Desktop/gitblog./hwaaaaanii.github.io/_includes/%7B%7B%20'/'%20%7C%20relative_url%20%7D%7D"><span class="Apple-converted-space">        </span>&lt;/a&gt;</a></span></p>
-<p class="p1"><span class="s1"><a href="file:///Users/hwaaaaanii/Desktop/gitblog./hwaaaaanii.github.io/_includes/%7B%7B%20'/'%20%7C%20relative_url%20%7D%7D"><span class="Apple-converted-space">      </span>&lt;/li&gt;</a></span></p>
-<p class="p1"><span class="s1"><a href="file:///Users/hwaaaaanii/Desktop/gitblog./hwaaaaanii.github.io/_includes/%7B%7B%20'/'%20%7C%20relative_url%20%7D%7D"><span class="Apple-converted-space">    </span>{%- endfor -%}</a></span></p>
-<p class="p1"><span class="s1"><a href="file:///Users/hwaaaaanii/Desktop/gitblog./hwaaaaanii.github.io/_includes/%7B%7B%20'/'%20%7C%20relative_url%20%7D%7D"><span class="Apple-converted-space">  </span>&lt;/ul&gt;</a></span></p>
-<p class="p1"><span class="s1"><a href="file:///Users/hwaaaaanii/Desktop/gitblog./hwaaaaanii.github.io/_includes/%7B%7B%20'/'%20%7C%20relative_url%20%7D%7D">&lt;/nav&gt;</a></span></p>
-<p class="p2"><span class="s1"><a href="file:///Users/hwaaaaanii/Desktop/gitblog./hwaaaaanii.github.io/_includes/%7B%7B%20'/'%20%7C%20relative_url%20%7D%7D"></a></span><br></p>
-<p class="p1"><span class="s1"><a href="file:///Users/hwaaaaanii/Desktop/gitblog./hwaaaaanii.github.io/_includes/%7B%7B%20'/'%20%7C%20relative_url%20%7D%7D">&lt;div class="sidebar-social"&gt;</a></span></p>
-<p class="p1"><span class="s1"><a href="file:///Users/hwaaaaanii/Desktop/gitblog./hwaaaaanii.github.io/_includes/%7B%7B%20'/'%20%7C%20relative_url%20%7D%7D"><span class="Apple-converted-space">  </span>{%- for entry in site.data.contact -%}</a></span></p>
-<p class="p1"><span class="s1"><a href="file:///Users/hwaaaaanii/Desktop/gitblog./hwaaaaanii.github.io/_includes/%7B%7B%20'/'%20%7C%20relative_url%20%7D%7D"><span class="Apple-converted-space">    </span>{%- case entry.type -%}</a></span></p>
-<p class="p1"><span class="s1"><a href="file:///Users/hwaaaaanii/Desktop/gitblog./hwaaaaanii.github.io/_includes/%7B%7B%20'/'%20%7C%20relative_url%20%7D%7D"><span class="Apple-converted-space">      </span>{%- when 'github', 'twitter', 'linkedin', 'rss' -%}</a></span></p>
-<p class="p1"><span class="s1"><a href="file:///Users/hwaaaaanii/Desktop/gitblog./hwaaaaanii.github.io/_includes/%7B%7B%20'/'%20%7C%20relative_url%20%7D%7D"><span class="Apple-converted-space">        </span>{%- capture url -%}</a></span></p>
-<p class="p1"><span class="s1"><a href="file:///Users/hwaaaaanii/Desktop/gitblog./hwaaaaanii.github.io/_includes/%7B%7B%20'/'%20%7C%20relative_url%20%7D%7D"><span class="Apple-converted-space">          </span>{%- if entry.type == 'rss' -%}</a></span></p>
-<p class="p1"><span class="s1"><a href="file:///Users/hwaaaaanii/Desktop/gitblog./hwaaaaanii.github.io/_includes/%7B%7B%20'/'%20%7C%20relative_url%20%7D%7D"><span class="Apple-converted-space">            </span>{{ '/feed.xml' | relative_url }}</a></span></p>
-<p class="p1"><span class="s1"><a href="file:///Users/hwaaaaanii/Desktop/gitblog./hwaaaaanii.github.io/_includes/%7B%7B%20'/'%20%7C%20relative_url%20%7D%7D"><span class="Apple-converted-space">          </span>{%- else -%}</a></span></p>
-<p class="p1"><span class="s1"><a href="file:///Users/hwaaaaanii/Desktop/gitblog./hwaaaaanii.github.io/_includes/%7B%7B%20'/'%20%7C%20relative_url%20%7D%7D"><span class="Apple-converted-space">            </span>https://{{ entry.type }}.com/{{ site[entry.type].username }}</a></span></p>
-<p class="p1"><span class="s1"><a href="file:///Users/hwaaaaanii/Desktop/gitblog./hwaaaaanii.github.io/_includes/%7B%7B%20'/'%20%7C%20relative_url%20%7D%7D"><span class="Apple-converted-space">          </span>{%- endif -%}</a></span></p>
-<p class="p1"><span class="s1"><a href="file:///Users/hwaaaaanii/Desktop/gitblog./hwaaaaanii.github.io/_includes/%7B%7B%20'/'%20%7C%20relative_url%20%7D%7D"><span class="Apple-converted-space">        </span>{%- endcapture -%}</a></span></p>
-<p class="p1"><span class="s1"><a href="file:///Users/hwaaaaanii/Desktop/gitblog./hwaaaaanii.github.io/_includes/%7B%7B%20'/'%20%7C%20relative_url%20%7D%7D"><span class="Apple-converted-space">        </span>&lt;a href="{{ url }}" target="_blank" rel="noopener noreferrer" class="sidebar-social-link"&gt;</a></span></p>
-<p class="p1"><span class="s1"><a href="file:///Users/hwaaaaanii/Desktop/gitblog./hwaaaaanii.github.io/_includes/%7B%7B%20'/'%20%7C%20relative_url%20%7D%7D"><span class="Apple-converted-space">          </span>&lt;i class="fa fa-{{ entry.type }}"&gt;&lt;/i&gt;</a></span></p>
-<p class="p1"><span class="s1"><a href="file:///Users/hwaaaaanii/Desktop/gitblog./hwaaaaanii.github.io/_includes/%7B%7B%20'/'%20%7C%20relative_url%20%7D%7D"><span class="Apple-converted-space">        </span>&lt;/a&gt;</a></span></p>
-<p class="p1"><span class="s1"><a href="file:///Users/hwaaaaanii/Desktop/gitblog./hwaaaaanii.github.io/_includes/%7B%7B%20'/'%20%7C%20relative_url%20%7D%7D"><span class="Apple-converted-space">      </span>{%- when 'email' -%}</a></span></p>
-<p class="p1"><span class="s1"><a href="file:///Users/hwaaaaanii/Desktop/gitblog./hwaaaaanii.github.io/_includes/%7B%7B%20'/'%20%7C%20relative_url%20%7D%7D"><span class="Apple-converted-space">        </span>&lt;a href="mailto:{{ site.email }}" class="sidebar-social-link"&gt;</a></span></p>
-<p class="p1"><span class="s1"><a href="file:///Users/hwaaaaanii/Desktop/gitblog./hwaaaaanii.github.io/_includes/%7B%7B%20'/'%20%7C%20relative_url%20%7D%7D"><span class="Apple-converted-space">          </span>&lt;i class="fa fa-envelope"&gt;&lt;/i&gt;</a></span></p>
-<p class="p1"><span class="s1"><a href="file:///Users/hwaaaaanii/Desktop/gitblog./hwaaaaanii.github.io/_includes/%7B%7B%20'/'%20%7C%20relative_url%20%7D%7D"><span class="Apple-converted-space">        </span>&lt;/a&gt;</a></span></p>
-<p class="p1"><span class="s1"><a href="file:///Users/hwaaaaanii/Desktop/gitblog./hwaaaaanii.github.io/_includes/%7B%7B%20'/'%20%7C%20relative_url%20%7D%7D"><span class="Apple-converted-space">    </span>{%- endcase -%}</a></span></p>
-<p class="p1"><span class="s1"><a href="file:///Users/hwaaaaanii/Desktop/gitblog./hwaaaaanii.github.io/_includes/%7B%7B%20'/'%20%7C%20relative_url%20%7D%7D"><span class="Apple-converted-space">  </span>{%- endfor -%}</a></span></p>
-<p class="p1"><span class="s1"><a href="file:///Users/hwaaaaanii/Desktop/gitblog./hwaaaaanii.github.io/_includes/%7B%7B%20'/'%20%7C%20relative_url%20%7D%7D">&lt;/div&gt;</a></span></p>
-</body>
-</html>
+<!-- The Side Bar -->
+
+<aside aria-label="Sidebar" id="sidebar" class="d-flex flex-column align-items-end">
+  <header class="profile-wrapper">
+    <a href="{{ '/' | relative_url }}" id="avatar" class="rounded-circle">
+      {%- if site.avatar != empty and site.avatar -%}
+        {%- capture avatar_url -%}
+          {% include img-url.html src=site.avatar %}
+        {%- endcapture -%}
+        <img src="{{- avatar_url -}}" width="112" height="112" alt="avatar" onerror="this.style.display='none'">
+      {%- endif -%}
+    </a>
+
+    <h1 class="site-title">
+      <a href="{{ '/' | relative_url }}">{{ site.title }}</a>
+    </h1>
+    <p class="site-subtitle fst-italic mb-0">{{ site.tagline }}</p>
+  </header>
+  <!-- .profile-wrapper -->
+
+  <nav class="flex-column flex-grow-1 w-100 ps-0">
+    <ul class="nav">
+      <!-- home -->
+      <li class="nav-item{% if page.layout == 'home' %}{{ " active" }}{% endif %}">
+        <a href="{{ '/' | relative_url }}" class="nav-link">
+          <i class="fa-fw fas fa-home"></i>
+          <span>{{ site.data.locales[include.lang].tabs.home | upcase }}</span>
+        </a>
+      </li>
+      <!-- the real tabs -->
+      {% for tab in site.tabs %}
+        <li class="nav-item{% if tab.url == page.url %}{{ " active" }}{% endif %}">
+          <a href="{{ tab.url | relative_url }}" class="nav-link">
+            <i class="fa-fw {{ tab.icon }}"></i>
+            {% capture tab_name %}{{ tab.url | split: '/' }}{% endcapture %}
+
+            <span>{{ site.data.locales[include.lang].tabs.[tab_name] | default: tab.title | upcase }}</span>
+          </a>
+        </li>
+        <!-- .nav-item -->
+      {% endfor %}
+    </ul>
+  </nav>
+
+  <div class="sidebar-bottom d-flex flex-wrap  align-items-center w-100">
+    {% unless site.theme_mode %}
+      <button type="button" class="mode-toggle btn" aria-label="Switch Mode">
+        <i class="fas fa-adjust"></i>
+      </button>
+
+      {% if site.data.contact.size > 0 %}
+        <span class="icon-border"></span>
+      {% endif %}
+    {% endunless %}
+
+    {% for entry in site.data.contact %}
+      {% case entry.type %}
+        {% when 'github', 'twitter' %}
+          {%- capture url -%}
+            https://{{ entry.type }}.com/{{ site[entry.type].username }}
+          {%- endcapture -%}
+        {% when 'email' %}
+          {% assign email = site.social.email | split: '@' %}
+          {%- capture url -%}
+            javascript:location.href = 'mailto:' + ['{{ email[0] }}','{{ email[1] }}'].join('@')
+          {%- endcapture -%}
+        {% when 'rss' %}
+          {% assign url = '/feed.xml' | relative_url %}
+        {% else %}
+          {% assign url = entry.url %}
+      {% endcase %}
+
+      {% if url %}
+        <a
+          href="{{ url }}"
+          aria-label="{{ entry.type }}"
+          {% assign link_types = '' %}
+
+          {% unless entry.noblank %}
+            target="_blank"
+            {% assign link_types = 'noopener noreferrer' %}
+          {% endunless %}
+
+          {% if entry.type == 'mastodon' %}
+            {% assign link_types = link_types | append: ' me' | strip %}
+          {% endif %}
+
+          {% unless link_types == empty %}
+            rel="{{ link_types }}"
+          {% endunless %}
+        >
+          <i class="{{ entry.icon }}"></i>
+        </a>
+      {% endif %}
+    {% endfor %}
+  </div>
+  <!-- .sidebar-bottom -->
+</aside>
+<!-- #sidebar -->
