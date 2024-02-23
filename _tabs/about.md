@@ -1,9 +1,8 @@
 ---
 layout: page
-title: ""
-icon: 
+title: "About me"
+icon: fas fa-solid fa-user
 order: 4
-permalink : /
 ---
 
 # **Welcome to Jeonghwan Choi's Github Blog.**

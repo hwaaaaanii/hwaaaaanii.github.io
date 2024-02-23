@@ -27,7 +27,7 @@ description: >- # used by seo meta and the atom feed
 url: "https://hwaaaaanoo.github.io"
 
 github:
-  username: hwaaaaanii # change to your github username
+  username: github_username # change to your github username
 
 # twitter:
 #   username: twitter_username # change to your twitter username
@@ -161,7 +161,7 @@ defaults:
       toc: true # Display TOC column in posts.
       # DO NOT modify the following parameter unless you are confident enough
       # to update the code of all other post links in this project.
-      permalink: /
+      permalink: /posts/:title/
   - scope:
       path: _drafts
     values:
