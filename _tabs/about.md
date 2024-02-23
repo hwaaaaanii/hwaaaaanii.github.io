@@ -8,15 +8,13 @@ permalink: /
 
 # **Welcome to Jeonghwan Choi's Portfolio.**
 
-<div style="display: flex; align-items: center;">
-  <img src="/assets/img/profile1.jpeg" style="margin-right: 30px;" alt="Your Name" width="130" height="130">
+<div style="display: flex; align-items: flex-start;">
+  <img src="/assets/img/profile1.jpeg" style="margin-right: 30px; flex-shrink: 0; margin-bottom: 0;" alt="Jeonghwan Choi" width="130" height="130">
   <div>
     <h2>Jeonghwan Choi</h2>
-    <br>
-    <p>Email : chlwjd13579@kaist.ac.kr / chlwjd13579@gmail.com </p>
+    <p>Email : chlwjd13579@kaist.ac.kr / chlwjd13579@gmail.com</p>
   </div>
 </div>
-
 
 This blog serves as my platform for sharing insights on projects, research and development, and paper reviews related to the field of Artificial Intelligence.
 
