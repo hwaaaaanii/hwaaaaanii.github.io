@@ -6,7 +6,17 @@ order: 4
 permalink: /
 ---
 
-# **Welcome to Jeonghwan Choi's Github Blog.**
+# **Welcome to Jeonghwan Choi's Portfolio.**
+
+<div style="display: flex; align-items: center;">
+  <img src="/assets/img/profile1.jpeg" style="margin-right: 30px;" alt="Your Name" width="130" height="130">
+  <div>
+    <h2>Jeonghwan Choi</h2>
+    <br><br><br>
+    <p>Email : chlwjd13579@kaist.ac.kr / chlwjd13579@gmail.com </p>
+  </div>
+</div>
+
 
 This blog serves as my platform for sharing insights on projects, research and development, and paper reviews related to the field of Artificial Intelligence.
 
