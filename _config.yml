@@ -27,7 +27,7 @@ description: >- # used by seo meta and the atom feed
 url: "https://hwaaaaanoo.github.io"
 
 github:
-  username: github_username # change to your github username
+  username: hwaaaaanii # change to your github username
 
 # twitter:
 #   username: twitter_username # change to your twitter username
@@ -40,7 +40,7 @@ social:
   links:
     # The first element serves as the copyright owner's link
     - https://www.linkedin.com/in/jeonghwan-choi-6b5b30249?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app # change to your twitter homepage
-    # - https://github.com/hwaaaaanii # change to your github homepage
+    - https://github.com/hwaaaaanii # change to your github homepage
     # Uncomment below to add more social links
     # - https://www.facebook.com/username
     # - https://www.linkedin.com/in/username
