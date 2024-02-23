@@ -18,6 +18,10 @@ permalink: /
 
 This blog serves as my platform for sharing insights on projects, research and development, and paper reviews related to the field of Artificial Intelligence.
 
+[Click here to see Paper reviews](https://hwaaaaanii.github.io/paper-reviews/)
+
+[Click here to see Projects](https://hwaaaaanii.github.io/projects/) - Preparing
+
 ## Education
 
 - **Yonsei University**  
