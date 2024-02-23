@@ -12,7 +12,7 @@ permalink: /
   <img src="/assets/img/profile1.jpeg" style="margin-right: 30px;" alt="Your Name" width="130" height="130">
   <div>
     <h2>Jeonghwan Choi</h2>
-    <br><br><br>
+    <br><br>
     <p>Email : chlwjd13579@kaist.ac.kr / chlwjd13579@gmail.com </p>
   </div>
 </div>

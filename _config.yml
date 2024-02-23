@@ -16,7 +16,7 @@ timezone: Asia/Seoul
 
 title: Hwaaaaanii # the main title
 
-tagline: Welcome to Jeonghwan Choi's Portfolio! Explore the <a href="#about">About</a> section to learn more about me and this site. <br><br> KAIST, M.S in Data Science, Data Intelligence System Lab (DISL.) # it will display as the sub-title
+tagline: Welcome to Jeonghwan Choi's Portfolio! <br><br> KAIST, M.S in Data Science, Data Intelligence System Lab (DISL.) # it will display as the sub-title
 
 
 description: >- # used by seo meta and the atom feed
