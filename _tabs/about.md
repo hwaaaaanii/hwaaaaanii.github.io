@@ -32,7 +32,8 @@ This blog serves as my platform for sharing insights on projects, research and d
 
 ## Research Interest
 
-Focused on data-centric AI, I am dedicated to advancing Computer Vision (CV) and Natural Language Processing (NLP). My work at DISL. aims to push AI boundaries and solve real-world challenges.
+Focused on data-centric AI, I am dedicated to advancing Natural Language Processing (NLP), with a particular focus on research in the Retrieval-Augmented Generation (RAG) System. My work at DISL aims to push AI boundaries and solve real-world challenges.
+
 
 ## Certificates
 
