@@ -1,7 +1,7 @@
 ---
 layout : post
 title: Paper Review - “Dataset Condenstaion via Efficient Synthetic-Data Parameterization” by Jang-Hyun Kim et al., 2022
-date : 2024-03-03 14:41:00 +09:00
+date : 2025-03-03 14:41:00 +09:00
 categories : [NLP(Natural Language Process), Data-Centric]
 tags : [논문 리뷰, Paper Review, 연구, Research, NLP, Natural Language Process, AI, Artificial Intelligence, Data Science, EMNLP-Finding, DisCal, Seq2Seq, Distillation, Calibration, ROUGE, Novel n-gram, Informativeness, Abstractiveness, Summary]
 ---
