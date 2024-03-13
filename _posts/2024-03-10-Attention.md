@@ -1,6 +1,6 @@
 ---
 layout : post
-title: Paper Review - “Attention Is All You Need” by Ashish Vaswani et al., 2017
+title: Paper Review - "Attention Is All You Need" by Ashish Vaswani et al., 2017
 date : 2024-03-10 14:41:00 +09:00
 categories : [NLP(Natural Language Process), Model-Centric]
 tags : [논문 리뷰, Paper Review, 연구, Research, NLP, Natural Language Process, AI, Artificial Intelligence, Data Science, Model-centric, Attention, Multi head attention, scale dot product, encoder-decoder, layer normalization, machine translation]
