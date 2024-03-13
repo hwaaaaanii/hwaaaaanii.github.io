@@ -35,7 +35,7 @@ Conference: ICLR (International Conference on Learning Representations), 2021
 
 ## **1. Contributions**
 
-RAG System(Retrieval-Augmented Generation)은 external data base에서 문서 검색을 통해 얻은 정보를 기반으로 answer generation을 할 수 있게 해주는 system입니다. RAG System을 학습시키기 위해서는 query와 document의 쌍에 대한 data가 필요합니다. 그러나 Data를 얻는 것은 challenge가 되는 부분입니다. 또한, 어떤 방법론에서는 정답을 포함한 document는 positive하도록 분류하여 학습하는 방식을 택합니다. 이러한 방식은 “Where was Ada Lovelace born?”이라는 질문의 정답이 “London”일 때, “Ada Lovelace died in 1852 in Londen”을 포함하는 document도 positive로 분류될 수 있다는 문제점이 있습니다. 이 외에도 supervised learning은 여러 한계들이 있습니다.
+RAG System(Retrieval-Augmented Generation)은 external data base에서 문서 검색을 통해 얻은 정보를 기반으로 answer generation을 할 수 있게 해주는 system입니다. RAG System을 학습시키기 위해서는 query와 document의 쌍에 대한 data가 필요합니다. 그러나 Data를 얻는 것은 challenge가 되는 부분입니다. 또한, 어떤 방법론에서는 정답을 포함한 document는 positive하도록 분류하여 학습하는 방식을 택합니다. 이러한 방식은 “Where was Ada Lovelace born?”이라는 질문의 정답이 “London”일 때, “Ada Lovelace died in 1852 in Londen”을 포함하는 document도 "London"이 있다는 이유로 positive로 분류될 수 있다는 문제점이 있습니다. 이 외에도 supervised learning은 여러 한계들이 있습니다.
 
 본 논문에서는 unsupervised learning을 통해서 query, document pair가 없이도 RAG System을 학습할 수 있는 방법론을 제안했습니다. 본 논문의 핵심 기여는 다음과 같습니다.
 
@@ -135,7 +135,7 @@ $$
 
 ### **3-2. Dense Bi-Encoder for Passage Retriever**
 
-본 논문에서는 Cross-attention score를 통해서 문서를 ranking하고자 합니다. 그러나, 모든 document와 query를 동시에 처리하는 것은 비효율적이라는 문제가 있습니다.. 논문에서는 이러한 문제를 해결하기 위해서, d차원 vector로 embedding하는 함수 $E$를 retriever와 함께 사용했습니다. $E$는 BERT가 사용했으며, DPR(Dense Passage Retrieval)과는 달리 Query인 $q$와 passgae인 $p$에 대해서 같은 $E$를 적용하여, $E(q)$와 $E(p)$를 얻을 수 있게 됩니다. 결과적으로 다음과 같이 similarity를 계산할 수 있게 됩니다. 
+본 논문에서는 Cross-attention score를 통해서 문서를 ranking하고자 합니다. 그러나, 모든 document와 query를 동시에 처리하는 것은 비효율적이라는 문제가 있습니다. 논문에서는 이러한 문제를 해결하기 위해서, d차원 vector로 embedding하는 함수 $E$를 retriever와 함께 사용했습니다. $E$는 BERT를 사용했으며, DPR(Dense Passage Retrieval)과는 달리 Query인 $q$와 passage인 $p$에 대해서 같은 $E$를 적용하여, $E(q)$와 $E(p)$를 얻을 수 있게 됩니다. 결과적으로 다음과 같이 similarity를 계산할 수 있게 됩니다. 
 
 $$
 S_{\theta}(q,p) = E(q)^TE(p)/\sqrt{d}
@@ -214,7 +214,7 @@ negative sample을 next step에서 retriever를 학습하는 데에 쓰는 discr
 </div>
 
 
-MSE는 성능이 안 좋았고, Max-margin loss에 있어서는 $\gamma$값이 유의미한 차이를 주지 못했다는 점, 그리고 KL-divergence가 가장 성능이 좋았다는 점을 확인할 수 있습니다. 또한 R@k에서 k가 높을 수록 성능이 더 높아지는 부분도 눈에 들어옵니다. k가 높을 수록 computation cost가 높아지는 문제가 있긴 하겠지만, 성능이 좋아진다는 점은 기억에 남겨두고 싶은 부분입니다.
+MSE는 성능이 안 좋았고, Max-margin loss에 있어서는 $\gamma$값이 유의미한 차이를 주지 못했다는 점, 그리고 KL-divergence가 가장 성능이 좋았다는 점을 확인할 수 있습니다. 또한 R@k에서 k가 높을 수록 성능이 더 높아지는 부분도 눈에 들어옵니다. k가 높을 수록 computation cost가 높아지는 문제가 있긴 하겠지만, 성능이 좋아진다는 점은 기억해 두고 싶은 부분입니다.
 
 ---
 
