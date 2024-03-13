@@ -205,7 +205,7 @@ negative sample을 next step에서 retriever를 학습하는 데에 쓰는 discr
 </div>
 
 
-논문에서 주장한 대로 성능이 잘 나온 것을 확인할 수 있습니다. 특히 제가 위 테이블에서 눈이 가는 부분은 더 많은 document를 top-k로 선정했을 때, 성능이 높아진다는 점입니다(R@k means extracted top-k documents). ROUGE나 BLEU score도 잘 나온 것을 확인할 수 있습니다. 한 가지 의문인 것은 왜 Iter를 0과 1만 넣어뒀는지가 의문입니다.
+논문에서 주장한 대로 성능이 잘 나온 것을 확인할 수 있습니다. 특히 제가 위 테이블에서 눈이 가는 부분은 더 많은 document를 top-k로 선정했을 때, 성능이 높아진다는 점입니다(R@k means extracting top-k documents). ROUGE나 BLEU score도 잘 나온 것을 확인할 수 있습니다. 한 가지 의문인 것은 왜 Iter를 0과 1만 넣어뒀는지가 의문입니다.
 
 앞서서 제시한 Loss function들 중에서 무엇이 가장 잘 작동했는지는 아래 table에 있습니다.
 
