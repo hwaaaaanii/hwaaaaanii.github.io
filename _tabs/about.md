@@ -19,7 +19,7 @@ permalink: /
 This blog serves as my platform for sharing insights on projects, research and development, and paper reviews related to the field of Artificial Intelligence.
 
 [Paper Reviews Here](https://hwaaaaanii.github.io/paper-reviews/)
-
+[Paper Review Videos Here](https://hwaaaaanii.github.io/Paper-Review-Videos/)
 [Projects Here](https://hwaaaaanii.github.io/projects/) - Preparing
 
 ## Education
