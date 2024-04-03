@@ -37,7 +37,7 @@ Conference : NAACL, Mar 2024
 
 RAG System은 Question-Answering(QA) task를 비롯한 다양한 task들에서 LLM의 성능을 높이는 데에 기여를 해왔습니다. 그러나, 사용자들이 실제로 쓰는 query들의 complexity는 다양합니다. 때로는, 간단한 query에 대해서 Multi-Step Approach를 하면서 불필요한 계산을 할 때도 있고, 복잡한 query에 대해서는 Single-Step Approach를 하며 적절하게 다루지 못할 때도 있습니다. 이러한 문제를 위해서 본 논문에서는 query의 complexity를 LLM을 활용해 미리 분류하고 활용하는 방안으로 Adaptive-RAG를 제안했습니다. 논문의 핵심 기여는 다음과 같습니다.
 
-1-1.  실제 사용자들이 쓰는 현실적인 query들은 complexity가 매우 다양하다는 점을 지적했습니다. 
+1-1.  실제 사용자들이 쓰는 현실적인 query들은 complexity가 다양하다는 점을 지적했습니다. 
 
 1-2.  LLM을 활용한 Classifier를 통해 query의 complexity를 평가하고, 각각의 complexity에 대해서 더 적절한 접근 방법들을 제안했습니다.
 
