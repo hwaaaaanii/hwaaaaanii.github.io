@@ -28,9 +28,10 @@ This blog serves as my platform for sharing insights on projects, research and d
 
 - **Yonsei University**  
   B.S in Economics & Statistics, ~Feb 2024
+  - GPA : 4.21 / 4.3 (Class rank : 3 / 131)
 
 - **KAIST**  
-  M.S in Data Science, Data Intelligence System Lab (DISL.), Feb 2024~
+  M.S in Data Science, Data Intelligence System Lab ([DISL.](https://disl-lab.github.io)), Feb 2024~
 
 ## Research Interest
 
@@ -57,6 +58,7 @@ Focused on data-centric AI, I am dedicated to advancing Natural Language Process
 
 - **High Honors, Yonsei University**, Aug 2022 - Top 3% of students based on grades.
 - **Highest Honors, Yonsei University**, Feb 2023 - Top 1% of students based on grades.
+
 
 ## Contact
 
