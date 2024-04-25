@@ -1,6 +1,6 @@
 ---
 layout : post
-title: Paper Review - "Adaptive-RAG ; Learning to Adapt Retrieval-Augmented Large Language Models through Question Complexity", Soyeong Jeong et al., Mar 2024
+title: Paper Review - [NAACL 2024] "Adaptive-RAG ; Learning to Adapt Retrieval-Augmented Large Language Models through Question Complexity", Soyeong Jeong et al., Mar 2024
 date : 2024-03-31 14:41:00 +09:00
 categories : [NLP(Natural Language Process), Data-Centric]
 tags : [논문 리뷰, Paper Review, 연구, Research, NLP, Natural Language Process, AI, Artificial Intelligence, Data Science, RAG, Noise, Document, IR, LLM, Retrieval-Augmented Generation, Information Retrieval, MDQA, Multi document QA, NQ dataset, Adaptive-RAG, Single-hop QA, Multi-hop QA, Query Complexity, SQuAD, Natural Questions, TriviaQA, MuSiQue, HotpotQA, 2WikiMultiHopQA, Self-RAG]

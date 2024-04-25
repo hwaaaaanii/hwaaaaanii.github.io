@@ -1,6 +1,6 @@
 ---
 layout : post
-title: Paper Review - "Distilling Knowledge From Reader To Retriever For Question Answering", Gautier Izacard et al., 4 Aug 2022
+title: Paper Review - [ICLR 2021] "Distilling Knowledge From Reader To Retriever For Question Answering", Gautier Izacard et al., 4 Aug 2022
 date : 2024-03-13 14:41:00 +09:00
 categories : [NLP(Natural Language Process), Data-Centric]
 tags : [논문 리뷰, Paper Review, 연구, Research, NLP, Natural Language Process, AI, Artificial Intelligence, Data Science, Data-centric, RAG, ICLR, Retrival Augmented Generation, Gautier Izacard, FiD, Fusion-in-Decoder model, cross-attention, self-attention, KL divergence, SpaCy, max-margin loss]
