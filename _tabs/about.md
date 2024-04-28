@@ -22,7 +22,7 @@ This blog serves as my platform for sharing insights on projects, research and d
 
 [Paper Review Videos Here](https://hwaaaaanii.github.io/Paper-Review-Videos/)
 
-[Projects Here](https://hwaaaaanii.github.io/projects/) - Preparing
+[Research Here](https://hwaaaaanii.github.io/projects/) - Preparing
 
 ## Education
 
