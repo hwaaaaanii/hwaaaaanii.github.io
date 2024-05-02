@@ -9,10 +9,10 @@ permalink: /
 # **Welcome to Jeonghwan Choi's Portfolio.**
 
 <div style="display: flex; align-items: flex-start;">
-  <img src="/assets/img/profile1.jpeg" style="margin-right: 30px; flex-shrink: 0; margin-bottom: 0;" alt="Jeonghwan Choi" width="130" height="130">
+  <img src="/assets/img/profile1.jpeg" style="margin-right: 30px; flex-shrink: 0; margin-bottom: 0;" alt="Jeonghwan Choi" width="110" height="110">
   <div>
     <h2>Jeonghwan Choi</h2>
-    <p>Email : chlwjd13579@kaist.ac.kr / chlwjd13579@gmail.com</p>
+    <p>Email : hwani.choi@kaist.ac.kr</p>
   </div>
 </div>
 
