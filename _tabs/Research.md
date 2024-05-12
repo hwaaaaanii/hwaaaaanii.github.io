@@ -1,6 +1,5 @@
 ---
 layout: page
-url:
 icon: fas fa-solid fa-laptop-code
 order: 3
 ---
