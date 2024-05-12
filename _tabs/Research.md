@@ -1,6 +1,6 @@
 ---
 layout: page
-url: /categories/projects/
+url:
 icon: fas fa-solid fa-laptop-code
 order: 3
 ---
