@@ -6,7 +6,7 @@ order: 3
 
 # **Research and Projects**
 
-**This page shares and details the codes and their contents from the projects and research activities I have conducted. Most of these projects and research are in areas such as data-driven decision optimization, machine learning, and deep learning. You can check out the detailed content and code for each project through the links below.**
+**This page shares and details the codes and their contents from the projects and research activities I have conducted. Most of these projects and research are in areas such as natural language processing (NLP), retrieval-augmented generation (RAG) systems, machine learning, and deep learning. You can check out the detailed content and code for each project through the links below.**
 
 ## **List of Researches**
 
