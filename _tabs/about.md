@@ -58,7 +58,7 @@ Focused on data-centric AI, I am dedicated to advancing Natural Language Process
 
 - **High Honors, Yonsei University**, Aug 2022 - Top 3% of students based on grades.
 - **Highest Honors, Yonsei University**, Feb 2023 - Top 1% of students based on grades.
-- **Awarded for Outstanding Paper Presentation**
+- **Awarded for Outstanding Paper Presentation (Korea Institute of Information Scientists and Engineers)**
   - [Improving the Text Summary Quality Through Understanding the Hallucination Level of Summarization Using Large Language Models, KCC 2024](https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE11861883)
 
 
