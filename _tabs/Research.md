@@ -10,10 +10,11 @@ order: 3
 
 ## **List of Researches**
 
-- Preparing
+- [KCC 2024] [Improving the Text Summary Quality Through Understanding the Hallucination Level of Summarization Using Large Language Models(LLM을 활용한 요약의 환각 수준 이해를 통한 텍스트 요약 품질 향상)](https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE11861883)
+  - Awarded for Outstanding Paper Presentation(우수발표논문상 수상)
 
 ## **List of Projects**
 
-- [[Project] Data Driven Decision Optimization](https://github.com/hwaaaaanii/Data-Driven-Decision-Optimization-Using-Bayesian-Optimization/tree/main)
+- [Project] [Data Driven Decision Optimization](https://github.com/hwaaaaanii/Data-Driven-Decision-Optimization-Using-Bayesian-Optimization/tree/main)
 
   This project is a study that uses Bayesian Optimization to integrate and evaluate various machine learning models for data-driven decision optimization. It thoroughly covers performance evaluation, model selection, hyperparameter optimization, and presents an approach to prediction and optimization based on actual data.
