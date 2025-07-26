@@ -33,9 +33,12 @@ This blog serves as my platform for sharing insights on projects, research and d
   - GPA : 4.21 / 4.3 (Class rank : 3 / 131)
 
 - **KAIST (Korea Advanced Institute of Science and Technology)**  
-  M.S in Data Science, Data Intelligence System Lab ([DISL.](https://disl-lab.github.io)), Feb 2024 ~ Feb 2025
+  M.S in Data Science, Feb 2024 ~ Feb 2025
+  - Data Intelligence System Lab ([DISL.](https://disl-lab.github.io))
+  - GPA : 4.22 / 4.3
 
-  Integrated Ph.D. in Industrial & Systems Engineering, Data Intelligence System Lab ([DISL.](https://disl-lab.github.io)), Feb 2025 ~ Present
+  Ph.D. in Industrial & Systems Engineering, Feb 2025 ~ Present
+  - Data Intelligence System Lab ([DISL.](https://disl-lab.github.io))
 
 ## Research Interest
 
