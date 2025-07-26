@@ -18,13 +18,13 @@ permalink: /
 
 This blog serves as my platform for sharing insights on projects, research and development, and paper reviews related to the field of Artificial Intelligence.
 
-[Paper Reviews Here](https://hwaaaaanii.github.io/paper-reviews/)
-
-[Paper Review Videos Here](https://hwaaaaanii.github.io/Paper-Review-Videos/)
-
 [Publications Here](https://hwaaaaanii.github.io/Publications/)
 
 [CV Here](https://drive.google.com/file/d/1PQXFSbPzx8I_vQUb68TKfE0LnVzzYd_a/view?usp=sharing)
+
+[Paper Reviews Here](https://hwaaaaanii.github.io/paper-reviews/)
+
+[Paper Review Videos Here](https://hwaaaaanii.github.io/Paper-Review-Videos/)
 
 ## Education
 
