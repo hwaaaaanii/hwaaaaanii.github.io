@@ -35,11 +35,11 @@ order: 1
 <br>Korea Computer Congress **(KCC), 2025**
 
 3. Improving Language Model Quality through LLM-based Fine-Grained Hallucinated Summary Generation
-<br>Jihwan Oh* , ***Jeonghwan Choi***, Nicole Hee-Yeon Kim, Taewon Yun, Hwanjun Song 
+<br>Jihwan Oh, ***Jeonghwan Choi***, Nicole Hee-Yeon Kim, Taewon Yun, Hwanjun Song 
 <br>KIISE Transactions on Computing Practices, 2025.
 
 4. [Improving the Text Summary Quality Through Understanding the Hallucination Level of Summarization Using Large Language Models](https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE11861883)
-<br>Jihwan Oh* , ***Jeonghwan Choi***, Nicole Hee-Yeon Kim, Hwanjun Song
+<br>Jihwan Oh, ***Jeonghwan Choi***, Nicole Hee-Yeon Kim, Hwanjun Song
 <br>Korea Computer Congress **(KCC), 2024**
     - Awarded for Outstanding Paper Presentation
 
