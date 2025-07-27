@@ -13,28 +13,35 @@ order: 1
 ## **List of Publications**
 
 ### **International Publications**
-1.  **[Findings of ACL 2025]** - [Word2Passage: Word-level Importance Re-weighting for Query Expansion](https://aclanthology.org/2025.findings-acl.434/)
-- ***Jeonghwan Choi*** *, Minjeong Ban, Minseok Kim, Hwanjun Song / Findings of the Association for Computational Linguistics (Findings of ACL), 2025.
+1. [Word2Passage: Word-level Importance Re-weighting for Query Expansion](https://aclanthology.org/2025.findings-acl.434/)
+<br>***Jeonghwan Choi***, Minjeong Ban, Minseok Kim, Hwanjun Song 
+<br>Findings of the Association for Computational Linguistics **(Findings of ACL), 2025**
 
-2. [ArXiv] [Ext2Gen: Alignment through Unified Extraction and Generation for Robust Retrieval-Augmented Generation](https://arxiv.org/abs/2503.04789)
-- Hwanjun Song* , ***Jeonghwan Choi***, Minseok Kim / ArXiv Preprint, 2025.
+2. [Ext2Gen: Alignment through Unified Extraction and Generation for Robust Retrieval-Augmented Generation](https://arxiv.org/abs/2503.04789)
+<br>Hwanjun Song, ***Jeonghwan Choi***, Minseok Kim
+<br>ArXiv Preprint, 2025
 
-3. **[COLING 2025]** [Learning to Verify Summary Facts with Fine-Grained LLM Feedback](https://aclanthology.org/2025.coling-main.16/)
-- Jihwan Oh* , ***Jeonghwan Choi***, Nicole Hee-Yeon Kim, Taewon Yun, Hwanjun Song / International Conference on Computational Linguistics (COLING), 2025.
+3. [Learning to Verify Summary Facts with Fine-Grained LLM Feedback](https://aclanthology.org/2025.coling-main.16/)
+<br>Jihwan Oh, ***Jeonghwan Choi***, Nicole Hee-Yeon Kim, Taewon Yun, Hwanjun Song 
+<br>International Conference on Computational Linguistics **(COLING), 2025**
 
 ### **Domestic Publications**
-1. **[KCC 2025]** A Benchmark Dataset for Retrieval-Augmented Generation Considering Performance Alignment between Retrieval and Generation
-- Minjeong Ban* , ***Jeonghwan Choi***, Hyangsuk Min, Taewon Yun, Jihwan Oh, Hwanjun Song / Korea Computer Congress (KCC), 2025.
+1. A Benchmark Dataset for Retrieval-Augmented Generation Considering Performance Alignment between Retrieval and Generation
+<br>Minjeong Ban, ***Jeonghwan Choi***, Hyangsuk Min, Taewon Yun, Jihwan Oh, Hwanjun Song 
+<br>Korea Computer Congress **(KCC), 2025**
 
-2. **[KCC 2025]** Robust Dataset Condensation via Semi-Supervised Learning
-- Hee-yeon Kim* , ***Jeonghwan Choi***, Yuho Lee, Hwanjun Song / Korea Computer Congress (KCC), 2025.
+2. Robust Dataset Condensation via Semi-Supervised Learning
+<br>Hee-yeon Kim, ***Jeonghwan Choi***, Yuho Lee, Hwanjun Song 
+<br>Korea Computer Congress **(KCC), 2025**
 
-3. **[KIISE 2025]** Improving Language Model Quality through LLM-based Fine-Grained Hallucinated Summary Generation
-- Jihwan Oh* , ***Jeonghwan Choi***, Nicole Hee-Yeon Kim, Taewon Yun, Hwanjun Song / KIISE Transactions on Computing Practices, 2025.
+3. Improving Language Model Quality through LLM-based Fine-Grained Hallucinated Summary Generation
+<br>Jihwan Oh* , ***Jeonghwan Choi***, Nicole Hee-Yeon Kim, Taewon Yun, Hwanjun Song 
+<br>KIISE Transactions on Computing Practices, 2025.
 
-4. **[KCC 2024]** [Improving the Text Summary Quality Through Understanding the Hallucination Level of Summarization Using Large Language Models](https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE11861883)
-- Jihwan Oh* , ***Jeonghwan Choi***, Nicole Hee-Yeon Kim, Hwanjun Song
-  - Awarded for Outstanding Paper Presentation
+4. [Improving the Text Summary Quality Through Understanding the Hallucination Level of Summarization Using Large Language Models](https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE11861883)
+<br>Jihwan Oh* , ***Jeonghwan Choi***, Nicole Hee-Yeon Kim, Hwanjun Song
+<br>Korea Computer Congress **(KCC), 2024**
+    - Awarded for Outstanding Paper Presentation
 
 ---
 
