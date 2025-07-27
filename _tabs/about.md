@@ -6,7 +6,7 @@ order: 10
 permalink: /
 ---
 
-# **Welcome to Jeonghwan Choi's Portfolio.**
+<!-- # **Welcome to Jeonghwan Choi's Portfolio.** -->
 
 <div style="display: flex; align-items: flex-start;">
   <img src="/assets/img/profile1.jpeg" style="margin-right: 30px; flex-shrink: 0; margin-bottom: 0;" alt="Jeonghwan Choi" width="110" height="110">
@@ -16,7 +16,7 @@ permalink: /
   </div>
 </div>
 
-This blog serves as my platform for sharing insights on projects, research and development, and paper reviews related to the field of Artificial Intelligence.
+Welcome! I am Jeonghwan Choi, a **Ph.D. student** at the **Data Intelligence System Lab (DISL. \| Advisor: Hwanjun Song)** in the Department of Industrial & Systems Engineering at KAIST. My research interests are mainly focused on **Retrieval-Augmented Generation (RAG) systems** for solving complex information retrieval and generation tasks. I am particularly interested in developing advanced RAG frameworks that can enhance the accuracy and reliability of large language models by integrating external knowledge sources effectively.
 
 [Publications Here](https://hwaaaaanii.github.io/Publications/)
 
@@ -28,17 +28,15 @@ This blog serves as my platform for sharing insights on projects, research and d
 
 ## Education
 
-- **Yonsei University**  
-  B.S in Economics & Statistics, ~Feb 2024
-  - GPA : 4.21 / 4.3 (Class rank : 3 / 131)
-
 - **KAIST (Korea Advanced Institute of Science and Technology)**  
-  M.S in Data Science, Feb 2024 ~ Feb 2025
+Ph.D. in Industrial & Systems Engineering, Feb 2025 ~ Present
+<br>M.S in Data Science, Feb 2024 ~ Feb 2025
   - Data Intelligence System Lab ([DISL.](https://disl-lab.github.io))
   - GPA : 4.22 / 4.3
 
-  Ph.D. in Industrial & Systems Engineering, Feb 2025 ~ Present
-  - Data Intelligence System Lab ([DISL.](https://disl-lab.github.io))
+- **Yonsei University**  
+  B.S in Economics & Statistics, ~Feb 2024
+  - GPA : 4.21 / 4.3 (Class rank : 3 / 131)
 
 ## Research Interest
 
