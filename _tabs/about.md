@@ -74,9 +74,8 @@ Focused on data-centric AI, I am dedicated to advancing Natural Language Process
 
 I'm open to discussions, collaborations, and opportunities. Feel free to connect:
 
-- [**GitHub**](https://github.com/hwaaaaanii)
+- [**LinkedIn**](https://www.linkedin.com/in/hwaaaaanii)
 - [**Email**](mailto:hwani.choi@kaist.ac.kr)
 <!-- - [**Instagram**](https://www.instagram.com/hwaaaaanii) -->
-- [**LinkedIn**](https://www.linkedin.com/in/jeonghwan-choi-6b5b30249?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app)
 
 Join me on this AI journey.

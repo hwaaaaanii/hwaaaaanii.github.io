@@ -2,7 +2,7 @@
 layout: page
 url: 
 icon: fas fa-solid fa-video 
-order: 2
+order: 3
 ---
 
 **This page serves video reviews of influential research papers, personally conducted by me during our lab seminars.**
