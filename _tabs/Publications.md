@@ -19,7 +19,7 @@ order: 1
 
 2. [Ext2Gen: Alignment through Unified Extraction and Generation for Robust Retrieval-Augmented Generation](https://arxiv.org/abs/2503.04789)
 <br>Hwanjun Song, ***Jeonghwan Choi***, Minseok Kim
-<br>ArXiv Preprint, 2025
+<br>ArXiv Preprint, **2025**
 
 3. [Learning to Verify Summary Facts with Fine-Grained LLM Feedback](https://aclanthology.org/2025.coling-main.16/)
 <br>Jihwan Oh, ***Jeonghwan Choi***, Nicole Hee-Yeon Kim, Taewon Yun, Hwanjun Song 
@@ -36,12 +36,15 @@ order: 1
 
 3. Improving Language Model Quality through LLM-based Fine-Grained Hallucinated Summary Generation
 <br>Jihwan Oh, ***Jeonghwan Choi***, Nicole Hee-Yeon Kim, Taewon Yun, Hwanjun Song 
-<br>KIISE Transactions on Computing Practices, 2025
+<br>KIISE Transactions on Computing Practices, **(KTCP), 2025**
 
-4. [Improving the Text Summary Quality Through Understanding the Hallucination Level of Summarization Using Large Language Models](https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE11861883)
+4. Training Summary Evaluation Model with Fine-Grained LLM Feedback
+<br>Jihwan Oh, ***Jeonghwan Choi***, Taewon Yun, Hyangsuk Min, Hwanjun Song
+<br>Korea Software Congress **(KSC), 2024**
+
+5. [Improving the Text Summary Quality Through Understanding the Hallucination Level of Summarization Using Large Language Models](https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE11861883)
 <br>Jihwan Oh, ***Jeonghwan Choi***, Nicole Hee-Yeon Kim, Hwanjun Song
 <br>Korea Computer Congress **(KCC), 2024**
-    - Awarded for Outstanding Paper Presentation
 
 ---
 
