@@ -15,13 +15,13 @@ timezone: Asia/Seoul
 # jekyll-seo-tag settings › https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md
 # ↓ --------------------------
 
-title: Hwaaaaanii # the main title
+title: Jeonghwan Choi # the main title
 
-tagline: Welcome to Jeonghwan Choi's Portfolio! <br><br> KAIST, Ph.D. in Industrial & Systems Engineering, Data Intelligence System Lab (DISL.) # it will display as the sub-title
+tagline: Welcome to Jeonghwan Choi's gitblog! <br><br> KAIST, Ph.D. in Industrial & Systems Engineering, Data Intelligence System Lab (DISL.) # it will display as the sub-title
 
 
 description: >- # used by seo meta and the atom feed
-  Welcome to Jeonghwan Choi's Portfolio. 
+  Welcome to Jeonghwan Choi's gitblog. 
 
 # Fill in the protocol & hostname for your site.
 # e.g. 'https://username.github.io', note that it does not end with a '/'.
