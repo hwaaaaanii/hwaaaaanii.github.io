@@ -13,38 +13,55 @@ order: 1
 ## **List of Publications**
 
 ### **International Publications**
-1. [Word2Passage: Word-level Importance Re-weighting for Query Expansion](https://aclanthology.org/2025.findings-acl.434/)
-<br>***Jeonghwan Choi***, Minjeong Ban, Minseok Kim, Hwanjun Song 
+1. Distilling Long-CoT Reasoning through Collaborative Step-wise Multi-Teacher Decoding
+<br>Taewon Yun, Jisu Shin, Seunghwan Bang, **Jeonghwan Choi**, Hwanjun Song
+<br>(**Under Review**) ARR Oct
+
+1. Completing Missing Annotation: Multi-Agent Debate for Accurate and Scalable Relevant Assessment for IR Benchmarks
+<br>Minjeong Ban\*, **Jeonghwan Choi** \*, Hyangsuk Min*, Nicole Hee-Yeon Kim, Minseok Kim, Jae-Gil Lee, Hwanjun Song <span style="color: #6BA4E8;">(with Meta)</span>
+<br>(**Under Review**) International Conference on Learning Representations **(ICLR), 2026**
+<br>[[PDF]](https://openreview.net/forum?id=DD5RNCHuzq)
+
+1. Ext2Gen: Alignment through Unified Extraction and Generation for Robust Retrieval-Augmented Generation
+<br>Hwanjun Song, **Jeonghwan Choi**, Minseok Kim
+<br>ACM International Conference on Web Search and Data Mining **(WSDM), 2026**
+<br>[[PDF]](https://arxiv.org/abs/2503.04789)
+
+1. Word2Passage: Word-level Importance Re-weighting for Query Expansion 
+<br>**Jeonghwan Choi**, Minjeong Ban, Minseok Kim, Hwanjun Song <span style="color: #6BA4E8;">(with Meta)</span>
 <br>Findings of the Association for Computational Linguistics **(Findings of ACL), 2025**
+<br>[[PDF]](https://aclanthology.org/2025.findings-acl.434/)
 
-2. [Ext2Gen: Alignment through Unified Extraction and Generation for Robust Retrieval-Augmented Generation](https://arxiv.org/abs/2503.04789)
-<br>Hwanjun Song, ***Jeonghwan Choi***, Minseok Kim
-<br>ArXiv Preprint, **2025**
-
-3. [Learning to Verify Summary Facts with Fine-Grained LLM Feedback](https://aclanthology.org/2025.coling-main.16/)
-<br>Jihwan Oh, ***Jeonghwan Choi***, Nicole Hee-Yeon Kim, Taewon Yun, Hwanjun Song 
+1. Learning to Verify Summary Facts with Fine-Grained LLM Feedback
+<br>Jihwan Oh, **Jeonghwan Choi**, Nicole Hee-Yeon Kim, Taewon Yun, Hwanjun Song 
 <br>International Conference on Computational Linguistics **(COLING), 2025**
+<br>[[PDF]](https://aclanthology.org/2025.coling-main.16/)
 
 ### **Domestic Publications**
+1. A Query Decompositional Framework for Fine-grained RAG Assessment
+<br>**Jeonghwan Choi**, Minjeong Ban, Nicole Hee-Yeon Kim, Taewon Yun, Yuho Lee, Hwanjun Song
+<br>(**Under Review**) Korea Software Congress **(KSC), 2026**
+
 1. A Benchmark Dataset for Retrieval-Augmented Generation Considering Performance Alignment between Retrieval and Generation
-<br>Minjeong Ban, ***Jeonghwan Choi***, Hyangsuk Min, Taewon Yun, Jihwan Oh, Hwanjun Song 
+<br>Minjeong Ban\*, **Jeonghwan Choi** \*, Hyangsuk Min*, Taewon Yun, Jihwan Oh, Hwanjun Song 
 <br>Korea Computer Congress **(KCC), 2025**
 
-2. Robust Dataset Condensation via Semi-Supervised Learning
-<br>Heeyeon Kim, ***Jeonghwan Choi***, Yuho Lee, Hwanjun Song 
+1. Robust Dataset Condensation via Semi-Supervised Learning
+<br>Heeyeon Kim, **Jeonghwan Choi**, Yuho Lee, Hwanjun Song 
 <br>Korea Computer Congress **(KCC), 2025**
 
-3. Improving Language Model Quality through LLM-based Fine-Grained Hallucinated Summary Generation
-<br>Jihwan Oh, ***Jeonghwan Choi***, Nicole Hee-Yeon Kim, Taewon Yun, Hwanjun Song 
+1. Improving Language Model Quality through LLM-based Fine-Grained Hallucinated Summary Generation
+<br>Jihwan Oh, **Jeonghwan Choi**, Nicole Hee-Yeon Kim, Taewon Yun, Hwanjun Song 
 <br>KIISE Transactions on Computing Practices, **(KTCP), 2025**
 
-4. Training Summary Evaluation Model with Fine-Grained LLM Feedback
-<br>Jihwan Oh, ***Jeonghwan Choi***, Taewon Yun, Hyangsuk Min, Hwanjun Song
+1. Training Summary Evaluation Model with Fine-Grained LLM Feedback
+<br>Jihwan Oh, **Jeonghwan Choi**, Taewon Yun, Hyangsuk Min, Hwanjun Song
 <br>Korea Software Congress **(KSC), 2024**
 
-5. [Improving the Text Summary Quality Through Understanding the Hallucination Level of Summarization Using Large Language Models](https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE11861883)
-<br>Jihwan Oh, ***Jeonghwan Choi***, Nicole Hee-Yeon Kim, Hwanjun Song
+1. Improving the Text Summary Quality Through Understanding the Hallucination Level of Summarization Using Large Language Models
+<br>Jihwan Oh, **Jeonghwan Choi**, Nicole Hee-Yeon Kim, Hwanjun Song
 <br>Korea Computer Congress **(KCC), 2024**
+<br>[[PDF]](https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE11861883)
 
 ---
 
