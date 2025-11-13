@@ -22,6 +22,10 @@ order: 1
 <br>(**Under Review**) International Conference on Learning Representations **(ICLR), 2026**
 <br>[[PDF]](https://openreview.net/forum?id=DD5RNCHuzq)
 
+1. BRIDGE: Toward Faithful RAG Benchmarking via Retrieval-Generation Alignment
+<br>Minjeong Ban\*, **Jeonghwan Choi** \*, Hyangsuk Min*, Heeyeon Kim, Seunghwan Bang, and Hwanjun Song
+<br>ACM International Conference on Information and Knowledge Management **(RDGENAI@CIKM), 2026**
+
 1. Ext2Gen: Alignment through Unified Extraction and Generation for Robust Retrieval-Augmented Generation
 <br>Hwanjun Song, **Jeonghwan Choi**, Minseok Kim
 <br>ACM International Conference on Web Search and Data Mining **(WSDM), 2026**
