@@ -93,9 +93,12 @@ section{scroll-margin-top:5rem}
 .highlight-box p{margin:0}
 
 /* ---------- research thrusts ---------- */
-/* a description list, not a card grid. no icons, no borders, no hover state */
-.thrust-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:1.5rem 2.5rem}
-.thrust-card h3{font-size:1rem;font-weight:600;margin-bottom:.35rem}
+/* boxed again, because four bare paragraphs floated. square corners, hairline
+   border, flat fill: the structure comes back without the shadow, gradient and
+   hover lift that made these read as generated cards */
+.thrust-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:1rem}
+.thrust-card{border:1px solid var(--rule);background:#fbfbfa;padding:1.1rem 1.25rem}
+.thrust-card h3{font-size:1rem;font-weight:600;margin-bottom:.4rem}
 .thrust-card p{font-size:.92rem;line-height:1.6;color:var(--soft);margin:0}
 
 /* ---------- news ---------- */
