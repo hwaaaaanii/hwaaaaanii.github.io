@@ -21,6 +21,9 @@ python3 annotate_counts.py
 echo "==> inlining paper thumbnails"
 python3 inline_thumbs.py
 
+echo "==> analytics"
+python3 inject_analytics.py
+
 echo "==> inlining icons"
 python3 inline_icons.py
 

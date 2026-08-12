@@ -180,6 +180,23 @@ Playwright로 확인. 2026-08-11 기준 통과 항목:
 - 썸네일 10개 로드 + 플레이스홀더 2개, 깨진 이미지 0개
   (1440 / 1100 / 900 / 700 / 390px 전부 오버플로 0px, JS 에러 0건)
 
+## 10. 방문자 통계 (비공개)
+
+`analytics.conf`의 `GOATCOUNTER_CODE=`가 비어 있으면 아무 스크립트도 안 나감.
+지금은 꺼진 상태고, 페이지의 외부 요청은 0개.
+
+켜는 법:
+
+1. https://www.goatcounter.com 가입 (무료, 카드 불필요). 사이트 코드를 정함
+2. `analytics.conf`의 `GOATCOUNTER_CODE=`에 그 코드를 적음
+3. `cd homepage-src && ./build.sh ../index.html` 후 커밋, 푸시
+
+대시보드는 `https://<코드>.goatcounter.com`. 로그인해야 보이고 페이지에는
+숫자가 전혀 표시되지 않음. 쿠키를 안 쓰고 스크립트는 3.5KB.
+
+본인 방문을 빼려면 브라우저 콘솔에서 한 번만
+`localStorage.setItem('skipgc', 't')` 실행. 쓰는 브라우저마다 따로 해야 함.
+
 ## 10. 논문 썸네일 파이프라인 (2026-08-11 구축)
 
 원본은 `~/Desktop/gitblog/papers/`. 파일명 규칙과 논문 매핑은 그 폴더의
