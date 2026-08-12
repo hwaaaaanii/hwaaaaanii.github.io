@@ -194,6 +194,10 @@ blockquote{margin:0 0 1.5rem;padding:1rem 1.15rem;border-left:4px solid rgba(212
 .contact-card:hover{transform:translateY(-2px);box-shadow:0 10px 15px -3px rgba(0,0,0,.08);border-color:#cbd5e1}
 .contact-row{display:flex;align-items:flex-start;gap:.6rem;color:#475569;font-size:.95rem;margin-bottom:.9rem}
 .contact-row:last-child{margin-bottom:0}
+/* email and LinkedIn sit side by side, stacking only when the column gets narrow */
+.contact-pair{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+  gap:1rem 2.5rem;align-items:start}
+.contact-pair>div>h3{margin-top:0}
 .contact-row i,.contact-row .ic{color:var(--accent);margin-top:.25rem}
 .contact-card h3{font-size:1rem;font-family:'Inter',sans-serif;font-weight:600;color:var(--primary);margin-bottom:.4rem}
 
