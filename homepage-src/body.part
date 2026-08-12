@@ -35,21 +35,21 @@
         <p class="affil">Industrial &amp; Systems Engineering<br>KAIST · Data Intelligence System Lab</p>
       </div>
       <div class="social-links">
-        <a href="CV_JeonghwanChoi.pdf" class="social-btn cv-btn" title="Curriculum Vitae (PDF)"><i class="fas fa-file-pdf"></i>CV</a>
-        <a href="https://www.semanticscholar.org/author/Jeonghwan-Choi/2335598802" class="social-btn" title="Semantic Scholar"><i class="fas fa-book-open"></i></a>
-        <a href="https://scholar.google.com/citations?user=0DwYO7IAAAAJ" class="social-btn" title="Google Scholar"><i class="fas fa-graduation-cap"></i></a>
-        <a href="https://www.linkedin.com/in/hwaaaaanii" class="social-btn" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-        <a href="https://disl-lab.github.io" class="social-btn" title="DISL Lab"><i class="fas fa-flask"></i></a>
-        <a href="mailto:hwani.choi@kaist.ac.kr" class="social-btn" title="Email"><i class="fas fa-envelope"></i></a>
+        <a href="CV_JeonghwanChoi.pdf" class="social-btn cv-btn" title="Curriculum Vitae (PDF)">CV</a>
+        <a href="https://www.semanticscholar.org/author/Jeonghwan-Choi/2335598802" class="social-btn" title="Semantic Scholar">Semantic Scholar</a>
+        <a href="https://scholar.google.com/citations?user=0DwYO7IAAAAJ" class="social-btn" title="Google Scholar">Google Scholar</a>
+        <a href="https://www.linkedin.com/in/hwaaaaanii" class="social-btn" title="LinkedIn">LinkedIn</a>
+        <a href="https://disl-lab.github.io" class="social-btn" title="DISL Lab">Lab</a>
+        <a href="mailto:hwani.choi@kaist.ac.kr" class="social-btn" title="Email">Email</a>
       </div>
       <div class="ri-card">
-        <h3><i class="fas fa-lightbulb" style="color:var(--accent);font-size:.95rem"></i> Research Interests</h3>
+        <h3>Research Interests</h3>
         <ul>
-          <li><i class="fas fa-magnifying-glass"></i><span>Retrieval-Augmented Generation</span></li>
-          <li><i class="fas fa-scale-balanced"></i><span>LLM Evaluation &amp; Reliability</span></li>
-          <li><i class="fas fa-handshake"></i><span>Human-AI Alignment</span></li>
-          <li><i class="fas fa-robot"></i><span>LLM Agent Simulation</span></li>
-          <li><i class="fas fa-microchip"></i><span>Physical AI</span></li>
+          <li><span>Retrieval-Augmented Generation</span></li>
+          <li><span>LLM Evaluation &amp; Reliability</span></li>
+          <li><span>Human-AI Alignment</span></li>
+          <li><span>LLM Agent Simulation</span></li>
+          <li><span>Physical AI</span></li>
         </ul>
       </div>
     </div>
@@ -64,30 +64,28 @@
         <p>I am a <strong>Ph.D. student</strong> at the <a href="https://disl-lab.github.io" class="lnk">Data Intelligence System Lab (DISL)</a> at KAIST, where I am advised by <strong>Prof. Hwanjun Song</strong>. I first joined the lab for my M.S. and then continued into the integrated Ph.D. program, after studying Economics with a double major in Statistics at Yonsei University.</p>
         <p>My work centers on <strong>Retrieval-Augmented Generation</strong>, where I build frameworks that keep generation faithful to retrieved evidence and design evaluation methods that reveal when they fail. The same interest carries into <strong>human-AI alignment</strong> and <strong>LLM agent simulation</strong>, and more recently into <strong>Physical AI</strong>, where I am exploring world model-based robot learning and sim-to-real transfer.</p>
         <div class="highlight-box">
-          <p><strong><i class="fas fa-lightbulb" style="color:var(--accent);margin-right:.4rem"></i>Open to collaboration.</strong>
-          I'm always happy to discuss RAG, LLM evaluation, agent simulation, and world models for Physical AI. Feel free to reach out by email.</p>
+          <p><strong>Open to collaboration.</strong> I'm always happy to discuss RAG, LLM evaluation, agent simulation, and world models for Physical AI. Feel free to reach out by email.</p>
         </div>
       </div>
     </section>
     <section id="research">
       <div class="section-header"><h2>Research Overview</h2></div>
       <div class="formal-font">
-        <blockquote>"My work follows one thread, from grounding what a model says in evidence, to measuring whether that grounding holds, to agents that act on it in simulated and physical worlds."</blockquote>
         <div class="thrust-grid">
           <div class="thrust-card">
-            <h3><i class="fas fa-magnifying-glass" style="color:var(--accent)"></i> Robust RAG Frameworks</h3>
+            <h3>Robust RAG Frameworks</h3>
             <p>Retrieval and generation that stays faithful to source evidence, through query expansion and extraction-generation alignment.</p>
           </div>
           <div class="thrust-card">
-            <h3><i class="fas fa-scale-balanced" style="color:var(--accent)"></i> Evaluation &amp; Reliability</h3>
+            <h3>Evaluation &amp; Reliability</h3>
             <p>Benchmarks and automatic evaluators that expose where RAG systems break, from query-agnostic metrics to multi-agent relevance annotation.</p>
           </div>
           <div class="thrust-card">
-            <h3><i class="fas fa-robot" style="color:var(--accent)"></i> LLM Agent Simulation</h3>
+            <h3>LLM Agent Simulation</h3>
             <p>Language models that simulate multi-party behavior, including seller-buyer retail dynamics and multimodal conflict mediation.</p>
           </div>
           <div class="thrust-card">
-            <h3><i class="fas fa-microchip" style="color:var(--accent)"></i> Physical AI</h3>
+            <h3>Physical AI</h3>
             <p>World model-based robot learning and sim-to-real transfer, extending agent reasoning to systems that act in the physical world.</p>
           </div>
         </div>
@@ -97,28 +95,27 @@
       <div class="section-header"><h2>Latest News</h2></div>
       <div class="news-list">
         <div class="news-item"><div class="news-date">2026.08</div>
-          <div class="news-content">🎉 <strong>Towards Robust RAG via Reliability-Aware Adaptive Evidence Selection</strong> accepted to <strong>Findings of EMNLP 2026</strong>.</div></div>
+          <div class="news-content"><strong>Towards Robust RAG via Reliability-Aware Adaptive Evidence Selection</strong> accepted to <strong>Findings of EMNLP 2026</strong>.</div></div>
         <div class="news-item"><div class="news-date">2026.07</div>
-          <div class="news-content">🔥 Three papers accepted to <strong>COLM 2026</strong>, including <strong>What Makes a Sale?</strong>, <strong>Towards Query-Agnostic RAG Evaluation</strong>, and <strong>RAQE</strong>.</div></div>
+          <div class="news-content">Three papers accepted to <strong>COLM 2026</strong>, including <strong>What Makes a Sale?</strong>, <strong>Towards Query-Agnostic RAG Evaluation</strong>, and <strong>RAQE</strong>.</div></div>
         <div class="news-item"><div class="news-date">2026.05</div>
-          <div class="news-content">🎉 <strong>Distilling Long-CoT Reasoning</strong> accepted to <strong>Findings of ACL 2026</strong>.</div></div>
+          <div class="news-content"><strong>Distilling Long-CoT Reasoning</strong> accepted to <strong>Findings of ACL 2026</strong>.</div></div>
         <div class="news-item"><div class="news-date">2026.04</div>
-          <div class="news-content">📄 Second patent filed with KIPO for multi-agent debate-based relevance assessment.</div></div>
+          <div class="news-content">Second patent filed with KIPO for multi-agent debate-based relevance assessment.</div></div>
         <div class="news-item"><div class="news-date">2026.01</div>
-          <div class="news-content">🔥 <strong>Completing Missing Annotation</strong> accepted to <strong>ICLR 2026</strong>. My first ICLR paper! <a href="https://openreview.net/forum?id=DD5RNCHuzq">[OpenReview]</a></div></div>
+          <div class="news-content"><strong>Completing Missing Annotation</strong> accepted to <strong>ICLR 2026</strong>. My first ICLR paper! <a href="https://openreview.net/forum?id=DD5RNCHuzq">[OpenReview]</a></div></div>
         <div class="news-item"><div class="news-date">2025.12</div>
-          <div class="news-content">🏆 Received the <strong>Best Paper Award</strong> at Korea Software Congress (KSC 2025).</div></div>
+          <div class="news-content">Received the <strong>Best Paper Award</strong> at Korea Software Congress (KSC 2025).</div></div>
         <div class="news-item"><div class="news-date">2025.10</div>
-          <div class="news-content">🎉 <strong>Aligning Extraction and Generation for Robust RAG</strong> accepted to <strong>WSDM 2026</strong>. <a href="https://arxiv.org/abs/2503.04789">[arXiv]</a></div></div>
+          <div class="news-content"><strong>Aligning Extraction and Generation for Robust RAG</strong> accepted to <strong>WSDM 2026</strong>. <a href="https://arxiv.org/abs/2503.04789">[arXiv]</a></div></div>
         <div class="news-item"><div class="news-date">2025.06</div>
-          <div class="news-content">🎉 <strong>Word2Passage</strong> accepted to <strong>Findings of ACL 2025</strong>. <a href="https://aclanthology.org/2025.findings-acl.434/">[paper]</a></div></div>
+          <div class="news-content"><strong>Word2Passage</strong> accepted to <strong>Findings of ACL 2025</strong>. <a href="https://aclanthology.org/2025.findings-acl.434/">[paper]</a></div></div>
       </div>
     </section>
     <section id="education">
       <div class="section-header"><h2>Education</h2></div>
       <div class="timeline">
         <div class="timeline-item">
-          <div class="tl-icon"><i class="fas fa-graduation-cap"></i></div>
           <div class="tl-content">
             <h3>Ph.D. Program, Industrial &amp; Systems Engineering</h3>
             <p class="when">Feb 2025 - Present · Daejeon, South Korea</p>
@@ -126,7 +123,6 @@
           </div>
         </div>
         <div class="timeline-item">
-          <div class="tl-icon"><i class="fas fa-user-graduate"></i></div>
           <div class="tl-content">
             <h3>M.S., Graduate School of Data Science</h3>
             <p class="when">Feb 2024 - Feb 2025 · Daejeon, South Korea</p>
@@ -134,7 +130,6 @@
           </div>
         </div>
         <div class="timeline-item">
-          <div class="tl-icon"><i class="fas fa-school"></i></div>
           <div class="tl-content">
             <h3>B.A. Economics, Statistics Double Major</h3>
             <p class="when">Until Feb 2024 · Seoul, South Korea</p>
@@ -149,7 +144,7 @@
           <h2>Publications</h2>
           <p class="sub-note">* denotes equal contribution</p>
         </div>
-        <a href="https://scholar.google.com/citations?user=0DwYO7IAAAAJ" class="view-all">Google Scholar <i class="fas fa-arrow-right"></i></a>
+        <a href="https://scholar.google.com/citations?user=0DwYO7IAAAAJ" class="view-all">Google Scholar </a>
       </div>
 
       <div class="pub-year-group">
@@ -358,7 +353,6 @@
       <div class="section-header"><h2>Patents</h2></div>
       <div class="timeline">
         <div class="timeline-item">
-          <div class="tl-icon"><i class="fas fa-lightbulb"></i></div>
           <div class="tl-content">
             <h3>Cost-Efficient and Accurate Debate-Based Relevance Assessment System with Multi-Agents</h3>
             <p class="when">Apr 2026 · KIPO · Application No. 10-2026-0066617</p>
@@ -366,7 +360,6 @@
           </div>
         </div>
         <div class="timeline-item">
-          <div class="tl-icon"><i class="fas fa-lightbulb"></i></div>
           <div class="tl-content">
             <h3>Method and Apparatus for Generating Answers Using Extended Query-Based Retrieval Utilizing Multi-Level Importance Reweighting</h3>
             <p class="when">Sep 2025 · KIPO · Application No. 10-2025-0127517</p>
@@ -402,28 +395,24 @@
       <div class="section-header"><h2>Academic Service, Teaching &amp; Leadership</h2></div>
       <div class="timeline">
         <div class="timeline-item">
-          <div class="tl-icon"><i class="fas fa-clipboard-check"></i></div>
           <div class="tl-content">
             <h3>Program Committee Member: LASS 2026</h3>
             <p class="when">2nd Workshop on LLM Agents for Social Simulation · Co-located with ACM CIKM 2026</p>
           </div>
         </div>
         <div class="timeline-item">
-          <div class="tl-icon"><i class="fas fa-clipboard-check"></i></div>
           <div class="tl-content">
             <h3>Reviewer: DocInsights 2026</h3>
             <p class="when">Workshop on Document Intelligence and Understanding · Co-located with EMNLP 2026</p>
           </div>
         </div>
         <div class="timeline-item">
-          <div class="tl-icon"><i class="fas fa-chalkboard-user"></i></div>
           <div class="tl-content">
             <h3>Teaching Assistant: Dynamic Programming and Reinforcement Learning (IE540)</h3>
             <p class="when">KAIST · Spring 2025</p>
           </div>
         </div>
         <div class="timeline-item">
-          <div class="tl-icon"><i class="fas fa-users"></i></div>
           <div class="tl-content">
             <h3>President, Y-FoRM (Yonsei Forum of Risk Management)</h3>
             <p class="when">Sep 2022 - Aug 2023 · AI-driven Financial Prediction Research Society</p>
@@ -431,7 +420,6 @@
           </div>
         </div>
         <div class="timeline-item">
-          <div class="tl-icon"><i class="fas fa-certificate"></i></div>
           <div class="tl-content">
             <h3>Certifications</h3>
             <p class="when">2020 - 2022</p>
@@ -443,7 +431,6 @@
           </div>
         </div>
         <div class="timeline-item">
-          <div class="tl-icon"><i class="fas fa-code"></i></div>
           <div class="tl-content">
             <h3>Skills</h3>
             <p class="desc">Programming: Python, Java, R &nbsp;·&nbsp; Languages: English (Proficient), Korean (Native)</p>
@@ -455,7 +442,6 @@
       <div class="section-header"><h2>Project Experience</h2></div>
       <div class="timeline">
         <div class="timeline-item">
-          <div class="tl-icon"><i class="fas fa-cart-shopping"></i></div>
           <div class="tl-content">
             <h3>Retrieval-Augmented Generation for Retail</h3>
             <p class="when">Project Manager · GS Retail · Jan 2026 - Jun 2026</p>
@@ -463,7 +449,6 @@
           </div>
         </div>
         <div class="timeline-item">
-          <div class="tl-icon"><i class="fas fa-comments"></i></div>
           <div class="tl-content">
             <h3>Multimodal Agentic Platform for Conflict Mediation</h3>
             <p class="when">Research Team Member · Ministry of Science and ICT (IITP) · Oct 2025 - Present</p>
@@ -471,7 +456,6 @@
           </div>
         </div>
         <div class="timeline-item">
-          <div class="tl-icon"><i class="fas fa-globe"></i></div>
           <div class="tl-content">
             <h3>Korea-Canada Joint Research (KAIST-GIST-UBC)</h3>
             <p class="when">Research Team Member · IITP · Sep 2024 - Present</p>
@@ -479,7 +463,6 @@
           </div>
         </div>
         <div class="timeline-item">
-          <div class="tl-icon"><i class="fas fa-shield-halved"></i></div>
           <div class="tl-content">
             <h3>Language Model Reliability Enhancement System</h3>
             <p class="when">Research Team Member · National Research Foundation of Korea (NRF) · Apr 2024 - Present</p>
@@ -487,7 +470,6 @@
           </div>
         </div>
         <div class="timeline-item">
-          <div class="tl-icon"><i class="fas fa-flask"></i></div>
           <div class="tl-content">
             <h3>Scientific Information RAG System</h3>
             <p class="when">Project Manager · KISTI · Jun 2025 - Dec 2025</p>
@@ -495,7 +477,6 @@
           </div>
         </div>
         <div class="timeline-item">
-          <div class="tl-icon"><i class="fas fa-database"></i></div>
           <div class="tl-content">
             <h3>Korean Scientific RAG Framework Development</h3>
             <p class="when">Project Manager · KISTI · Jun 2024 - Dec 2024</p>
@@ -510,11 +491,11 @@
         <div class="contact-pair">
           <div>
             <h3>Email</h3>
-            <div class="contact-row"><i class="fas fa-envelope"></i><span>hwani.choi@kaist.ac.kr</span></div>
+            <div class="contact-row"><span>hwani.choi@kaist.ac.kr</span></div>
           </div>
           <div>
             <h3>LinkedIn</h3>
-            <div class="contact-row"><i class="fab fa-linkedin-in"></i><span>
+            <div class="contact-row"><span>
               <a href="https://www.linkedin.com/in/hwaaaaanii" class="lnk">linkedin.com/in/hwaaaaanii</a>
             </span></div>
           </div>

@@ -13,236 +13,190 @@
 <link rel="shortcut icon" href="/assets/img/favicons/favicon.ico">
 <link rel="manifest" href="/assets/img/favicons/site.webmanifest">
 <meta name="theme-color" content="#ffffff">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 <style>
+/* No webfonts and no icon font. System stacks only: it loads instantly, and the
+   Georgia/Helvetica pairing reads as a document rather than a product page.
+   One ink colour, one link colour, no gradients, no shadows, no hover motion. */
 :root{
-  --bg:#f8fafc; --fg:#0f172a; --primary:#1e293b; --accent:#d4a562;
-  --accent-dark:#b7791f; --muted:#64748b; --line:#e2e8f0;
+  --ink:#1a1a1a; --body:#333; --soft:#666; --faint:#8a8a8a;
+  --rule:#dcdcdc; --rule-soft:#ebebeb; --link:#14507a; --page:#fff;
+  --serif:Charter,"Bitstream Charter","Sitka Text",Cambria,Georgia,serif;
+  --sans:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+  --mono:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;
 }
 *{box-sizing:border-box}
-html{scroll-behavior:smooth}
-body{font-family:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;color:var(--fg);
-  background:var(--bg);line-height:1.6;margin:0;-webkit-font-smoothing:antialiased}
-h1,h2,h3,h4{font-family:'Crimson Text',Georgia,serif;margin:0}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{font-family:var(--sans);color:var(--body);background:var(--page);
+  line-height:1.65;margin:0;font-size:16px;-webkit-font-smoothing:antialiased}
+h1,h2,h3,h4{font-family:var(--serif);color:var(--ink);margin:0;font-weight:600;line-height:1.25}
 a{color:inherit;text-decoration:none}
 img{max-width:100%}
+.lnk,.news-content a,.honor-content a,footer a{color:var(--link);text-decoration:underline;
+  text-decoration-thickness:1px;text-underline-offset:2px}
+.lnk:hover,.news-content a:hover,.honor-content a:hover{text-decoration-thickness:2px}
 
 /* ---------- nav ---------- */
-.top-nav{position:fixed;top:0;left:0;right:0;z-index:50;background:rgba(255,255,255,.92);
-  backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-bottom:1px solid var(--line);
-  box-shadow:0 4px 30px rgba(0,0,0,.03)}
-.nav-inner{max-width:1480px;margin:0 auto;padding:0 1.5rem;min-height:4.5rem;
+.top-nav{position:sticky;top:0;z-index:50;background:var(--page);border-bottom:1px solid var(--rule)}
+.nav-inner{max-width:1180px;margin:0 auto;padding:0 1.5rem;min-height:3.5rem;
   display:flex;justify-content:space-between;align-items:center;gap:1.5rem}
-.brand{font-family:'Crimson Text',serif;font-size:1.5rem;font-weight:600;color:var(--primary);
-  transition:color .2s;white-space:nowrap;flex-shrink:0}
-.brand:hover{color:var(--accent)}
-.nav-links{display:flex;gap:1.35rem;list-style:none;margin:0;padding:0;flex-wrap:wrap;
-  justify-content:flex-end;row-gap:.5rem}
-.nav-item{position:relative;font-weight:500;font-size:.9rem;color:#475569;transition:color .2s;white-space:nowrap}
-.nav-item:hover,.nav-item.active{color:var(--primary)}
-.nav-item::after{content:'';position:absolute;width:0;height:2px;bottom:-5px;left:0;
-  background:var(--accent);transition:width .3s ease}
-.nav-item:hover::after,.nav-item.active::after{width:100%}
+.brand{font-family:var(--serif);font-size:1.15rem;font-weight:600;color:var(--ink);
+  white-space:nowrap;flex-shrink:0}
+.nav-links{display:flex;gap:1.1rem;list-style:none;margin:0;padding:0;flex-wrap:wrap;
+  justify-content:flex-end;row-gap:.35rem}
+.nav-item{font-size:.85rem;color:var(--soft)}
+.nav-item:hover{color:var(--ink)}
+.nav-item.active{color:var(--ink);font-weight:600}
 
 /* ---------- layout ---------- */
-main{min-height:100vh;padding:7rem 0 3rem}
-.wrap{max-width:1480px;margin:0 auto;padding:0 1.5rem}
+main{padding:3rem 0}
+.wrap{max-width:1180px;margin:0 auto;padding:0 1.5rem}
 .grid-layout{display:grid;grid-template-columns:1fr;gap:2.5rem}
-/* no align-items:start here. the profile column has to stretch to the full row
-   height, otherwise it is exactly as tall as the card and sticky has no travel */
-@media(min-width:1024px){.grid-layout{grid-template-columns:320px 1fr;gap:4rem}}
-.profile-card{position:sticky;top:6.5rem;max-height:calc(100vh - 8rem);overflow-y:auto}
-.content-column{display:flex;flex-direction:column;gap:3.5rem}
+/* no align-items:start here: the profile column must stretch to the full row
+   height, otherwise sticky has no room to travel */
+@media(min-width:1024px){.grid-layout{grid-template-columns:250px 1fr;gap:4rem}}
+.profile-card{position:sticky;top:5rem;max-height:calc(100vh - 6.5rem);overflow-y:auto}
+.content-column{display:flex;flex-direction:column;gap:3.25rem}
 
 /* ---------- profile ---------- */
-.profile-image-container{max-width:190px;margin:0 auto 1.5rem}
-.profile-image-container img{width:100%;border-radius:.85rem;box-shadow:0 8px 24px -14px rgba(15,23,42,.45);display:block}
-.profile-name{text-align:center;margin-bottom:1.5rem}
-.profile-name h1{font-size:1.9rem;font-weight:700;color:var(--primary);margin-bottom:.15rem}
-.profile-name .ko{font-size:1rem;color:#94a3b8;margin:0 0 .5rem}
-.profile-name .role{font-size:1.05rem;color:var(--accent);font-weight:500;margin:0 0 .25rem}
-.profile-name .affil{color:#64748b;font-size:.9rem;margin:0;line-height:1.45}
-.social-links{display:flex;flex-wrap:wrap;justify-content:center;gap:.6rem;margin-bottom:1.5rem}
-.social-btn{width:2.5rem;height:2.5rem;display:inline-flex;align-items:center;justify-content:center;
-  border-radius:999px;border:1px solid var(--line);color:#475569;background:#fff;
-  transition:all .2s ease;box-shadow:0 6px 18px -16px rgba(15,23,42,.55)}
-.social-btn:hover{border-color:rgba(212,165,98,.5);color:var(--accent-dark);transform:translateY(-1px)}
-/* the CV is the one link people actually hunt for, so it gets a label instead of
-   a bare icon and carries the accent colour */
-.social-btn.cv-btn{width:auto;padding:0 .85rem;gap:.4rem;font-size:.82rem;font-weight:700;
-  letter-spacing:.04em;border-color:rgba(212,165,98,.55);color:var(--accent-dark);
-  background:linear-gradient(180deg,#fffdf8 0%,#fdf6e9 100%)}
-.social-btn.cv-btn:hover{border-color:var(--accent);background:#fdf1dd}
-.ri-card{background:#f1f5f9;border-radius:.85rem;padding:1.25rem}
-.ri-card h3{font-size:1.1rem;font-weight:700;color:var(--primary);margin-bottom:.9rem;
-  padding-bottom:.5rem;border-bottom:1px solid var(--line);display:flex;align-items:center;gap:.5rem}
-.ri-card ul{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:.7rem}
-.ri-card li{display:flex;align-items:center;color:#334155;font-size:.875rem;font-weight:500}
-.ri-card li i,.ri-card li .ic{color:rgba(212,165,98,.9);margin-right:.75rem;width:1.25rem;text-align:center;font-size:.85rem}
+.profile-image-container{max-width:170px;margin:0 0 1.1rem}
+.profile-image-container img{width:100%;display:block}
+.profile-name{margin-bottom:1.1rem}
+.profile-name h1{font-size:1.5rem;font-weight:600;margin-bottom:.2rem}
+.profile-name .role{font-size:.95rem;color:var(--body);margin:0 0 .15rem}
+.profile-name .affil{color:var(--soft);font-size:.88rem;margin:0;line-height:1.5}
+.social-links{display:flex;flex-wrap:wrap;gap:.9rem;margin-bottom:1.6rem;
+  padding-bottom:1.4rem;border-bottom:1px solid var(--rule-soft)}
+.social-btn{font-size:.85rem;color:var(--link);text-decoration:underline;
+  text-decoration-thickness:1px;text-underline-offset:2px}
+.social-btn:hover{text-decoration-thickness:2px}
+.social-btn.cv-btn{font-weight:600}
+.ri-card h3{font-size:.78rem;font-family:var(--sans);font-weight:600;color:var(--faint);
+  text-transform:uppercase;letter-spacing:.09em;margin-bottom:.6rem}
+.ri-card ul{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:.4rem}
+.ri-card li{color:var(--body);font-size:.88rem;line-height:1.45}
 
 /* ---------- sections ---------- */
-section{scroll-margin-top:6.5rem}
-.section-header{margin-bottom:1.5rem;display:flex;justify-content:space-between;align-items:flex-end;gap:1rem}
-.section-header h2{position:relative;display:inline-block;font-size:1.85rem;font-weight:700;color:var(--primary);z-index:0}
-.section-header h2::after{content:'';position:absolute;bottom:2px;left:0;width:40%;height:3px;
-  background:rgba(212,165,98,.3);z-index:-1}
-.view-all{font-size:.85rem;font-weight:500;color:var(--accent);white-space:nowrap;transition:color .2s}
-.view-all:hover{color:var(--accent-dark)}
-.formal-font{font-family:'Times New Roman',Times,serif;font-size:1.05rem;line-height:1.7;color:#475569;text-align:justify}
+section{scroll-margin-top:5rem}
+.section-header{margin-bottom:1.25rem;padding-bottom:.4rem;border-bottom:1px solid var(--rule);
+  display:flex;justify-content:space-between;align-items:baseline;gap:1rem}
+.section-header h2{font-size:1.3rem;font-weight:600}
+.view-all{font-size:.82rem;color:var(--link);white-space:nowrap;text-decoration:underline;
+  text-decoration-thickness:1px;text-underline-offset:2px}
+.formal-font{font-size:1rem;line-height:1.7;color:var(--body)}
 .formal-font p{margin:0 0 1rem}
-.highlight-box{background:rgba(212,165,98,.1);border-left:4px solid var(--accent);
-  padding:1rem 1.15rem;border-radius:0 .5rem .5rem 0;font-family:'Inter',sans-serif;font-size:.95rem;text-align:left}
+.formal-font strong{color:var(--ink);font-weight:600}
+.highlight-box{margin-top:1.25rem;padding-top:1rem;border-top:1px solid var(--rule-soft);
+  font-size:.92rem;color:var(--soft)}
 .highlight-box p{margin:0}
-blockquote{margin:0 0 1.5rem;padding:1rem 1.15rem;border-left:4px solid rgba(212,165,98,.3);
-  background:rgba(248,250,252,.6);border-radius:0 .5rem .5rem 0;font-style:italic;color:#475569}
 
-/* ---------- thrust cards ---------- */
-.thrust-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:1.25rem}
-.thrust-card{background:#fff;border:1px solid #eef2f7;border-radius:.85rem;padding:1.25rem;
-  transition:all .3s ease;display:flex;flex-direction:column}
-.thrust-card:hover{box-shadow:0 10px 20px -14px rgba(15,23,42,.4);border-color:rgba(212,165,98,.4)}
-.thrust-card h3{font-size:1.1rem;font-weight:700;color:var(--primary);margin-bottom:.75rem;
-  display:flex;align-items:center;gap:.5rem;transition:color .2s}
-.thrust-card:hover h3{color:var(--accent-dark)}
-.thrust-card p{font-size:.875rem;line-height:1.65;color:#64748b;margin:0;text-align:justify}
+/* ---------- research thrusts ---------- */
+/* a description list, not a card grid. no icons, no borders, no hover state */
+.thrust-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:1.5rem 2.5rem}
+.thrust-card h3{font-size:1rem;font-weight:600;margin-bottom:.35rem}
+.thrust-card p{font-size:.92rem;line-height:1.6;color:var(--soft);margin:0}
 
 /* ---------- news ---------- */
-.news-list{display:flex;flex-direction:column;gap:1rem}
-.news-item{display:grid;grid-template-columns:88px 1fr;gap:1.5rem;align-items:baseline;
-  padding-bottom:.75rem;border-bottom:1px dashed var(--line)}
-.news-item:last-child{border-bottom:none}
-.news-date{font-size:.85rem;font-weight:600;color:var(--muted);white-space:nowrap;font-variant-numeric:tabular-nums}
-.news-content{font-size:.92rem;color:#334155;line-height:1.6}
-.news-content a{color:var(--accent-dark);border-bottom:1px solid rgba(212,165,98,.35)}
+.news-list{display:flex;flex-direction:column;gap:.7rem}
+.news-item{display:grid;grid-template-columns:72px 1fr;gap:1.25rem;align-items:baseline}
+.news-date{font-family:var(--mono);font-size:.8rem;color:var(--faint);white-space:nowrap}
+.news-content{font-size:.93rem;color:var(--body);line-height:1.6}
+.news-content strong{color:var(--ink);font-weight:600}
 
 /* ---------- publications ---------- */
-.pub-year-group{margin-bottom:1.75rem}
-.pub-year-header{font-family:'Inter',sans-serif;font-size:1.3rem;font-weight:700;font-style:italic;
-  letter-spacing:.05em;color:var(--primary);margin-bottom:1rem;border-bottom:2px solid var(--line);
-  padding-bottom:.25rem;display:inline-block}
-.pub-year-count{font-style:normal;font-weight:600;font-size:.78rem;color:var(--muted);
-  letter-spacing:0;margin-left:.4rem;vertical-align:.12em}
-.pub-list-ul{list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:1.15rem}
-.pub-list-item{display:flex;gap:1.4rem;align-items:flex-start;padding:1.2rem;border:1px solid var(--line);
-  border-radius:18px;background:linear-gradient(135deg,#fff 0%,#f8fafc 100%);
-  transition:border-color .25s ease;line-height:1.5}
-.pub-list-item:hover{border-color:rgba(212,165,98,.55)}
+.pub-year-group{margin-bottom:2rem}
+.pub-year-header{font-family:var(--sans);font-size:.78rem;font-weight:600;letter-spacing:.09em;
+  text-transform:uppercase;color:var(--faint);margin-bottom:.9rem}
+.pub-year-count{font-weight:400;letter-spacing:0;margin-left:.3rem}
+.pub-list-ul{list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:1.4rem}
+.pub-list-item{display:flex;gap:1.4rem;align-items:flex-start;line-height:1.5}
 .pub-content-wrapper{flex:1 1 auto;min-width:0}
-.pub-line-1{display:flex;flex-wrap:wrap;align-items:center;gap:.55rem;margin-bottom:.45rem}
-.pub-title-text{font-weight:600;color:var(--primary);font-size:1.05rem;line-height:1.35}
-.pub-line-2{font-size:.92rem;color:#4b5563;margin-bottom:.35rem}
-.pub-line-2 strong{color:var(--primary);font-weight:700}
-.pub-line-2 .meta-note{color:#6BA4E8;font-weight:500}
-.pub-line-3{font-size:.88rem;color:var(--muted);display:flex;flex-wrap:wrap;align-items:center;gap:.35rem}
-.pub-line-4{display:flex;flex-wrap:wrap;gap:.45rem;margin-top:.55rem}
-.pub-link-btn{display:inline-block;font-size:.76rem;font-weight:600;padding:.2rem .65rem;
-  border:1px solid #dbe4ef;border-radius:999px;color:#475569;background:#fff;transition:all .2s;
-  box-shadow:0 8px 16px -14px rgba(15,23,42,.45)}
-.pub-link-btn:hover{border-color:rgba(212,165,98,.55);color:var(--accent-dark);background:#fffaf0}
-.pub-venue-tag{display:inline-flex;align-items:center;padding:.28rem .8rem;border-radius:999px;
-  border:1px solid rgba(148,163,184,.28);background:rgba(255,255,255,.96);font-size:.75rem;
-  font-weight:700;letter-spacing:.04em;white-space:nowrap}
-.tag-conference{color:var(--accent-dark);border-color:rgba(212,165,98,.36);background:#fffaf0}
-.tag-under-review{color:#2563eb;border-color:rgba(37,99,235,.22);background:#eff6ff}
-.tag-journal{color:#059669;border-color:rgba(5,150,105,.22);background:#ecfdf5}
-.pub-badge-highlight{display:inline-block;background:#ef4444;color:#fff;font-size:.72rem;
-  font-weight:700;padding:.16rem .5rem;border-radius:999px;line-height:1.2}
-/* framework figures run anywhere from 1.6:1 to 5:1, so the box keeps a fixed
-   2:1 frame and the image is contained inside it rather than cropped */
-.pub-thumbnail-box{width:250px;aspect-ratio:2/1;flex-shrink:0;position:relative;border-radius:14px;
-  overflow:hidden;background:#fff;
-  border:1px solid rgba(226,232,240,.9);padding:.45rem;display:flex;align-items:center;justify-content:center}
-.pub-thumb-img{max-width:100%;max-height:100%;width:auto;height:auto;object-fit:contain;display:block;
-  border-radius:4px}
-/* papers with no figure get a plain tinted card, no text, so nothing has to be
-   chosen per paper and the row keeps the same left edge as figured entries */
-.pub-thumb-fallback{width:100%;height:100%;border-radius:10px;
-  background:linear-gradient(135deg,#fbfaf7 0%,#f1f3f6 100%);
-  box-shadow:inset 0 0 0 1px rgba(212,165,98,.14)}
+.pub-line-1{display:flex;flex-wrap:wrap;align-items:baseline;gap:.5rem;margin-bottom:.3rem}
+.pub-title-text{font-family:var(--serif);font-weight:600;color:var(--ink);font-size:1.05rem;line-height:1.35}
+.pub-line-2{font-size:.9rem;color:var(--soft);margin-bottom:.25rem}
+.pub-line-2 strong{color:var(--ink);font-weight:600}
+.pub-line-2 .meta-note{color:var(--faint);font-weight:400}
+.pub-line-3{font-size:.88rem;color:var(--body);display:flex;flex-wrap:wrap;align-items:baseline;gap:.4rem}
+.pub-line-4{display:flex;flex-wrap:wrap;gap:.7rem;margin-top:.35rem}
+.pub-link-btn{font-size:.82rem;color:var(--link);text-decoration:underline;
+  text-decoration-thickness:1px;text-underline-offset:2px}
+.pub-link-btn:hover{text-decoration-thickness:2px}
+/* venue is plain italic text, not a pill */
+.pub-venue-tag{font-style:italic;font-size:.88rem;color:var(--body);white-space:nowrap}
+.pub-badge-highlight{font-size:.76rem;font-weight:600;color:var(--faint);letter-spacing:.03em;
+  white-space:nowrap}
+.pub-badge-highlight::before{content:"[ "}
+.pub-badge-highlight::after{content:" ]"}
+/* framework figures run 1.6:1 to 5:1, so the frame stays 2:1 and the image is
+   contained rather than cropped */
+.pub-thumbnail-box{width:190px;aspect-ratio:2/1;flex-shrink:0;overflow:hidden;background:var(--page);
+  border:1px solid var(--rule);display:flex;align-items:center;justify-content:center;padding:.3rem}
+.pub-thumb-img{max-width:100%;max-height:100%;width:auto;height:auto;object-fit:contain;display:block}
+/* papers with no figure get an empty frame: nothing to choose, nothing to maintain */
+.pub-thumb-fallback{width:100%;height:100%;background:#fafafa}
 
-/* ---------- timeline / honors ---------- */
-.timeline{display:flex;flex-direction:column;gap:1.5rem}
+/* ---------- education / honors ---------- */
+.timeline{display:flex;flex-direction:column;gap:1.35rem}
 .timeline-item{display:flex;gap:1rem;align-items:flex-start}
-.tl-icon{width:3.5rem;height:3.5rem;flex-shrink:0;background:#fff;border-radius:.6rem;
-  box-shadow:0 6px 18px -16px rgba(15,23,42,.55);display:flex;align-items:center;justify-content:center;
-  border:1px solid #eef2f7;font-size:1.35rem;color:var(--accent)}
-.tl-content h3{font-size:1.02rem;font-weight:600;font-family:'Inter',sans-serif;color:var(--primary);margin-bottom:.1rem}
-.tl-content .when{font-size:.85rem;color:var(--accent);font-weight:500;margin:0}
-.tl-content .desc{font-size:.88rem;color:#64748b;margin:.25rem 0 0;line-height:1.6}
-.tl-content ul{margin:.4rem 0 0;padding-left:1.1rem;font-size:.85rem;color:#64748b;line-height:1.65}
-.honors-list{display:flex;flex-direction:column;gap:1.1rem}
-.honor-item{display:grid;grid-template-columns:110px 1fr;gap:1.5rem;align-items:baseline}
-.honor-year{font-family:'Courier New',Courier,monospace;font-weight:700;font-size:.88rem;
-  color:var(--accent);text-align:right;white-space:nowrap}
-.honor-content h3{font-size:1rem;font-weight:600;font-family:'Inter',sans-serif;color:var(--primary);margin-bottom:.15rem}
-.honor-content p{margin:0;color:#64748b;font-size:.88rem}
-.honor-content a{color:var(--accent-dark);border-bottom:1px solid rgba(212,165,98,.35)}
+.tl-icon{display:none}
+.tl-content h3{font-size:1rem;font-weight:600;margin-bottom:.1rem}
+.tl-content .when{font-size:.85rem;color:var(--faint);margin:0}
+.tl-content .desc{font-size:.9rem;color:var(--soft);margin:.2rem 0 0;line-height:1.6}
+.tl-content ul{margin:.3rem 0 0;padding-left:1.1rem;font-size:.88rem;color:var(--soft);line-height:1.65}
+.honors-list{display:flex;flex-direction:column;gap:.85rem}
+.honor-item{display:grid;grid-template-columns:60px 1fr;gap:1.25rem;align-items:baseline}
+.honor-year{font-family:var(--mono);font-size:.8rem;color:var(--faint);white-space:nowrap}
+.honor-content h3{font-size:.97rem;font-weight:600;margin-bottom:.05rem}
+.honor-content p{margin:0;color:var(--soft);font-size:.88rem}
 
-/* ---------- blog cards ---------- */
-.blog-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:.9rem}
-.blog-card{background:#fff;border:1px solid var(--line);border-radius:.75rem;padding:.9rem 1rem;
-  transition:all .25s ease}
-.blog-card:hover{border-color:rgba(212,165,98,.55);transform:translateY(-2px);
-  box-shadow:0 10px 20px -16px rgba(15,23,42,.5)}
-.blog-card .t{font-weight:600;color:var(--primary);font-size:.92rem;margin-bottom:.2rem}
-.blog-card .d{font-size:.78rem;color:#94a3b8}
+/* ---------- blog ---------- */
+.blog-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:1.1rem}
+.blog-card .t{font-weight:600;color:var(--ink);font-size:.93rem;margin-bottom:.15rem}
+.blog-card .d{font-size:.8rem;color:var(--faint)}
 
 /* ---------- contact ---------- */
-.contact-card{background:#fff;border-radius:.85rem;border:1px solid var(--line);padding:1.35rem;
-  box-shadow:0 6px 18px -18px rgba(15,23,42,.5);transition:all .3s ease}
-.contact-card:hover{transform:translateY(-2px);box-shadow:0 10px 15px -3px rgba(0,0,0,.08);border-color:#cbd5e1}
-.contact-row{display:flex;align-items:flex-start;gap:.6rem;color:#475569;font-size:.95rem;margin-bottom:.9rem}
-.contact-row:last-child{margin-bottom:0}
-/* email and LinkedIn sit side by side, stacking only when the column gets narrow */
+.contact-row{display:flex;align-items:baseline;gap:.5rem;color:var(--body);font-size:.95rem}
 .contact-pair{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
-  gap:1rem 2.5rem;align-items:start}
-.contact-pair>div>h3{margin-top:0}
-.contact-row i,.contact-row .ic{color:var(--accent);margin-top:.25rem}
-.contact-card h3{font-size:1rem;font-family:'Inter',sans-serif;font-weight:600;color:var(--primary);margin-bottom:.4rem}
+  gap:1.25rem 2.5rem;align-items:start}
+.contact-card h3{font-size:.78rem;font-family:var(--sans);font-weight:600;color:var(--faint);
+  text-transform:uppercase;letter-spacing:.09em;margin-bottom:.35rem}
 
-footer{border-top:1px solid var(--line);padding:2rem 1.5rem;margin-top:3rem;background:#f1f5f9;
-  text-align:center;color:var(--muted);font-size:.85rem}
-footer a{color:var(--accent-dark)}
+footer{border-top:1px solid var(--rule);padding:1.75rem 1.5rem;margin-top:3.5rem;
+  color:var(--faint);font-size:.82rem}
+footer .wrap{padding:0 1.5rem}
+
+.sub-note{font-size:.85rem;color:var(--faint);margin:.3rem 0 0}
+.pub-note{font-size:.85rem;color:var(--faint)}
 
 @media(max-width:1100px){
-  /* nav collapses into a scrollable strip under the name, never a hidden menu */
-  .nav-inner{flex-direction:column;align-items:stretch;gap:.25rem;padding:.65rem 0 0;min-height:0}
-  .brand{font-size:1.25rem;padding:0 1.25rem}
+  /* nav becomes a scrollable strip under the name, never a hidden menu */
+  .nav-inner{flex-direction:column;align-items:stretch;gap:.1rem;padding:.5rem 0 0;min-height:0}
+  .brand{font-size:1.05rem;padding:0 1.25rem}
   .nav-links{flex-wrap:nowrap;overflow-x:auto;justify-content:flex-start;
-    gap:1.1rem;padding:.35rem 1.25rem .6rem;scrollbar-width:none;-ms-overflow-style:none}
+    gap:1rem;padding:.3rem 1.25rem .5rem;scrollbar-width:none;-ms-overflow-style:none}
   .nav-links::-webkit-scrollbar{display:none}
-  .nav-item{font-size:.82rem}
-  .nav-item::after{bottom:-3px}
-  main{padding-top:8rem}
-  section{scroll-margin-top:8rem}
-  .profile-card{top:8rem;max-height:calc(100vh - 9.5rem)}
+  .nav-item{font-size:.8rem}
+  section{scroll-margin-top:6rem}
+  .profile-card{top:6rem;max-height:calc(100vh - 7.5rem)}
 }
 
 /* single column below 1024px, so the card stops sticking and scrolls with the
    page. must come after the 1100px block to win on max-height */
 @media(max-width:1023px){
   .profile-card{position:static;max-height:none;overflow:visible}
+  .profile-image-container{max-width:150px}
 }
 @media(max-width:640px){
-  .news-item,.honor-item{grid-template-columns:1fr;gap:.35rem}
-  .honor-year{text-align:left}
-  .pub-list-item{flex-direction:column}
+  .news-item,.honor-item{grid-template-columns:1fr;gap:.15rem}
+  .pub-list-item{flex-direction:column;gap:.8rem}
   .pub-thumbnail-box{width:100%}
-  .section-header{flex-direction:column;align-items:flex-start;gap:.4rem}
+  .section-header{flex-direction:column;align-items:flex-start;gap:.25rem}
 }
-
-.lnk{color:var(--accent-dark);border-bottom:1px solid rgba(212,165,98,.35)}
-.lnk:hover{color:#8b5e2b}
-.sub-note{font-size:.85rem;color:#94a3b8;margin:.35rem 0 0}
-.pub-note{font-size:.82rem;color:#94a3b8;font-style:italic}
 
 .ic{width:1em;height:1em;fill:currentColor;display:inline-block;vertical-align:-.125em;flex-shrink:0}
 </style>
 </head>
 <body>
-<svg xmlns="http://www.w3.org/2000/svg" style="display:none"><symbol id="brands-linkedin-in" viewBox="0 0 448 512"><path fill="currentColor" d="M100.3 448l-92.9 0 0-299.1 92.9 0 0 299.1zM53.8 108.1C24.1 108.1 0 83.5 0 53.8 0 39.5 5.7 25.9 15.8 15.8s23.8-15.8 38-15.8 27.9 5.7 38 15.8 15.8 23.8 15.8 38c0 29.7-24.1 54.3-53.8 54.3zM447.9 448l-92.7 0 0-145.6c0-34.7-.7-79.2-48.3-79.2-48.3 0-55.7 37.7-55.7 76.7l0 148.1-92.8 0 0-299.1 89.1 0 0 40.8 1.3 0c12.4-23.5 42.7-48.3 87.9-48.3 94 0 111.3 61.9 111.3 142.3l0 164.3-.1 0z"/></symbol><symbol id="solid-arrow-right" viewBox="0 0 512 512"><path fill="currentColor" d="M502.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L402.7 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l370.7 0-105.4 105.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"/></symbol><symbol id="solid-book-open" viewBox="0 0 512 512"><path fill="currentColor" d="M256 141.3l0 309.3 .5-.2C311.1 427.7 369.7 416 428.8 416l19.2 0 0-320-19.2 0c-42.2 0-84.1 8.4-123.1 24.6-16.8 7-33.4 13.9-49.7 20.7zM230.9 61.5L256 72 281.1 61.5C327.9 42 378.1 32 428.8 32L464 32c26.5 0 48 21.5 48 48l0 352c0 26.5-21.5 48-48 48l-35.2 0c-50.7 0-100.9 10-147.7 29.5l-12.8 5.3c-7.9 3.3-16.7 3.3-24.6 0l-12.8-5.3C184.1 490 133.9 480 83.2 480L48 480c-26.5 0-48-21.5-48-48L0 80C0 53.5 21.5 32 48 32l35.2 0c50.7 0 100.9 10 147.7 29.5z"/></symbol><symbol id="solid-cart-shopping" viewBox="0 0 640 512"><path fill="currentColor" d="M24-16C10.7-16 0-5.3 0 8S10.7 32 24 32l45.3 0c3.9 0 7.2 2.8 7.9 6.6l52.1 286.3c6.2 34.2 36 59.1 70.8 59.1L456 384c13.3 0 24-10.7 24-24s-10.7-24-24-24l-255.9 0c-11.6 0-21.5-8.3-23.6-19.7l-5.1-28.3 303.6 0c30.8 0 57.2-21.9 62.9-52.2L568.9 69.9C572.6 50.2 557.5 32 537.4 32l-412.7 0-.4-2c-4.8-26.6-28-46-55.1-46L24-16zM208 512a48 48 0 1 0 0-96 48 48 0 1 0 0 96zm224 0a48 48 0 1 0 0-96 48 48 0 1 0 0 96z"/></symbol><symbol id="solid-certificate" viewBox="0 0 576 512"><path fill="currentColor" d="M239.2-8c-6.1-6.2-15-8.7-23.4-6.4S200.9-5.6 198.8 2.8L183.5 63c-1.1 4.4-5.6 7-9.9 5.7L113.8 51.9c-8.4-2.4-17.4 0-23.5 6.1s-8.5 15.1-6.1 23.5l16.9 59.8c1.2 4.3-1.4 8.8-5.7 9.9L35.1 166.5c-8.4 2.1-15 8.7-17.3 17.1s.2 17.3 6.4 23.4l44.5 43.3c3.2 3.1 3.2 8.3 0 11.5L24.3 305.1c-6.2 6.1-8.7 15-6.4 23.4s8.9 14.9 17.3 17.1l60.2 15.3c4.4 1.1 7 5.6 5.7 9.9L84.2 430.5c-2.4 8.4 0 17.4 6.1 23.5s15.1 8.5 23.5 6.1l59.8-16.9c4.3-1.2 8.8 1.4 9.9 5.7l15.3 60.2c2.1 8.4 8.7 15 17.1 17.3s17.3-.2 23.4-6.4l43.3-44.5c3.1-3.2 8.3-3.2 11.5 0L337.3 520c6.1 6.2 15 8.7 23.4 6.4s14.9-8.9 17.1-17.3L393.1 449c1.1-4.4 5.6-7 9.9-5.7l59.8 16.9c8.4 2.4 17.4 0 23.5-6.1s8.5-15.1 6.1-23.5l-16.9-59.8c-1.2-4.3 1.4-8.8 5.7-9.9l60.2-15.3c8.4-2.1 15-8.7 17.3-17.1s-.2-17.4-6.4-23.4l-44.5-43.3c-3.2-3.1-3.2-8.3 0-11.5l44.5-43.3c6.2-6.1 8.7-15 6.4-23.4s-8.9-14.9-17.3-17.1l-60.2-15.3c-4.4-1.1-7-5.6-5.7-9.9l16.9-59.8c2.4-8.4 0-17.4-6.1-23.5s-15.1-8.5-23.5-6.1L403 68.8c-4.3 1.2-8.8-1.4-9.9-5.7L377.8 2.8c-2.1-8.4-8.7-15-17.1-17.3s-17.3 .2-23.4 6.4L294 36.5c-3.1 3.2-8.3 3.2-11.5 0L239.2-8z"/></symbol><symbol id="solid-chalkboard-user" viewBox="0 0 640 512"><path fill="currentColor" d="M192 384c53 0 96 43 96 96 0 17.7-14.3 32-32 32L32 512c-17.7 0-32-14.3-32-32 0-53 43-96 96-96l96 0zM544 32c35.3 0 64 28.7 64 64l0 288c0 33.1-25.2 60.4-57.5 63.7l-6.5 .3-211.1 0c-5.1-24.2-16.3-46.1-32.1-64l51.2 0 0-32c0-17.7 14.3-32 32-32l96 0c17.7 0 32 14.3 32 32l0 32 32 0 0-288-352 0 0 57.3c-14.8-6-31-9.3-48-9.3-5.4 0-10.8 .3-16 1l0-49c0-35.3 28.7-64 64-64l352 0zM144 352a80 80 0 1 1 0-160 80 80 0 1 1 0 160z"/></symbol><symbol id="solid-clipboard-check" viewBox="0 0 384 512"><path fill="currentColor" d="M256 0c23.7 0 44.4 12.9 55.4 32l8.6 0c35.3 0 64 28.7 64 64l0 352c0 35.3-28.7 64-64 64L64 512c-35.3 0-64-28.7-64-64L0 96C0 60.7 28.7 32 64 32l8.6 0C83.6 12.9 104.3 0 128 0L256 0zm26.9 212.6c-10.7-7.8-25.7-5.4-33.5 5.3l-85.6 117.7-26.5-27.4c-9.2-9.5-24.4-9.8-33.9-.6s-9.8 24.4-.6 33.9l46.4 48c4.9 5.1 11.8 7.8 18.9 7.3s13.6-4.1 17.8-9.8L288.2 246.1c7.8-10.7 5.4-25.7-5.3-33.5zM136 64c-13.3 0-24 10.7-24 24s10.7 24 24 24l112 0c13.3 0 24-10.7 24-24s-10.7-24-24-24L136 64z"/></symbol><symbol id="solid-code" viewBox="0 0 576 512"><path fill="currentColor" d="M360.8 1.2c-17-4.9-34.7 5-39.6 22l-128 448c-4.9 17 5 34.7 22 39.6s34.7-5 39.6-22l128-448c4.9-17-5-34.7-22-39.6zm64.6 136.1c-12.5 12.5-12.5 32.8 0 45.3l73.4 73.4-73.4 73.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l96-96c12.5-12.5 12.5-32.8 0-45.3l-96-96c-12.5-12.5-32.8-12.5-45.3 0zm-274.7 0c-12.5-12.5-32.8-12.5-45.3 0l-96 96c-12.5 12.5-12.5 32.8 0 45.3l96 96c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L77.3 256 150.6 182.6c12.5-12.5 12.5-32.8 0-45.3z"/></symbol><symbol id="solid-comments" viewBox="0 0 576 512"><path fill="currentColor" d="M384 144c0 97.2-86 176-192 176-26.7 0-52.1-5-75.2-14L35.2 349.2c-9.3 4.9-20.7 3.2-28.2-4.2s-9.2-18.9-4.2-28.2l35.6-67.2C14.3 220.2 0 183.6 0 144 0 46.8 86-32 192-32S384 46.8 384 144zm0 368c-94.1 0-172.4-62.1-188.8-144 120-1.5 224.3-86.9 235.8-202.7 83.3 19.2 145 88.3 145 170.7 0 39.6-14.3 76.2-38.4 105.6l35.6 67.2c4.9 9.3 3.2 20.7-4.2 28.2s-18.9 9.2-28.2 4.2L459.2 498c-23.1 9-48.5 14-75.2 14z"/></symbol><symbol id="solid-database" viewBox="0 0 448 512"><path fill="currentColor" d="M448 205.8c-14.8 9.8-31.8 17.7-49.5 24-47 16.8-108.7 26.2-174.5 26.2S96.4 246.5 49.5 229.8c-17.6-6.3-34.7-14.2-49.5-24L0 288c0 44.2 100.3 80 224 80s224-35.8 224-80l0-82.2zm0-77.8l0-48C448 35.8 347.7 0 224 0S0 35.8 0 80l0 48c0 44.2 100.3 80 224 80s224-35.8 224-80zM398.5 389.8C351.6 406.5 289.9 416 224 416S96.4 406.5 49.5 389.8c-17.6-6.3-34.7-14.2-49.5-24L0 432c0 44.2 100.3 80 224 80s224-35.8 224-80l0-66.2c-14.8 9.8-31.8 17.7-49.5 24z"/></symbol><symbol id="solid-envelope" viewBox="0 0 512 512"><path fill="currentColor" d="M48 64c-26.5 0-48 21.5-48 48 0 15.1 7.1 29.3 19.2 38.4l208 156c17.1 12.8 40.5 12.8 57.6 0l208-156c12.1-9.1 19.2-23.3 19.2-38.4 0-26.5-21.5-48-48-48L48 64zM0 196L0 384c0 35.3 28.7 64 64 64l384 0c35.3 0 64-28.7 64-64l0-188-198.4 148.8c-34.1 25.6-81.1 25.6-115.2 0L0 196z"/></symbol><symbol id="solid-file-pdf" viewBox="0 0 576 512"><path fill="currentColor" d="M96 0C60.7 0 32 28.7 32 64l0 384c0 35.3 28.7 64 64 64l80 0 0-112c0-35.3 28.7-64 64-64l176 0 0-165.5c0-17-6.7-33.3-18.7-45.3L290.7 18.7C278.7 6.7 262.5 0 245.5 0L96 0zM357.5 176L264 176c-13.3 0-24-10.7-24-24L240 58.5 357.5 176zM240 380c-11 0-20 9-20 20l0 128c0 11 9 20 20 20s20-9 20-20l0-28 12 0c33.1 0 60-26.9 60-60s-26.9-60-60-60l-32 0zm32 80l-12 0 0-40 12 0c11 0 20 9 20 20s-9 20-20 20zm96-80c-11 0-20 9-20 20l0 128c0 11 9 20 20 20l32 0c28.7 0 52-23.3 52-52l0-64c0-28.7-23.3-52-52-52l-32 0zm20 128l0-88 12 0c6.6 0 12 5.4 12 12l0 64c0 6.6-5.4 12-12 12l-12 0zm88-108l0 128c0 11 9 20 20 20s20-9 20-20l0-44 28 0c11 0 20-9 20-20s-9-20-20-20l-28 0 0-24 28 0c11 0 20-9 20-20s-9-20-20-20l-48 0c-11 0-20 9-20 20z"/></symbol><symbol id="solid-flask" viewBox="0 0 448 512"><path fill="currentColor" d="M288 0L128 0C110.3 0 96 14.3 96 32s14.3 32 32 32L128 215.5 7.5 426.3C2.6 435 0 444.7 0 454.7 0 486.4 25.6 512 57.3 512l333.4 0c31.6 0 57.3-25.6 57.3-57.3 0-10-2.6-19.8-7.5-28.4L320 215.5 320 64c17.7 0 32-14.3 32-32S337.7 0 320 0L288 0zM192 215.5l0-151.5 64 0 0 151.5c0 11.1 2.9 22.1 8.4 31.8l41.6 72.7-164 0 41.6-72.7c5.5-9.7 8.4-20.6 8.4-31.8z"/></symbol><symbol id="solid-globe" viewBox="0 0 512 512"><path fill="currentColor" d="M351.9 280l-190.9 0c2.9 64.5 17.2 123.9 37.5 167.4 11.4 24.5 23.7 41.8 35.1 52.4 11.2 10.5 18.9 12.2 22.9 12.2s11.7-1.7 22.9-12.2c11.4-10.6 23.7-28 35.1-52.4 20.3-43.5 34.6-102.9 37.5-167.4zM160.9 232l190.9 0C349 167.5 334.7 108.1 314.4 64.6 303 40.2 290.7 22.8 279.3 12.2 268.1 1.7 260.4 0 256.4 0s-11.7 1.7-22.9 12.2c-11.4 10.6-23.7 28-35.1 52.4-20.3 43.5-34.6 102.9-37.5 167.4zm-48 0C116.4 146.4 138.5 66.9 170.8 14.7 78.7 47.3 10.9 131.2 1.5 232l111.4 0zM1.5 280c9.4 100.8 77.2 184.7 169.3 217.3-32.3-52.2-54.4-131.7-57.9-217.3L1.5 280zm398.4 0c-3.5 85.6-25.6 165.1-57.9 217.3 92.1-32.7 159.9-116.5 169.3-217.3l-111.4 0zm111.4-48C501.9 131.2 434.1 47.3 342 14.7 374.3 66.9 396.4 146.4 399.9 232l111.4 0z"/></symbol><symbol id="solid-graduation-cap" viewBox="0 0 576 512"><path fill="currentColor" d="M48 195.8l209.2 86.1c9.8 4 20.2 6.1 30.8 6.1s21-2.1 30.8-6.1l242.4-99.8c9-3.7 14.8-12.4 14.8-22.1s-5.8-18.4-14.8-22.1L318.8 38.1C309 34.1 298.6 32 288 32s-21 2.1-30.8 6.1L14.8 137.9C5.8 141.6 0 150.3 0 160L0 456c0 13.3 10.7 24 24 24s24-10.7 24-24l0-260.2zm48 71.7L96 384c0 53 86 96 192 96s192-43 192-96l0-116.6-142.9 58.9c-15.6 6.4-32.2 9.7-49.1 9.7s-33.5-3.3-49.1-9.7L96 267.4z"/></symbol><symbol id="solid-handshake" viewBox="0 0 576 512"><path fill="currentColor" d="M268.9 85.2L152.3 214.8c-4.6 5.1-4.4 13 .5 17.9 30.5 30.5 80 30.5 110.5 0l31.8-31.8c4.2-4.2 9.5-6.5 14.9-6.9 6.8-.6 13.8 1.7 19 6.9L505.6 376 576 320 576 32 464 96 440.2 80.1C424.4 69.6 405.9 64 386.9 64l-70.4 0c-1.1 0-2.3 0-3.4 .1-16.9 .9-32.8 8.5-44.2 21.1zM116.6 182.7L223.4 64 183.8 64c-25.5 0-49.9 10.1-67.9 28.1L112 96 0 32 0 320 156.4 450.3c23 19.2 52 29.7 81.9 29.7l15.7 0-7-7c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l41 41 9 0c19.1 0 37.8-4.3 54.8-12.3L359 441c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l32 32 17.5-17.5c8.9-8.9 11.5-21.8 7.6-33.1l-137.9-136.8-14.9 14.9c-49.3 49.3-129.1 49.3-178.4 0-23-23-23.9-59.9-2.2-84z"/></symbol><symbol id="solid-lightbulb" viewBox="0 0 384 512"><path fill="currentColor" d="M292.9 384c7.3-22.3 21.9-42.5 38.4-59.9 32.7-34.4 52.7-80.9 52.7-132.1 0-106-86-192-192-192S0 86 0 192c0 51.2 20 97.7 52.7 132.1 16.5 17.4 31.2 37.6 38.4 59.9l201.7 0zM288 432l-192 0 0 16c0 44.2 35.8 80 80 80l32 0c44.2 0 80-35.8 80-80l0-16zM184 112c-39.8 0-72 32.2-72 72 0 13.3-10.7 24-24 24s-24-10.7-24-24c0-66.3 53.7-120 120-120 13.3 0 24 10.7 24 24s-10.7 24-24 24z"/></symbol><symbol id="solid-magnifying-glass" viewBox="0 0 512 512"><path fill="currentColor" d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376C296.3 401.1 253.9 416 208 416 93.1 416 0 322.9 0 208S93.1 0 208 0 416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"/></symbol><symbol id="solid-microchip" viewBox="0 0 512 512"><path fill="currentColor" d="M176 24c0-13.3-10.7-24-24-24s-24 10.7-24 24l0 40c-35.3 0-64 28.7-64 64l-40 0c-13.3 0-24 10.7-24 24s10.7 24 24 24l40 0 0 56-40 0c-13.3 0-24 10.7-24 24s10.7 24 24 24l40 0 0 56-40 0c-13.3 0-24 10.7-24 24s10.7 24 24 24l40 0c0 35.3 28.7 64 64 64l0 40c0 13.3 10.7 24 24 24s24-10.7 24-24l0-40 56 0 0 40c0 13.3 10.7 24 24 24s24-10.7 24-24l0-40 56 0 0 40c0 13.3 10.7 24 24 24s24-10.7 24-24l0-40c35.3 0 64-28.7 64-64l40 0c13.3 0 24-10.7 24-24s-10.7-24-24-24l-40 0 0-56 40 0c13.3 0 24-10.7 24-24s-10.7-24-24-24l-40 0 0-56 40 0c13.3 0 24-10.7 24-24s-10.7-24-24-24l-40 0c0-35.3-28.7-64-64-64l0-40c0-13.3-10.7-24-24-24s-24 10.7-24 24l0 40-56 0 0-40c0-13.3-10.7-24-24-24s-24 10.7-24 24l0 40-56 0 0-40zM160 128l192 0c17.7 0 32 14.3 32 32l0 192c0 17.7-14.3 32-32 32l-192 0c-17.7 0-32-14.3-32-32l0-192c0-17.7 14.3-32 32-32zm16 48l0 160 160 0 0-160-160 0z"/></symbol><symbol id="solid-robot" viewBox="0 0 640 512"><path fill="currentColor" d="M352 0c0-17.7-14.3-32-32-32S288-17.7 288 0l0 64-96 0c-53 0-96 43-96 96l0 224c0 53 43 96 96 96l256 0c53 0 96-43 96-96l0-224c0-53-43-96-96-96l-96 0 0-64zM160 368c0-13.3 10.7-24 24-24l32 0c13.3 0 24 10.7 24 24s-10.7 24-24 24l-32 0c-13.3 0-24-10.7-24-24zm120 0c0-13.3 10.7-24 24-24l32 0c13.3 0 24 10.7 24 24s-10.7 24-24 24l-32 0c-13.3 0-24-10.7-24-24zm120 0c0-13.3 10.7-24 24-24l32 0c13.3 0 24 10.7 24 24s-10.7 24-24 24l-32 0c-13.3 0-24-10.7-24-24zM224 176a48 48 0 1 1 0 96 48 48 0 1 1 0-96zm144 48a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zM64 224c0-17.7-14.3-32-32-32S0 206.3 0 224l0 96c0 17.7 14.3 32 32 32s32-14.3 32-32l0-96zm544-32c-17.7 0-32 14.3-32 32l0 96c0 17.7 14.3 32 32 32s32-14.3 32-32l0-96c0-17.7-14.3-32-32-32z"/></symbol><symbol id="solid-scale-balanced" viewBox="0 0 640 512"><path fill="currentColor" d="M384 32l128 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L398.4 96c-5.2 25.8-22.9 47.1-46.4 57.3l0 294.7 160 0c17.7 0 32 14.3 32 32s-14.3 32-32 32l-384 0c-17.7 0-32-14.3-32-32s14.3-32 32-32l160 0 0-294.7c-23.5-10.3-41.2-31.6-46.4-57.3L128 96c-17.7 0-32-14.3-32-32s14.3-32 32-32l128 0c14.6-19.4 37.8-32 64-32s49.4 12.6 64 32zm55.6 288L584.4 320 512 195.8 439.6 320zM512 416c-62.9 0-115.2-34-126-78.9-2.6-11 1-22.3 6.7-32.1l95.2-163.2c5-8.6 14.2-13.8 24.1-13.8s19.1 5.3 24.1 13.8l95.2 163.2c5.7 9.8 9.3 21.1 6.7 32.1-10.8 44.8-63.1 78.9-126 78.9zM126.8 195.8L54.4 320 199.3 320 126.8 195.8zM.9 337.1c-2.6-11 1-22.3 6.7-32.1l95.2-163.2c5-8.6 14.2-13.8 24.1-13.8s19.1 5.3 24.1 13.8l95.2 163.2c5.7 9.8 9.3 21.1 6.7 32.1-10.8 44.8-63.1 78.9-126 78.9S11.7 382 .9 337.1z"/></symbol><symbol id="solid-school" viewBox="0 0 576 512"><path fill="currentColor" d="M0 192c0-35.3 28.7-64 64-64l64 0 127.9-115.1c18.3-16.4 46-16.4 64.2 0L448 128 512 128c35.3 0 64 28.7 64 64l0 256c0 35.3-28.7 64-64 64L64 512c-35.3 0-64-28.7-64-64L0 192zM224 376l0 88 128 0 0-88c0-22.1-17.9-40-40-40l-48 0c-22.1 0-40 17.9-40 40zm-112 8c8.8 0 16-7.2 16-16l0-32c0-8.8-7.2-16-16-16l-32 0c-8.8 0-16 7.2-16 16l0 32c0 8.8 7.2 16 16 16l32 0zm16-144l0-32c0-8.8-7.2-16-16-16l-32 0c-8.8 0-16 7.2-16 16l0 32c0 8.8 7.2 16 16 16l32 0c8.8 0 16-7.2 16-16zM496 384c8.8 0 16-7.2 16-16l0-32c0-8.8-7.2-16-16-16l-32 0c-8.8 0-16 7.2-16 16l0 32c0 8.8 7.2 16 16 16l32 0zm16-144l0-32c0-8.8-7.2-16-16-16l-32 0c-8.8 0-16 7.2-16 16l0 32c0 8.8 7.2 16 16 16l32 0c8.8 0 16-7.2 16-16zM288 256a64 64 0 1 0 0-128 64 64 0 1 0 0 128z"/></symbol><symbol id="solid-shield-halved" viewBox="0 0 512 512"><path fill="currentColor" d="M256 0c4.6 0 9.2 1 13.4 2.9L457.8 82.8c22 9.3 38.4 31 38.3 57.2-.5 99.2-41.3 280.7-213.6 363.2-16.7 8-36.1 8-52.8 0-172.4-82.5-213.1-264-213.6-363.2-.1-26.2 16.3-47.9 38.3-57.2L242.7 2.9C246.9 1 251.4 0 256 0zm0 66.8l0 378.1c138-66.8 175.1-214.8 176-303.4l-176-74.6 0 0z"/></symbol><symbol id="solid-user-graduate" viewBox="0 0 448 512"><path fill="currentColor" d="M241.3-13c-11.4-2.3-23.1-2.3-34.5 0L19.3 24.5C8.1 26.7 0 36.6 0 48 0 58.3 6.5 67.3 16 70.6L16 144 .3 222.6c-.2 .9-.3 1.9-.3 2.9 0 8 6.5 14.6 14.6 14.6l34.9 0c8 0 14.6-6.5 14.6-14.6 0-1-.1-1.9-.3-2.9L48 144 48 77.3 96 86.9 96 144c0 70.7 57.3 128 128 128s128-57.3 128-128l0-57.1 76.7-15.3C439.9 69.3 448 59.4 448 48s-8.1-21.3-19.3-23.5L241.3-13zM224 224c-44.2 0-80-35.8-80-80l160 0c0 44.2-35.8 80-80 80zM120.1 320.1C58.7 348.3 16 410.3 16 482.3 16 498.7 29.3 512 45.7 512l154.3 0 0-146-57.4-43c-6.5-4.9-15.2-6.2-22.6-2.8zM248 512l154.3 0c16.4 0 29.7-13.3 29.7-29.7 0-72-42.7-134-104.1-162.1-7.4-3.4-16.1-2.1-22.6 2.8l-57.4 43 0 146z"/></symbol><symbol id="solid-users" viewBox="0 0 640 512"><path fill="currentColor" d="M320 16a104 104 0 1 1 0 208 104 104 0 1 1 0-208zM96 88a72 72 0 1 1 0 144 72 72 0 1 1 0-144zM0 416c0-70.7 57.3-128 128-128 12.8 0 25.2 1.9 36.9 5.4-32.9 36.8-52.9 85.4-52.9 138.6l0 16c0 11.4 2.4 22.2 6.7 32L32 480c-17.7 0-32-14.3-32-32l0-32zm521.3 64c4.3-9.8 6.7-20.6 6.7-32l0-16c0-53.2-20-101.8-52.9-138.6 11.7-3.5 24.1-5.4 36.9-5.4 70.7 0 128 57.3 128 128l0 32c0 17.7-14.3 32-32 32l-86.7 0zM472 160a72 72 0 1 1 144 0 72 72 0 1 1 -144 0zM160 432c0-88.4 71.6-160 160-160s160 71.6 160 160l0 16c0 17.7-14.3 32-32 32l-256 0c-17.7 0-32-14.3-32-32l0-16z"/></symbol></svg>
+<svg xmlns="http://www.w3.org/2000/svg" style="display:none"></svg>
 
 
 <nav class="top-nav">
@@ -280,21 +234,21 @@ footer a{color:var(--accent-dark)}
         <p class="affil">Industrial &amp; Systems Engineering<br>KAIST · Data Intelligence System Lab</p>
       </div>
       <div class="social-links">
-        <a href="CV_JeonghwanChoi.pdf" class="social-btn cv-btn" title="Curriculum Vitae (PDF)"><svg class="ic" aria-hidden="true"><use href="#solid-file-pdf"/></svg>CV</a>
-        <a href="https://www.semanticscholar.org/author/Jeonghwan-Choi/2335598802" class="social-btn" title="Semantic Scholar"><svg class="ic" aria-hidden="true"><use href="#solid-book-open"/></svg></a>
-        <a href="https://scholar.google.com/citations?user=0DwYO7IAAAAJ" class="social-btn" title="Google Scholar"><svg class="ic" aria-hidden="true"><use href="#solid-graduation-cap"/></svg></a>
-        <a href="https://www.linkedin.com/in/hwaaaaanii" class="social-btn" title="LinkedIn"><svg class="ic" aria-hidden="true"><use href="#brands-linkedin-in"/></svg></a>
-        <a href="https://disl-lab.github.io" class="social-btn" title="DISL Lab"><svg class="ic" aria-hidden="true"><use href="#solid-flask"/></svg></a>
-        <a href="mailto:hwani.choi@kaist.ac.kr" class="social-btn" title="Email"><svg class="ic" aria-hidden="true"><use href="#solid-envelope"/></svg></a>
+        <a href="CV_JeonghwanChoi.pdf" class="social-btn cv-btn" title="Curriculum Vitae (PDF)">CV</a>
+        <a href="https://www.semanticscholar.org/author/Jeonghwan-Choi/2335598802" class="social-btn" title="Semantic Scholar">Semantic Scholar</a>
+        <a href="https://scholar.google.com/citations?user=0DwYO7IAAAAJ" class="social-btn" title="Google Scholar">Google Scholar</a>
+        <a href="https://www.linkedin.com/in/hwaaaaanii" class="social-btn" title="LinkedIn">LinkedIn</a>
+        <a href="https://disl-lab.github.io" class="social-btn" title="DISL Lab">Lab</a>
+        <a href="mailto:hwani.choi@kaist.ac.kr" class="social-btn" title="Email">Email</a>
       </div>
       <div class="ri-card">
-        <h3><svg class="ic" style="color:var(--accent);font-size:.95rem" aria-hidden="true"><use href="#solid-lightbulb"/></svg> Research Interests</h3>
+        <h3>Research Interests</h3>
         <ul>
-          <li><svg class="ic" aria-hidden="true"><use href="#solid-magnifying-glass"/></svg><span>Retrieval-Augmented Generation</span></li>
-          <li><svg class="ic" aria-hidden="true"><use href="#solid-scale-balanced"/></svg><span>LLM Evaluation &amp; Reliability</span></li>
-          <li><svg class="ic" aria-hidden="true"><use href="#solid-handshake"/></svg><span>Human-AI Alignment</span></li>
-          <li><svg class="ic" aria-hidden="true"><use href="#solid-robot"/></svg><span>LLM Agent Simulation</span></li>
-          <li><svg class="ic" aria-hidden="true"><use href="#solid-microchip"/></svg><span>Physical AI</span></li>
+          <li><span>Retrieval-Augmented Generation</span></li>
+          <li><span>LLM Evaluation &amp; Reliability</span></li>
+          <li><span>Human-AI Alignment</span></li>
+          <li><span>LLM Agent Simulation</span></li>
+          <li><span>Physical AI</span></li>
         </ul>
       </div>
     </div>
@@ -309,30 +263,28 @@ footer a{color:var(--accent-dark)}
         <p>I am a <strong>Ph.D. student</strong> at the <a href="https://disl-lab.github.io" class="lnk">Data Intelligence System Lab (DISL)</a> at KAIST, where I am advised by <strong>Prof. Hwanjun Song</strong>. I first joined the lab for my M.S. and then continued into the integrated Ph.D. program, after studying Economics with a double major in Statistics at Yonsei University.</p>
         <p>My work centers on <strong>Retrieval-Augmented Generation</strong>, where I build frameworks that keep generation faithful to retrieved evidence and design evaluation methods that reveal when they fail. The same interest carries into <strong>human-AI alignment</strong> and <strong>LLM agent simulation</strong>, and more recently into <strong>Physical AI</strong>, where I am exploring world model-based robot learning and sim-to-real transfer.</p>
         <div class="highlight-box">
-          <p><strong><svg class="ic" style="color:var(--accent);margin-right:.4rem" aria-hidden="true"><use href="#solid-lightbulb"/></svg>Open to collaboration.</strong>
-          I'm always happy to discuss RAG, LLM evaluation, agent simulation, and world models for Physical AI. Feel free to reach out by email.</p>
+          <p><strong>Open to collaboration.</strong> I'm always happy to discuss RAG, LLM evaluation, agent simulation, and world models for Physical AI. Feel free to reach out by email.</p>
         </div>
       </div>
     </section>
     <section id="research">
       <div class="section-header"><h2>Research Overview</h2></div>
       <div class="formal-font">
-        <blockquote>"My work follows one thread, from grounding what a model says in evidence, to measuring whether that grounding holds, to agents that act on it in simulated and physical worlds."</blockquote>
         <div class="thrust-grid">
           <div class="thrust-card">
-            <h3><svg class="ic" style="color:var(--accent)" aria-hidden="true"><use href="#solid-magnifying-glass"/></svg> Robust RAG Frameworks</h3>
+            <h3>Robust RAG Frameworks</h3>
             <p>Retrieval and generation that stays faithful to source evidence, through query expansion and extraction-generation alignment.</p>
           </div>
           <div class="thrust-card">
-            <h3><svg class="ic" style="color:var(--accent)" aria-hidden="true"><use href="#solid-scale-balanced"/></svg> Evaluation &amp; Reliability</h3>
+            <h3>Evaluation &amp; Reliability</h3>
             <p>Benchmarks and automatic evaluators that expose where RAG systems break, from query-agnostic metrics to multi-agent relevance annotation.</p>
           </div>
           <div class="thrust-card">
-            <h3><svg class="ic" style="color:var(--accent)" aria-hidden="true"><use href="#solid-robot"/></svg> LLM Agent Simulation</h3>
+            <h3>LLM Agent Simulation</h3>
             <p>Language models that simulate multi-party behavior, including seller-buyer retail dynamics and multimodal conflict mediation.</p>
           </div>
           <div class="thrust-card">
-            <h3><svg class="ic" style="color:var(--accent)" aria-hidden="true"><use href="#solid-microchip"/></svg> Physical AI</h3>
+            <h3>Physical AI</h3>
             <p>World model-based robot learning and sim-to-real transfer, extending agent reasoning to systems that act in the physical world.</p>
           </div>
         </div>
@@ -342,28 +294,27 @@ footer a{color:var(--accent-dark)}
       <div class="section-header"><h2>Latest News</h2></div>
       <div class="news-list">
         <div class="news-item"><div class="news-date">2026.08</div>
-          <div class="news-content">🎉 <strong>Towards Robust RAG via Reliability-Aware Adaptive Evidence Selection</strong> accepted to <strong>Findings of EMNLP 2026</strong>.</div></div>
+          <div class="news-content"><strong>Towards Robust RAG via Reliability-Aware Adaptive Evidence Selection</strong> accepted to <strong>Findings of EMNLP 2026</strong>.</div></div>
         <div class="news-item"><div class="news-date">2026.07</div>
-          <div class="news-content">🔥 Three papers accepted to <strong>COLM 2026</strong>, including <strong>What Makes a Sale?</strong>, <strong>Towards Query-Agnostic RAG Evaluation</strong>, and <strong>RAQE</strong>.</div></div>
+          <div class="news-content">Three papers accepted to <strong>COLM 2026</strong>, including <strong>What Makes a Sale?</strong>, <strong>Towards Query-Agnostic RAG Evaluation</strong>, and <strong>RAQE</strong>.</div></div>
         <div class="news-item"><div class="news-date">2026.05</div>
-          <div class="news-content">🎉 <strong>Distilling Long-CoT Reasoning</strong> accepted to <strong>Findings of ACL 2026</strong>.</div></div>
+          <div class="news-content"><strong>Distilling Long-CoT Reasoning</strong> accepted to <strong>Findings of ACL 2026</strong>.</div></div>
         <div class="news-item"><div class="news-date">2026.04</div>
-          <div class="news-content">📄 Second patent filed with KIPO for multi-agent debate-based relevance assessment.</div></div>
+          <div class="news-content">Second patent filed with KIPO for multi-agent debate-based relevance assessment.</div></div>
         <div class="news-item"><div class="news-date">2026.01</div>
-          <div class="news-content">🔥 <strong>Completing Missing Annotation</strong> accepted to <strong>ICLR 2026</strong>. My first ICLR paper! <a href="https://openreview.net/forum?id=DD5RNCHuzq">[OpenReview]</a></div></div>
+          <div class="news-content"><strong>Completing Missing Annotation</strong> accepted to <strong>ICLR 2026</strong>. My first ICLR paper! <a href="https://openreview.net/forum?id=DD5RNCHuzq">[OpenReview]</a></div></div>
         <div class="news-item"><div class="news-date">2025.12</div>
-          <div class="news-content">🏆 Received the <strong>Best Paper Award</strong> at Korea Software Congress (KSC 2025).</div></div>
+          <div class="news-content">Received the <strong>Best Paper Award</strong> at Korea Software Congress (KSC 2025).</div></div>
         <div class="news-item"><div class="news-date">2025.10</div>
-          <div class="news-content">🎉 <strong>Aligning Extraction and Generation for Robust RAG</strong> accepted to <strong>WSDM 2026</strong>. <a href="https://arxiv.org/abs/2503.04789">[arXiv]</a></div></div>
+          <div class="news-content"><strong>Aligning Extraction and Generation for Robust RAG</strong> accepted to <strong>WSDM 2026</strong>. <a href="https://arxiv.org/abs/2503.04789">[arXiv]</a></div></div>
         <div class="news-item"><div class="news-date">2025.06</div>
-          <div class="news-content">🎉 <strong>Word2Passage</strong> accepted to <strong>Findings of ACL 2025</strong>. <a href="https://aclanthology.org/2025.findings-acl.434/">[paper]</a></div></div>
+          <div class="news-content"><strong>Word2Passage</strong> accepted to <strong>Findings of ACL 2025</strong>. <a href="https://aclanthology.org/2025.findings-acl.434/">[paper]</a></div></div>
       </div>
     </section>
     <section id="education">
       <div class="section-header"><h2>Education</h2></div>
       <div class="timeline">
         <div class="timeline-item">
-          <div class="tl-icon"><svg class="ic" aria-hidden="true"><use href="#solid-graduation-cap"/></svg></div>
           <div class="tl-content">
             <h3>Ph.D. Program, Industrial &amp; Systems Engineering</h3>
             <p class="when">Feb 2025 - Present · Daejeon, South Korea</p>
@@ -371,7 +322,6 @@ footer a{color:var(--accent-dark)}
           </div>
         </div>
         <div class="timeline-item">
-          <div class="tl-icon"><svg class="ic" aria-hidden="true"><use href="#solid-user-graduate"/></svg></div>
           <div class="tl-content">
             <h3>M.S., Graduate School of Data Science</h3>
             <p class="when">Feb 2024 - Feb 2025 · Daejeon, South Korea</p>
@@ -379,7 +329,6 @@ footer a{color:var(--accent-dark)}
           </div>
         </div>
         <div class="timeline-item">
-          <div class="tl-icon"><svg class="ic" aria-hidden="true"><use href="#solid-school"/></svg></div>
           <div class="tl-content">
             <h3>B.A. Economics, Statistics Double Major</h3>
             <p class="when">Until Feb 2024 · Seoul, South Korea</p>
@@ -394,7 +343,7 @@ footer a{color:var(--accent-dark)}
           <h2>Publications</h2>
           <p class="sub-note">* denotes equal contribution</p>
         </div>
-        <a href="https://scholar.google.com/citations?user=0DwYO7IAAAAJ" class="view-all">Google Scholar <svg class="ic" aria-hidden="true"><use href="#solid-arrow-right"/></svg></a>
+        <a href="https://scholar.google.com/citations?user=0DwYO7IAAAAJ" class="view-all">Google Scholar </a>
       </div>
 
       <div class="pub-year-group">
@@ -603,7 +552,6 @@ footer a{color:var(--accent-dark)}
       <div class="section-header"><h2>Patents</h2></div>
       <div class="timeline">
         <div class="timeline-item">
-          <div class="tl-icon"><svg class="ic" aria-hidden="true"><use href="#solid-lightbulb"/></svg></div>
           <div class="tl-content">
             <h3>Cost-Efficient and Accurate Debate-Based Relevance Assessment System with Multi-Agents</h3>
             <p class="when">Apr 2026 · KIPO · Application No. 10-2026-0066617</p>
@@ -611,7 +559,6 @@ footer a{color:var(--accent-dark)}
           </div>
         </div>
         <div class="timeline-item">
-          <div class="tl-icon"><svg class="ic" aria-hidden="true"><use href="#solid-lightbulb"/></svg></div>
           <div class="tl-content">
             <h3>Method and Apparatus for Generating Answers Using Extended Query-Based Retrieval Utilizing Multi-Level Importance Reweighting</h3>
             <p class="when">Sep 2025 · KIPO · Application No. 10-2025-0127517</p>
@@ -647,28 +594,24 @@ footer a{color:var(--accent-dark)}
       <div class="section-header"><h2>Academic Service, Teaching &amp; Leadership</h2></div>
       <div class="timeline">
         <div class="timeline-item">
-          <div class="tl-icon"><svg class="ic" aria-hidden="true"><use href="#solid-clipboard-check"/></svg></div>
           <div class="tl-content">
             <h3>Program Committee Member: LASS 2026</h3>
             <p class="when">2nd Workshop on LLM Agents for Social Simulation · Co-located with ACM CIKM 2026</p>
           </div>
         </div>
         <div class="timeline-item">
-          <div class="tl-icon"><svg class="ic" aria-hidden="true"><use href="#solid-clipboard-check"/></svg></div>
           <div class="tl-content">
             <h3>Reviewer: DocInsights 2026</h3>
             <p class="when">Workshop on Document Intelligence and Understanding · Co-located with EMNLP 2026</p>
           </div>
         </div>
         <div class="timeline-item">
-          <div class="tl-icon"><svg class="ic" aria-hidden="true"><use href="#solid-chalkboard-user"/></svg></div>
           <div class="tl-content">
             <h3>Teaching Assistant: Dynamic Programming and Reinforcement Learning (IE540)</h3>
             <p class="when">KAIST · Spring 2025</p>
           </div>
         </div>
         <div class="timeline-item">
-          <div class="tl-icon"><svg class="ic" aria-hidden="true"><use href="#solid-users"/></svg></div>
           <div class="tl-content">
             <h3>President, Y-FoRM (Yonsei Forum of Risk Management)</h3>
             <p class="when">Sep 2022 - Aug 2023 · AI-driven Financial Prediction Research Society</p>
@@ -676,7 +619,6 @@ footer a{color:var(--accent-dark)}
           </div>
         </div>
         <div class="timeline-item">
-          <div class="tl-icon"><svg class="ic" aria-hidden="true"><use href="#solid-certificate"/></svg></div>
           <div class="tl-content">
             <h3>Certifications</h3>
             <p class="when">2020 - 2022</p>
@@ -688,7 +630,6 @@ footer a{color:var(--accent-dark)}
           </div>
         </div>
         <div class="timeline-item">
-          <div class="tl-icon"><svg class="ic" aria-hidden="true"><use href="#solid-code"/></svg></div>
           <div class="tl-content">
             <h3>Skills</h3>
             <p class="desc">Programming: Python, Java, R &nbsp;·&nbsp; Languages: English (Proficient), Korean (Native)</p>
@@ -700,7 +641,6 @@ footer a{color:var(--accent-dark)}
       <div class="section-header"><h2>Project Experience</h2></div>
       <div class="timeline">
         <div class="timeline-item">
-          <div class="tl-icon"><svg class="ic" aria-hidden="true"><use href="#solid-cart-shopping"/></svg></div>
           <div class="tl-content">
             <h3>Retrieval-Augmented Generation for Retail</h3>
             <p class="when">Project Manager · GS Retail · Jan 2026 - Jun 2026</p>
@@ -708,7 +648,6 @@ footer a{color:var(--accent-dark)}
           </div>
         </div>
         <div class="timeline-item">
-          <div class="tl-icon"><svg class="ic" aria-hidden="true"><use href="#solid-comments"/></svg></div>
           <div class="tl-content">
             <h3>Multimodal Agentic Platform for Conflict Mediation</h3>
             <p class="when">Research Team Member · Ministry of Science and ICT (IITP) · Oct 2025 - Present</p>
@@ -716,7 +655,6 @@ footer a{color:var(--accent-dark)}
           </div>
         </div>
         <div class="timeline-item">
-          <div class="tl-icon"><svg class="ic" aria-hidden="true"><use href="#solid-globe"/></svg></div>
           <div class="tl-content">
             <h3>Korea-Canada Joint Research (KAIST-GIST-UBC)</h3>
             <p class="when">Research Team Member · IITP · Sep 2024 - Present</p>
@@ -724,7 +662,6 @@ footer a{color:var(--accent-dark)}
           </div>
         </div>
         <div class="timeline-item">
-          <div class="tl-icon"><svg class="ic" aria-hidden="true"><use href="#solid-shield-halved"/></svg></div>
           <div class="tl-content">
             <h3>Language Model Reliability Enhancement System</h3>
             <p class="when">Research Team Member · National Research Foundation of Korea (NRF) · Apr 2024 - Present</p>
@@ -732,7 +669,6 @@ footer a{color:var(--accent-dark)}
           </div>
         </div>
         <div class="timeline-item">
-          <div class="tl-icon"><svg class="ic" aria-hidden="true"><use href="#solid-flask"/></svg></div>
           <div class="tl-content">
             <h3>Scientific Information RAG System</h3>
             <p class="when">Project Manager · KISTI · Jun 2025 - Dec 2025</p>
@@ -740,7 +676,6 @@ footer a{color:var(--accent-dark)}
           </div>
         </div>
         <div class="timeline-item">
-          <div class="tl-icon"><svg class="ic" aria-hidden="true"><use href="#solid-database"/></svg></div>
           <div class="tl-content">
             <h3>Korean Scientific RAG Framework Development</h3>
             <p class="when">Project Manager · KISTI · Jun 2024 - Dec 2024</p>
@@ -755,11 +690,11 @@ footer a{color:var(--accent-dark)}
         <div class="contact-pair">
           <div>
             <h3>Email</h3>
-            <div class="contact-row"><svg class="ic" aria-hidden="true"><use href="#solid-envelope"/></svg><span>hwani.choi@kaist.ac.kr</span></div>
+            <div class="contact-row"><span>hwani.choi@kaist.ac.kr</span></div>
           </div>
           <div>
             <h3>LinkedIn</h3>
-            <div class="contact-row"><svg class="ic" aria-hidden="true"><use href="#brands-linkedin-in"/></svg><span>
+            <div class="contact-row"><span>
               <a href="https://www.linkedin.com/in/hwaaaaanii" class="lnk">linkedin.com/in/hwaaaaanii</a>
             </span></div>
           </div>
