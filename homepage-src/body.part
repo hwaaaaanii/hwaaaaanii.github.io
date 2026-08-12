@@ -65,7 +65,7 @@
         <p>My work centers on <strong>Retrieval-Augmented Generation</strong>, where I build frameworks that keep generation faithful to retrieved evidence and design evaluation methods that reveal when they fail. The same interest carries into <strong>human-AI alignment</strong> and <strong>LLM agent simulation</strong>, and more recently into <strong>Physical AI</strong>, where I am exploring world model-based robot learning and sim-to-real transfer.</p>
         <div class="highlight-box">
           <p><strong><i class="fas fa-lightbulb" style="color:var(--accent);margin-right:.4rem"></i>Open to collaboration.</strong>
-          I'm always happy to discuss RAG, LLM evaluation, and agent simulation. Feel free to reach out by email.</p>
+          I'm always happy to discuss RAG, LLM evaluation, agent simulation, and world models for Physical AI. Feel free to reach out by email.</p>
         </div>
       </div>
     </section>
