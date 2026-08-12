@@ -30,3 +30,6 @@ _sass/vendors
 papers/
 homepage-src/node_modules/
 homepage-src/template*.html
+
+# macOS
+.DS_Store
