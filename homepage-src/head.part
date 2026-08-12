@@ -23,6 +23,9 @@
   /* one extra colour, reserved for venue names. deliberately not the link
      blue, so a coloured venue never reads as something clickable */
   --venue:#8c3131;
+  /* just enough to take the hard edge off. large radii were part of what made
+     the old cards look generated, so this stays small and uniform */
+  --radius:4px;
   --serif:Charter,"Bitstream Charter","Sitka Text",Cambria,Georgia,serif;
   --sans:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
   --mono:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;
@@ -62,7 +65,7 @@ main{padding:3rem 0}
 
 /* ---------- profile ---------- */
 .profile-image-container{max-width:170px;margin:0 0 1.1rem}
-.profile-image-container img{width:100%;display:block}
+.profile-image-container img{width:100%;display:block;border-radius:var(--radius)}
 .profile-name{margin-bottom:1.1rem}
 .profile-name h1{font-size:1.5rem;font-weight:600;margin-bottom:.2rem}
 .profile-name .role{font-size:.95rem;color:var(--body);margin:0 0 .15rem}
@@ -104,7 +107,8 @@ section{scroll-margin-top:5rem}
    border, flat fill: the structure comes back without the shadow, gradient and
    hover lift that made these read as generated cards */
 .thrust-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:1rem}
-.thrust-card{border:1px solid var(--rule);background:#fbfbfa;padding:1.1rem 1.25rem}
+.thrust-card{border:1px solid var(--rule);background:#fbfbfa;padding:1.1rem 1.25rem;
+  border-radius:var(--radius)}
 .thrust-card h3{font-size:1rem;font-weight:600;margin-bottom:.4rem}
 .thrust-card p{font-size:.92rem;line-height:1.6;color:var(--soft);margin:0}
 
@@ -148,10 +152,11 @@ section{scroll-margin-top:5rem}
 /* framework figures run 1.6:1 to 5:1, so the frame stays 2:1 and the image is
    contained rather than cropped */
 .pub-thumbnail-box{width:190px;aspect-ratio:2/1;flex-shrink:0;overflow:hidden;background:var(--page);
-  border:1px solid var(--rule);display:flex;align-items:center;justify-content:center;padding:.3rem}
+  border:1px solid var(--rule);display:flex;align-items:center;justify-content:center;padding:.3rem;
+  border-radius:var(--radius)}
 .pub-thumb-img{max-width:100%;max-height:100%;width:auto;height:auto;object-fit:contain;display:block}
 /* papers with no figure get an empty frame: nothing to choose, nothing to maintain */
-.pub-thumb-fallback{width:100%;height:100%;background:#fafafa}
+.pub-thumb-fallback{width:100%;height:100%;background:#fafafa;border-radius:2px}
 
 /* ---------- education / honors ---------- */
 .timeline{display:flex;flex-direction:column;gap:1.35rem}
