@@ -15,6 +15,9 @@ echo "==> assembling template.html"
 python3 -c "open('template.html','w',encoding='utf-8').write(
     open('head.part',encoding='utf-8').read()+open('body.part',encoding='utf-8').read())"
 
+echo "==> counting publications per year"
+python3 annotate_counts.py
+
 echo "==> inlining paper thumbnails"
 python3 inline_thumbs.py
 

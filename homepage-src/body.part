@@ -170,6 +170,7 @@
               <div class="pub-line-1"><span class="pub-title-text">SoCRATES: Towards Reliable Automated Evaluation of Proactive LLM Mediation across Domains and Socio-cognitive Variations</span></div>
               <div class="pub-line-2">Taewon Yun, Hyeonseong Park, <strong>Jeonghwan Choi</strong>, HaYoon Park, Yeeun Choi, Hwanjun Song</div>
               <div class="pub-line-3"><span class="pub-venue-tag tag-under-review">Under Review · 2026</span></div>
+              <div class="pub-line-4"><a href="https://arxiv.org/abs/2606.05563" class="pub-link-btn">arXiv</a></div>
             </div>
           </li>
         </ul>
@@ -193,6 +194,7 @@
                 <span class="pub-badge-highlight">First Author</span></div>
               <div class="pub-line-2"><strong>Jeonghwan Choi</strong>, Jibin Hwang, Gyeonghun Sun, Minjeong Ban, Taewon Yun, Hwanjun Song</div>
               <div class="pub-line-3"><span class="pub-venue-tag tag-conference">COLM 2026</span></div>
+              <div class="pub-line-4"><a href="https://arxiv.org/abs/2604.04468" class="pub-link-btn">arXiv</a></div>
             </div>
           </li>
           <li class="pub-list-item">
@@ -228,6 +230,7 @@
               <div class="pub-line-1"><span class="pub-title-text">Distilling Long-CoT Reasoning through Collaborative Step-wise Multi-Teacher Decoding</span></div>
               <div class="pub-line-2">Taewon Yun, Jisu Shin, <strong>Jeonghwan Choi</strong>, Seunghwan Bang, Hwanjun Song</div>
               <div class="pub-line-3"><span class="pub-venue-tag tag-conference">Findings of ACL 2026</span></div>
+              <div class="pub-line-4"><a href="https://aclanthology.org/2026.findings-acl.1867/" class="pub-link-btn">PDF</a></div>
             </div>
           </li>
           <li class="pub-list-item">
