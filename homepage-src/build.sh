@@ -37,6 +37,9 @@ s = open(sys.argv[1], encoding='utf-8').read()
 print('  em-dash :', s.count('—'))
 print('  en-dash :', s.count('–'))
 print('  size    :', len(s), 'bytes')
+import re
+left = sorted(set(re.findall(r'__[A-Z0-9_]+__', s)))
+assert not left, 'unsubstituted placeholder in output: %s' % left
 assert s.count('—') == 0 and s.count('–') == 0, 'dashes present'
 PY
 

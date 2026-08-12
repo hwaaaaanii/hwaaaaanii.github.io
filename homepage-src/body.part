@@ -35,12 +35,12 @@
         <p class="affil">Industrial &amp; Systems Engineering<br>KAIST · Data Intelligence System Lab</p>
       </div>
       <div class="social-links">
-        <a href="mailto:hwani.choi@kaist.ac.kr" class="social-btn" title="Email"><i class="fas fa-envelope"></i></a>
-        <a href="CV_JeonghwanChoi.pdf" class="social-btn" title="CV"><i class="fas fa-file-pdf"></i></a>
+        <a href="CV_JeonghwanChoi.pdf" class="social-btn cv-btn" title="Curriculum Vitae (PDF)"><i class="fas fa-file-pdf"></i>CV</a>
+        <a href="https://www.semanticscholar.org/author/Jeonghwan-Choi/2335598802" class="social-btn" title="Semantic Scholar"><i class="fas fa-book-open"></i></a>
         <a href="https://scholar.google.com/citations?user=0DwYO7IAAAAJ" class="social-btn" title="Google Scholar"><i class="fas fa-graduation-cap"></i></a>
-        <a href="https://github.com/hwaaaaanii" class="social-btn" title="GitHub"><i class="fab fa-github"></i></a>
         <a href="https://www.linkedin.com/in/hwaaaaanii" class="social-btn" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
         <a href="https://disl-lab.github.io" class="social-btn" title="DISL Lab"><i class="fas fa-flask"></i></a>
+        <a href="mailto:hwani.choi@kaist.ac.kr" class="social-btn" title="Email"><i class="fas fa-envelope"></i></a>
       </div>
       <div class="ri-card">
         <h3><i class="fas fa-lightbulb" style="color:var(--accent);font-size:.95rem"></i> Research Interests</h3>
@@ -50,7 +50,6 @@
           <li><i class="fas fa-handshake"></i><span>Human-AI Alignment</span></li>
           <li><i class="fas fa-robot"></i><span>LLM Agent Simulation</span></li>
           <li><i class="fas fa-microchip"></i><span>Physical AI</span></li>
-          <li><i class="fas fa-shield-halved"></i><span>Trustworthy AI</span></li>
         </ul>
       </div>
     </div>

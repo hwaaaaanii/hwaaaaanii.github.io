@@ -68,6 +68,12 @@ main{min-height:100vh;padding:7rem 0 3rem}
   border-radius:999px;border:1px solid var(--line);color:#475569;background:#fff;
   transition:all .2s ease;box-shadow:0 6px 18px -16px rgba(15,23,42,.55)}
 .social-btn:hover{border-color:rgba(212,165,98,.5);color:var(--accent-dark);transform:translateY(-1px)}
+/* the CV is the one link people actually hunt for, so it gets a label instead of
+   a bare icon and carries the accent colour */
+.social-btn.cv-btn{width:auto;padding:0 .85rem;gap:.4rem;font-size:.82rem;font-weight:700;
+  letter-spacing:.04em;border-color:rgba(212,165,98,.55);color:var(--accent-dark);
+  background:linear-gradient(180deg,#fffdf8 0%,#fdf6e9 100%)}
+.social-btn.cv-btn:hover{border-color:var(--accent);background:#fdf1dd}
 .ri-card{background:#f1f5f9;border-radius:.85rem;padding:1.25rem}
 .ri-card h3{font-size:1.1rem;font-weight:700;color:var(--primary);margin-bottom:.9rem;
   padding-bottom:.5rem;border-bottom:1px solid var(--line);display:flex;align-items:center;gap:.5rem}

@@ -108,5 +108,8 @@
         "section": "Improvements"
       }
     ]
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^7.3.1"
   }
 }
