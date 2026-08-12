@@ -112,16 +112,20 @@ section{scroll-margin-top:5rem}
 .pub-content-wrapper{flex:1 1 auto;min-width:0}
 .pub-line-1{display:flex;flex-wrap:wrap;align-items:baseline;gap:.5rem;margin-bottom:.3rem}
 .pub-title-text{font-family:var(--serif);font-weight:600;color:var(--ink);font-size:1.05rem;line-height:1.35}
-.pub-line-2{font-size:.9rem;color:var(--soft);margin-bottom:.25rem}
-.pub-line-2 strong{color:var(--ink);font-weight:600}
+/* co-authors sit back so the one bold name carries real contrast. bold alone
+   against near-black neighbours was not enough to catch the eye */
+.pub-line-2{font-size:.9rem;color:var(--faint);margin-bottom:.25rem}
+.pub-line-2 strong{color:#000;font-weight:700}
 .pub-line-2 .meta-note{color:var(--faint);font-weight:400}
 .pub-line-3{font-size:.88rem;color:var(--body);display:flex;flex-wrap:wrap;align-items:baseline;gap:.4rem}
 .pub-line-4{display:flex;flex-wrap:wrap;gap:.7rem;margin-top:.35rem}
 .pub-link-btn{font-size:.82rem;color:var(--link);text-decoration:underline;
   text-decoration-thickness:1px;text-underline-offset:2px}
 .pub-link-btn:hover{text-decoration-thickness:2px}
-/* venue is plain italic text, not a pill */
-.pub-venue-tag{font-style:italic;font-size:.88rem;color:var(--body);white-space:nowrap}
+/* the venue is what a reader scans for, so it gets the heading serif at full
+   ink rather than sitting quieter than the author list */
+.pub-venue-tag{font-family:var(--serif);font-style:italic;font-size:1rem;font-weight:600;
+  color:var(--ink);white-space:nowrap}
 .pub-badge-highlight{font-size:.76rem;font-weight:600;color:var(--faint);letter-spacing:.03em;
   white-space:nowrap}
 .pub-badge-highlight::before{content:"[ "}
