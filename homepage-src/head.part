@@ -118,6 +118,11 @@ section{scroll-margin-top:5rem}
 .news-date{font-family:var(--mono);font-size:.8rem;color:var(--faint);white-space:nowrap}
 .news-content{font-size:.93rem;color:var(--body);line-height:1.6}
 .news-content strong{color:var(--ink);font-weight:600}
+/* venue names carry the same red here as in the publication list, so the
+   conference is what the eye lands on. this is the emphasis the emoji used to
+   supply, without the emoji */
+.news-content .nv{font-family:var(--serif);font-style:italic;font-weight:600;color:var(--venue)}
+.news-sub{display:block;font-size:.85rem;color:var(--faint);margin-top:.1rem}
 
 /* ---------- publications ---------- */
 .pub-year-group{margin-bottom:2rem}

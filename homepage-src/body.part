@@ -94,21 +94,20 @@
       <div class="section-header"><h2>Latest News</h2></div>
       <div class="news-list">
         <div class="news-item"><div class="news-date">2026.08</div>
-          <div class="news-content"><strong>Towards Robust RAG via Reliability-Aware Adaptive Evidence Selection</strong> accepted to <strong>Findings of EMNLP 2026</strong>.</div></div>
+          <div class="news-content"><strong>Towards Robust RAG via Reliability-Aware Adaptive Evidence Selection</strong> accepted to <span class="nv">Findings of EMNLP 2026</span>.</div></div>
         <div class="news-item"><div class="news-date">2026.07</div>
-          <div class="news-content">Three papers accepted to <strong>COLM 2026</strong>, including <strong>What Makes a Sale?</strong>, <strong>Towards Query-Agnostic RAG Evaluation</strong>, and <strong>RAQE</strong>.</div></div>
+          <div class="news-content"><strong>Three papers</strong> accepted to <span class="nv">COLM 2026</span>.
+            <span class="news-sub">What Makes a Sale? · Towards Query-Agnostic RAG Evaluation · RAQE</span></div></div>
         <div class="news-item"><div class="news-date">2026.05</div>
-          <div class="news-content"><strong>Distilling Long-CoT Reasoning</strong> accepted to <strong>Findings of ACL 2026</strong>.</div></div>
-        <div class="news-item"><div class="news-date">2026.04</div>
-          <div class="news-content">Second patent filed with KIPO for multi-agent debate-based relevance assessment.</div></div>
+          <div class="news-content"><strong>Distilling Long-CoT Reasoning</strong> accepted to <span class="nv">Findings of ACL 2026</span>. <a href="https://aclanthology.org/2026.findings-acl.1867/">[paper]</a></div></div>
         <div class="news-item"><div class="news-date">2026.01</div>
-          <div class="news-content"><strong>Completing Missing Annotation</strong> accepted to <strong>ICLR 2026</strong>. My first ICLR paper! <a href="https://openreview.net/forum?id=DD5RNCHuzq">[OpenReview]</a></div></div>
+          <div class="news-content"><strong>Completing Missing Annotation</strong> accepted to <span class="nv">ICLR 2026</span>, my first ICLR paper. <a href="https://openreview.net/forum?id=DD5RNCHuzq">[OpenReview]</a></div></div>
         <div class="news-item"><div class="news-date">2025.12</div>
-          <div class="news-content">Received the <strong>Best Paper Award</strong> at Korea Software Congress (KSC 2025).</div></div>
+          <div class="news-content"><strong>Best Paper Award</strong> at <span class="nv">Korea Software Congress 2025</span>.</div></div>
         <div class="news-item"><div class="news-date">2025.10</div>
-          <div class="news-content"><strong>Aligning Extraction and Generation for Robust RAG</strong> accepted to <strong>WSDM 2026</strong>. <a href="https://arxiv.org/abs/2503.04789">[arXiv]</a></div></div>
+          <div class="news-content"><strong>Aligning Extraction and Generation for Robust RAG</strong> accepted to <span class="nv">WSDM 2026</span>. <a href="https://arxiv.org/abs/2503.04789">[arXiv]</a></div></div>
         <div class="news-item"><div class="news-date">2025.06</div>
-          <div class="news-content"><strong>Word2Passage</strong> accepted to <strong>Findings of ACL 2025</strong>. <a href="https://aclanthology.org/2025.findings-acl.434/">[paper]</a></div></div>
+          <div class="news-content"><strong>Word2Passage</strong> accepted to <span class="nv">Findings of ACL 2025</span>. <a href="https://aclanthology.org/2025.findings-acl.434/">[paper]</a></div></div>
       </div>
     </section>
     <section id="education">
