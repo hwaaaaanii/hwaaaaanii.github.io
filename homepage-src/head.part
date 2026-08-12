@@ -67,12 +67,19 @@ main{padding:3rem 0}
 .profile-name h1{font-size:1.5rem;font-weight:600;margin-bottom:.2rem}
 .profile-name .role{font-size:.95rem;color:var(--body);margin:0 0 .15rem}
 .profile-name .affil{color:var(--soft);font-size:.88rem;margin:0;line-height:1.5}
-.social-links{display:flex;flex-wrap:wrap;gap:.9rem;margin-bottom:1.6rem;
+/* inline SVG marks, no icon font and no extra request. Simple Icons for the two
+   scholar services (CC0) and Bootstrap Icons for the rest (MIT) */
+.social-links{display:flex;flex-direction:column;gap:.5rem;margin-bottom:1.6rem;
   padding-bottom:1.4rem;border-bottom:1px solid var(--rule-soft)}
-.social-btn{font-size:.85rem;color:var(--link);text-decoration:underline;
-  text-decoration-thickness:1px;text-underline-offset:2px}
-.social-btn:hover{text-decoration-thickness:2px}
-.social-btn.cv-btn{font-weight:600}
+.social-btn{display:inline-flex;align-items:center;gap:.55rem;font-size:.85rem;color:var(--body)}
+.social-btn .si{width:15px;height:15px;flex-shrink:0;color:var(--faint)}
+.social-btn span{text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:2px;
+  text-decoration-color:var(--rule)}
+.social-btn:hover{color:var(--link)}
+.social-btn:hover .si{color:var(--link)}
+.social-btn:hover span{text-decoration-color:currentColor}
+.social-btn.cv-btn{font-weight:600;color:var(--ink)}
+.social-btn.cv-btn .si{color:var(--venue)}
 .ri-card h3{font-size:.78rem;font-family:var(--sans);font-weight:600;color:var(--faint);
   text-transform:uppercase;letter-spacing:.09em;margin-bottom:.6rem}
 .ri-card ul{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:.4rem}
