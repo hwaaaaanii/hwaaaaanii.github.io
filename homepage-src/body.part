@@ -1,0 +1,551 @@
+<body>
+
+<nav class="top-nav">
+  <div class="nav-inner">
+    <a href="#" class="brand">Jeonghwan Choi</a>
+    <ul class="nav-links">
+      <li><a href="#about" class="nav-item">About</a></li>
+      <li><a href="#research" class="nav-item">Research</a></li>
+      <li><a href="#news" class="nav-item">News</a></li>
+      <li><a href="#education" class="nav-item">Education</a></li>
+      <li><a href="#publications" class="nav-item">Publications</a></li>
+      <li><a href="#patents" class="nav-item">Patents</a></li>
+      <li><a href="#honors" class="nav-item">Honors</a></li>
+      <li><a href="#service" class="nav-item">Service</a></li>
+      <li><a href="#projects" class="nav-item">Projects</a></li>
+      <li><a href="blog/" class="nav-item">Blog</a></li>
+      <li><a href="#contact" class="nav-item">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+<main>
+<div class="wrap">
+<div class="grid-layout">
+
+  <!-- ============ LEFT COLUMN ============ -->
+  <div class="profile-column">
+    <div class="profile-card">
+      <div class="profile-image-container">
+        <img src="data:image/jpeg;base64,__PROFILE_B64__" alt="Jeonghwan Choi">
+      </div>
+      <div class="profile-name">
+        <h1>Jeonghwan Choi</h1>
+        <p class="role">Ph.D. Student</p>
+        <p class="affil">Industrial &amp; Systems Engineering<br>KAIST · Data Intelligence System Lab</p>
+      </div>
+      <div class="social-links">
+        <a href="mailto:hwani.choi@kaist.ac.kr" class="social-btn" title="Email"><i class="fas fa-envelope"></i></a>
+        <a href="CV_JeonghwanChoi.pdf" class="social-btn" title="CV"><i class="fas fa-file-pdf"></i></a>
+        <a href="https://scholar.google.com/citations?user=0DwYO7IAAAAJ" class="social-btn" title="Google Scholar"><i class="fas fa-graduation-cap"></i></a>
+        <a href="https://github.com/hwaaaaanii" class="social-btn" title="GitHub"><i class="fab fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/hwaaaaanii" class="social-btn" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+        <a href="https://disl-lab.github.io" class="social-btn" title="DISL Lab"><i class="fas fa-flask"></i></a>
+      </div>
+      <div class="ri-card">
+        <h3><i class="fas fa-lightbulb" style="color:var(--accent);font-size:.95rem"></i> Research Interests</h3>
+        <ul>
+          <li><i class="fas fa-magnifying-glass"></i><span>Retrieval-Augmented Generation</span></li>
+          <li><i class="fas fa-scale-balanced"></i><span>LLM Evaluation &amp; Reliability</span></li>
+          <li><i class="fas fa-handshake"></i><span>Human-AI Alignment</span></li>
+          <li><i class="fas fa-robot"></i><span>LLM Agent Simulation</span></li>
+          <li><i class="fas fa-microchip"></i><span>Physical AI</span></li>
+          <li><i class="fas fa-shield-halved"></i><span>Trustworthy AI</span></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============ RIGHT COLUMN ============ -->
+  <div class="content-column">
+
+    <section id="about">
+      <div class="section-header"><h2>About Me</h2></div>
+      <div class="formal-font">
+        <p>I am a <strong>Ph.D. student</strong> at the <a href="https://disl-lab.github.io" class="lnk">Data Intelligence System Lab (DISL)</a> at KAIST, where I am advised by <strong>Prof. Hwanjun Song</strong>. I first joined the lab for my M.S. and then continued into the integrated Ph.D. program, after studying Economics with a double major in Statistics at Yonsei University.</p>
+        <p>My work centers on <strong>Retrieval-Augmented Generation</strong>, where I build frameworks that keep generation faithful to retrieved evidence and design evaluation methods that reveal when they fail. The same interest carries into <strong>human-AI alignment</strong> and <strong>LLM agent simulation</strong>, and more recently into <strong>Physical AI</strong>, where I am exploring world model-based robot learning and sim-to-real transfer.</p>
+        <div class="highlight-box">
+          <p><strong><i class="fas fa-lightbulb" style="color:var(--accent);margin-right:.4rem"></i>Open to collaboration.</strong>
+          I'm always happy to discuss RAG, LLM evaluation, and agent simulation. Feel free to reach out by email.</p>
+        </div>
+      </div>
+    </section>
+    <section id="research">
+      <div class="section-header"><h2>Research Overview</h2></div>
+      <div class="formal-font">
+        <blockquote>"Language models are only as trustworthy as the evidence they retrieve, and as the benchmarks we use to judge them."</blockquote>
+        <div class="thrust-grid">
+          <div class="thrust-card">
+            <h3><i class="fas fa-magnifying-glass" style="color:var(--accent)"></i> Robust RAG Frameworks</h3>
+            <p>Retrieval and generation that stays faithful to source evidence, through query expansion and extraction-generation alignment.</p>
+          </div>
+          <div class="thrust-card">
+            <h3><i class="fas fa-scale-balanced" style="color:var(--accent)"></i> Evaluation &amp; Reliability</h3>
+            <p>Benchmarks and automatic evaluators that expose where RAG systems break, from query-agnostic metrics to multi-agent relevance annotation.</p>
+          </div>
+          <div class="thrust-card">
+            <h3><i class="fas fa-robot" style="color:var(--accent)"></i> LLM Agent Simulation</h3>
+            <p>Language models that simulate multi-party behavior, including seller-buyer retail dynamics and multimodal conflict mediation.</p>
+          </div>
+          <div class="thrust-card">
+            <h3><i class="fas fa-microchip" style="color:var(--accent)"></i> Physical AI</h3>
+            <p>World model-based robot learning and sim-to-real transfer, extending agent reasoning to systems that act in the physical world.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="news">
+      <div class="section-header"><h2>Latest News</h2></div>
+      <div class="news-list">
+        <div class="news-item"><div class="news-date">2026.08</div>
+          <div class="news-content">🎉 <strong>Towards Robust RAG via Reliability-Aware Adaptive Evidence Selection</strong> accepted to <strong>Findings of EMNLP 2026</strong>.</div></div>
+        <div class="news-item"><div class="news-date">2026.07</div>
+          <div class="news-content">🔥 Three papers accepted to <strong>COLM 2026</strong>, including <strong>What Makes a Sale?</strong>, <strong>Towards Query-Agnostic RAG Evaluation</strong>, and <strong>RAQE</strong>.</div></div>
+        <div class="news-item"><div class="news-date">2026.05</div>
+          <div class="news-content">🎉 <strong>Distilling Long-CoT Reasoning</strong> accepted to <strong>Findings of ACL 2026</strong>.</div></div>
+        <div class="news-item"><div class="news-date">2026.04</div>
+          <div class="news-content">📄 Second patent filed with KIPO for multi-agent debate-based relevance assessment.</div></div>
+        <div class="news-item"><div class="news-date">2026.01</div>
+          <div class="news-content">🔥 <strong>Completing Missing Annotation</strong> accepted to <strong>ICLR 2026</strong>. My first ICLR paper! <a href="https://openreview.net/forum?id=DD5RNCHuzq">[OpenReview]</a></div></div>
+        <div class="news-item"><div class="news-date">2025.12</div>
+          <div class="news-content">🏆 Received the <strong>Best Paper Award</strong> at Korea Software Congress (KSC 2025).</div></div>
+        <div class="news-item"><div class="news-date">2025.10</div>
+          <div class="news-content">🎉 <strong>Aligning Extraction and Generation for Robust RAG</strong> accepted to <strong>WSDM 2026</strong>. <a href="https://arxiv.org/abs/2503.04789">[arXiv]</a></div></div>
+        <div class="news-item"><div class="news-date">2025.06</div>
+          <div class="news-content">🎉 <strong>Word2Passage</strong> accepted to <strong>Findings of ACL 2025</strong>. <a href="https://aclanthology.org/2025.findings-acl.434/">[paper]</a></div></div>
+      </div>
+    </section>
+    <section id="education">
+      <div class="section-header"><h2>Education</h2></div>
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="tl-icon"><i class="fas fa-graduation-cap"></i></div>
+          <div class="tl-content">
+            <h3>Ph.D. Program, Industrial &amp; Systems Engineering</h3>
+            <p class="when">Feb 2025 - Present · Daejeon, South Korea</p>
+            <p class="desc">KAIST · Advisor: Prof. Hwanjun Song · Integrated from M.S.</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="tl-icon"><i class="fas fa-user-graduate"></i></div>
+          <div class="tl-content">
+            <h3>M.S., Graduate School of Data Science</h3>
+            <p class="when">Feb 2024 - Feb 2025 · Daejeon, South Korea</p>
+            <p class="desc">KAIST · Advisor: Prof. Hwanjun Song · GPA 4.22 / 4.3</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="tl-icon"><i class="fas fa-school"></i></div>
+          <div class="tl-content">
+            <h3>B.A. Economics, Statistics Double Major</h3>
+            <p class="when">Until Feb 2024 · Seoul, South Korea</p>
+            <p class="desc">Yonsei University · GPA 4.21 / 4.3</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="publications">
+      <div class="section-header">
+        <div>
+          <h2>Publications</h2>
+          <p class="sub-note">* denotes equal contribution</p>
+        </div>
+        <a href="https://scholar.google.com/citations?user=0DwYO7IAAAAJ" class="view-all">Google Scholar <i class="fas fa-arrow-right"></i></a>
+      </div>
+
+      <div class="pub-year-group">
+        <div class="pub-year-header">Under Review</div>
+        <ul class="pub-list-ul">
+          <li class="pub-list-item">
+            <div class="pub-thumbnail-box">__THUMB_01-agentic-rag-retail__</div>
+            <div class="pub-content-wrapper">
+              <div class="pub-line-1"><span class="pub-title-text">Toward Agentic Retrieval-Augmented Generation for Enterprise Retail Workflows over Heterogeneous Data Sources</span>
+                <span class="pub-badge-highlight">First Author</span></div>
+              <div class="pub-line-2"><strong>Jeonghwan Choi</strong>, Jibin Hwang, HaYoon Park, Hyeonjae Cheon, Hwanjun Song</div>
+              <div class="pub-line-3"><span class="pub-venue-tag tag-under-review">Under Review · 2026</span></div>
+            </div>
+          </li>
+          <li class="pub-list-item">
+            <div class="pub-thumbnail-box">__THUMB_02-socrates__</div>
+            <div class="pub-content-wrapper">
+              <div class="pub-line-1"><span class="pub-title-text">SoCRATES: Towards Reliable Automated Evaluation of Proactive LLM Mediation across Domains and Socio-cognitive Variations</span></div>
+              <div class="pub-line-2">Taewon Yun, Hyeonseong Park, <strong>Jeonghwan Choi</strong>, HaYoon Park, Yeeun Choi, Hwanjun Song</div>
+              <div class="pub-line-3"><span class="pub-venue-tag tag-under-review">Under Review · 2026</span></div>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <div class="pub-year-group">
+        <div class="pub-year-header">2026</div>
+        <ul class="pub-list-ul">
+          <li class="pub-list-item">
+            <div class="pub-thumbnail-box">__THUMB_03-reliability-aware__</div>
+            <div class="pub-content-wrapper">
+              <div class="pub-line-1"><span class="pub-title-text">Towards Robust Retrieval-Augmented Generation via Reliability-Aware Adaptive Evidence Selection</span></div>
+              <div class="pub-line-2">Minkyu Che, Jihwan Oh, <strong>Jeonghwan Choi</strong>, Jeesu Jung, Hwanjun Song</div>
+              <div class="pub-line-3"><span class="pub-venue-tag tag-conference">Findings of EMNLP 2026</span></div>
+            </div>
+          </li>
+          <li class="pub-list-item">
+            <div class="pub-thumbnail-box">__THUMB_04-what-makes-a-sale__</div>
+            <div class="pub-content-wrapper">
+              <div class="pub-line-1"><span class="pub-title-text">What Makes a Sale? Simulating End-to-End Seller-Buyer Retail Dynamics with LLM Agents</span>
+                <span class="pub-badge-highlight">First Author</span></div>
+              <div class="pub-line-2"><strong>Jeonghwan Choi</strong>, Jibin Hwang, Gyeonghun Sun, Minjeong Ban, Taewon Yun, Hwanjun Song</div>
+              <div class="pub-line-3"><span class="pub-venue-tag tag-conference">COLM 2026</span></div>
+            </div>
+          </li>
+          <li class="pub-list-item">
+            <div class="pub-thumbnail-box">__THUMB_05-query-agnostic__</div>
+            <div class="pub-content-wrapper">
+              <div class="pub-line-1"><span class="pub-title-text">Towards Query-Agnostic RAG Evaluation via Query Coverage and Claim Verifiability</span>
+                <span class="pub-badge-highlight">First Author</span></div>
+              <div class="pub-line-2"><strong>Jeonghwan Choi</strong>, Taewon Yun, Minjeong Ban, Gyeonghun Sun, Jae-gil Lee, Hwanjun Song</div>
+              <div class="pub-line-3"><span class="pub-venue-tag tag-conference">COLM 2026</span></div>
+            </div>
+          </li>
+          <li class="pub-list-item">
+            <div class="pub-thumbnail-box">__THUMB_06-raqe__</div>
+            <div class="pub-content-wrapper">
+              <div class="pub-line-1"><span class="pub-title-text">RAQE: Reranker-Aligned Query Expansion via Label-Free Group-Relative Policy Optimization</span></div>
+              <div class="pub-line-2">Gyeonghun Sun, <strong>Jeonghwan Choi</strong>, Hwanjun Song</div>
+              <div class="pub-line-3"><span class="pub-venue-tag tag-conference">COLM 2026</span></div>
+            </div>
+          </li>
+          <li class="pub-list-item">
+            <div class="pub-thumbnail-box">__THUMB_07-completing-missing-annotation__</div>
+            <div class="pub-content-wrapper">
+              <div class="pub-line-1"><span class="pub-title-text">Completing Missing Annotation: Multi-Agent Debate for Accurate and Scalable Relevant Assessment for IR Benchmarks</span>
+                <span class="pub-badge-highlight">First Author</span></div>
+              <div class="pub-line-2"><strong>Jeonghwan Choi</strong>*, Minjeong Ban*, Hyangsuk Min*, Nicole Hee-yeon Kim, Minseok Kim, Jae-gil Lee, Hwanjun Song</div>
+              <div class="pub-line-3"><span class="pub-venue-tag tag-conference">ICLR 2026</span></div>
+              <div class="pub-line-4"><a href="https://openreview.net/forum?id=DD5RNCHuzq" class="pub-link-btn">PDF</a></div>
+            </div>
+          </li>
+          <li class="pub-list-item">
+            <div class="pub-thumbnail-box">__THUMB_08-distilling-long-cot__</div>
+            <div class="pub-content-wrapper">
+              <div class="pub-line-1"><span class="pub-title-text">Distilling Long-CoT Reasoning through Collaborative Step-wise Multi-Teacher Decoding</span></div>
+              <div class="pub-line-2">Taewon Yun, Jisu Shin, <strong>Jeonghwan Choi</strong>, Seunghwan Bang, Hwanjun Song</div>
+              <div class="pub-line-3"><span class="pub-venue-tag tag-conference">Findings of ACL 2026</span></div>
+            </div>
+          </li>
+          <li class="pub-list-item">
+            <div class="pub-thumbnail-box">__THUMB_09-aligning-extraction-generation__</div>
+            <div class="pub-content-wrapper">
+              <div class="pub-line-1"><span class="pub-title-text">Aligning Extraction and Generation for Robust Retrieval-Augmented Generation</span></div>
+              <div class="pub-line-2">Hwanjun Song, <strong>Jeonghwan Choi</strong>, Minseok Kim</div>
+              <div class="pub-line-3"><span class="pub-venue-tag tag-conference">WSDM 2026</span></div>
+              <div class="pub-line-4"><a href="https://arxiv.org/abs/2503.04789" class="pub-link-btn">PDF</a></div>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <div class="pub-year-group">
+        <div class="pub-year-header">2025</div>
+        <ul class="pub-list-ul">
+          <li class="pub-list-item">
+            <div class="pub-thumbnail-box">__THUMB_10-bridge__</div>
+            <div class="pub-content-wrapper">
+              <div class="pub-line-1"><span class="pub-title-text">BRIDGE: Toward Faithful RAG Benchmarking via Retrieval-Generation Alignment</span>
+                <span class="pub-badge-highlight">First Author</span></div>
+              <div class="pub-line-2"><strong>Jeonghwan Choi</strong>*, Minjeong Ban*, Hyangsuk Min*, Hee-yeon Kim, Seunghwan Bang, Hwanjun Song</div>
+              <div class="pub-line-3"><span class="pub-venue-tag tag-conference">RDGENAI@CIKM 2025</span></div>
+            </div>
+          </li>
+          <li class="pub-list-item">
+            <div class="pub-thumbnail-box">__THUMB_11-word2passage__</div>
+            <div class="pub-content-wrapper">
+              <div class="pub-line-1"><span class="pub-title-text">Word2Passage: Word-level Importance Re-weighting for Query Expansion</span>
+                <span class="pub-badge-highlight">First Author</span></div>
+              <div class="pub-line-2"><strong>Jeonghwan Choi</strong>, Minjeong Ban, Minseok Kim, Hwanjun Song</div>
+              <div class="pub-line-3"><span class="pub-venue-tag tag-conference">Findings of ACL 2025</span></div>
+              <div class="pub-line-4"><a href="https://aclanthology.org/2025.findings-acl.434/" class="pub-link-btn">PDF</a></div>
+            </div>
+          </li>
+          <li class="pub-list-item">
+            <div class="pub-thumbnail-box">__THUMB_12-learn-to-verify__</div>
+            <div class="pub-content-wrapper">
+              <div class="pub-line-1"><span class="pub-title-text">Learning to Verify Summary Facts with Fine-Grained LLM Feedback</span></div>
+              <div class="pub-line-2">Jihwan Oh, <strong>Jeonghwan Choi</strong>, Nicole Hee-Yeon Kim, Taewon Yun, Hwanjun Song</div>
+              <div class="pub-line-3"><span class="pub-venue-tag tag-conference">COLING 2025</span></div>
+              <div class="pub-line-4"><a href="https://aclanthology.org/2025.coling-main.16/" class="pub-link-btn">PDF</a></div>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <div class="pub-year-group">
+        <div class="pub-year-header">Domestic</div>
+        <ul class="pub-list-ul">
+          <li class="pub-list-item">
+            <div class="pub-content-wrapper">
+              <div class="pub-line-1"><span class="pub-title-text">Simulating Seller-Buyer Retail Interactions and Sales Strategies with LLM Agents</span>
+                <span class="pub-badge-highlight">First Author</span></div>
+              <div class="pub-line-2"><strong>Jeonghwan Choi</strong>, Jibin Hwang, Gyeonghun Sun, Minjeong Ban, Taewon Yun, Hwanjun Song</div>
+              <div class="pub-line-3"><span class="pub-venue-tag tag-conference">KCC 2026</span></div>
+            </div>
+          </li>
+          <li class="pub-list-item">
+            <div class="pub-content-wrapper">
+              <div class="pub-line-1"><span class="pub-title-text">Toward Low-Cost Query Expansion: Label-Free Reward Design via Reranker Scores</span></div>
+              <div class="pub-line-2">Gyeonghun Sun, <strong>Jeonghwan Choi</strong>, Sundong Kim, Hwanjun Song</div>
+              <div class="pub-line-3"><span class="pub-venue-tag tag-conference">KCC 2026</span></div>
+            </div>
+          </li>
+          <li class="pub-list-item">
+            <div class="pub-content-wrapper">
+              <div class="pub-line-1"><span class="pub-title-text">A Query Decompositional Framework for Fine-grained RAG Assessment</span>
+                <span class="pub-badge-highlight">First Author</span></div>
+              <div class="pub-line-2"><strong>Jeonghwan Choi</strong>, Minjeong Ban, Taewon Yun, Jihwan Oh, Yuho Lee, Hwanjun Song</div>
+              <div class="pub-line-3"><span class="pub-venue-tag tag-journal">KTCP 2026 · Journal</span><span class="pub-note">Extended version of KSC 2025 Best Paper</span></div>
+            </div>
+          </li>
+          <li class="pub-list-item">
+            <div class="pub-content-wrapper">
+              <div class="pub-line-1"><span class="pub-title-text">A Query Decompositional Framework for Fine-grained RAG Assessment</span>
+                <span class="pub-badge-highlight">Best Paper</span></div>
+              <div class="pub-line-2"><strong>Jeonghwan Choi</strong>, Minjeong Ban, Nicole Hee-Yeon Kim, Taewon Yun, Yuho Lee, Hwanjun Song</div>
+              <div class="pub-line-3"><span class="pub-venue-tag tag-conference">KSC 2025</span></div>
+            </div>
+          </li>
+          <li class="pub-list-item">
+            <div class="pub-content-wrapper">
+              <div class="pub-line-1"><span class="pub-title-text">A Benchmark Dataset for Retrieval-Augmented Generation Considering Performance Alignment between Retrieval and Generation</span>
+                <span class="pub-badge-highlight">Best Presentation</span></div>
+              <div class="pub-line-2"><strong>Jeonghwan Choi</strong>*, Minjeong Ban*, Hyangsuk Min*, Taewon Yun, Jihwan Oh, Hwanjun Song</div>
+              <div class="pub-line-3"><span class="pub-venue-tag tag-conference">KCC 2025</span></div>
+            </div>
+          </li>
+          <li class="pub-list-item">
+            <div class="pub-content-wrapper">
+              <div class="pub-line-1"><span class="pub-title-text">Robust Dataset Condensation via Semi-Supervised Learning</span></div>
+              <div class="pub-line-2">Hee-yeon Kim, <strong>Jeonghwan Choi</strong>, Yuho Lee, Hwanjun Song</div>
+              <div class="pub-line-3"><span class="pub-venue-tag tag-conference">KCC 2025</span></div>
+            </div>
+          </li>
+          <li class="pub-list-item">
+            <div class="pub-content-wrapper">
+              <div class="pub-line-1"><span class="pub-title-text">Improving Language Model Quality through LLM-based Fine-Grained Hallucinated Summary Generation</span></div>
+              <div class="pub-line-2">Jihwan Oh, <strong>Jeonghwan Choi</strong>, Nicole Hee-Yeon Kim, Taewon Yun, Hwanjun Song</div>
+              <div class="pub-line-3"><span class="pub-venue-tag tag-journal">KTCP 2025 · Journal</span></div>
+            </div>
+          </li>
+          <li class="pub-list-item">
+            <div class="pub-content-wrapper">
+              <div class="pub-line-1"><span class="pub-title-text">Training Summary Evaluation Model with Fine-Grained LLM Feedback</span>
+                <span class="pub-badge-highlight">Best Presentation</span></div>
+              <div class="pub-line-2">Jihwan Oh, <strong>Jeonghwan Choi</strong>, Taewon Yun, Hyangsuk Min, Hwanjun Song</div>
+              <div class="pub-line-3"><span class="pub-venue-tag tag-conference">KSC 2024</span></div>
+            </div>
+          </li>
+          <li class="pub-list-item">
+            <div class="pub-content-wrapper">
+              <div class="pub-line-1"><span class="pub-title-text">Improving the Text Summary Quality Through Understanding the Hallucination Level of Summarization Using Large Language Models</span>
+                <span class="pub-badge-highlight">Best Presentation</span></div>
+              <div class="pub-line-2">Jihwan Oh, <strong>Jeonghwan Choi</strong>, Nicole Hee-Yeon Kim, Hwanjun Song</div>
+              <div class="pub-line-3"><span class="pub-venue-tag tag-conference">KCC 2024</span></div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section id="patents">
+      <div class="section-header"><h2>Patents</h2></div>
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="tl-icon"><i class="fas fa-lightbulb"></i></div>
+          <div class="tl-content">
+            <h3>Cost-Efficient and Accurate Debate-Based Relevance Assessment System with Multi-Agents</h3>
+            <p class="when">Apr 2026 · KIPO · Application No. 10-2026-0066617</p>
+            <p class="desc">Inventors: <strong>Jeonghwan Choi</strong> (20%), Minjeong Ban (20%), Hyangsuk Min (20%), Hee-yeon Kim (10%), Jae-gil Lee (10%), Hwanjun Song (20%)</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="tl-icon"><i class="fas fa-lightbulb"></i></div>
+          <div class="tl-content">
+            <h3>Method and Apparatus for Generating Answers Using Extended Query-Based Retrieval Utilizing Multi-Level Importance Reweighting</h3>
+            <p class="when">Sep 2025 · KIPO · Application No. 10-2025-0127517</p>
+            <p class="desc">Inventors: <strong>Jeonghwan Choi</strong> (40%), Minjeong Ban (20%), Hwanjun Song (40%)</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="honors">
+      <div class="section-header"><h2>Honors &amp; Awards</h2></div>
+      <div class="honors-list">
+        <div class="honor-item"><div class="honor-year">2025</div>
+          <div class="honor-content"><h3>Best Paper</h3><p>Korea Software Congress (KSC)</p></div></div>
+        <div class="honor-item"><div class="honor-year">2025</div>
+          <div class="honor-content"><h3>Best Presentation</h3><p>Korea Computer Congress (KCC)</p></div></div>
+        <div class="honor-item"><div class="honor-year">2024</div>
+          <div class="honor-content"><h3>Best Presentation</h3><p>Korea Software Congress (KSC)</p></div></div>
+        <div class="honor-item"><div class="honor-year">2024</div>
+          <div class="honor-content"><h3>Best Presentation</h3><p>Korea Computer Congress (KCC)</p></div></div>
+        <div class="honor-item"><div class="honor-year">2023</div>
+          <div class="honor-content"><h3>National Scholarship for Humanities Excellence</h3><p>Korea Student Aid Foundation (KOSAF)</p></div></div>
+        <div class="honor-item"><div class="honor-year">2023</div>
+          <div class="honor-content"><h3>Highest Honors (Top 1%)</h3><p>Yonsei University</p></div></div>
+        <div class="honor-item"><div class="honor-year">2023</div>
+          <div class="honor-content"><h3>Guwon Foundation Scholarship</h3><p>Guwon Scholarship Foundation · Top 1 in Department</p></div></div>
+        <div class="honor-item"><div class="honor-year">2023</div>
+          <div class="honor-content"><h3>High Honors (Top 3%)</h3><p>Yonsei University</p></div></div>
+        <div class="honor-item"><div class="honor-year">2022</div>
+          <div class="honor-content"><h3>High Honors (Top 3%)</h3><p>Yonsei University</p></div></div>
+      </div>
+    </section>
+    <section id="service">
+      <div class="section-header"><h2>Academic Service, Teaching &amp; Leadership</h2></div>
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="tl-icon"><i class="fas fa-clipboard-check"></i></div>
+          <div class="tl-content">
+            <h3>Program Committee Member: LASS 2026</h3>
+            <p class="when">2nd Workshop on LLM Agents for Social Simulation · Co-located with ACM CIKM 2026</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="tl-icon"><i class="fas fa-clipboard-check"></i></div>
+          <div class="tl-content">
+            <h3>Reviewer: DocInsights 2026</h3>
+            <p class="when">Workshop on Document Intelligence and Understanding · Co-located with EMNLP 2026</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="tl-icon"><i class="fas fa-chalkboard-user"></i></div>
+          <div class="tl-content">
+            <h3>Teaching Assistant: Dynamic Programming and Reinforcement Learning (IE540)</h3>
+            <p class="when">KAIST · Spring 2025</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="tl-icon"><i class="fas fa-users"></i></div>
+          <div class="tl-content">
+            <h3>President, Y-FoRM (Yonsei Forum of Risk Management)</h3>
+            <p class="when">Sep 2022 - Aug 2023 · AI-driven Financial Prediction Research Society</p>
+            <p class="desc">Led 30 members and delivered lectures on Statistics, Calculus, Linear Algebra, and Deep Learning.</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="tl-icon"><i class="fas fa-certificate"></i></div>
+          <div class="tl-content">
+            <h3>Certifications</h3>
+            <p class="when">2020 - 2022</p>
+            <ul>
+              <li>ADsP (Advanced Data Analytics Semi-Professional), Korea Data Agency, Mar 2022</li>
+              <li>FRM Part 1 (Financial Risk Manager), GARP, Jul 2021</li>
+              <li>Investment Asset Management Professional, Korea Financial Investment Association, Jun 2020</li>
+            </ul>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="tl-icon"><i class="fas fa-code"></i></div>
+          <div class="tl-content">
+            <h3>Skills</h3>
+            <p class="desc">Programming: Python, Java, R &nbsp;·&nbsp; Languages: English (Proficient), Korean (Native)</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="projects">
+      <div class="section-header"><h2>Project Experience</h2></div>
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="tl-icon"><i class="fas fa-cart-shopping"></i></div>
+          <div class="tl-content">
+            <h3>Retrieval-Augmented Generation for Retail</h3>
+            <p class="when">Project Manager · GS Retail · Jan 2026 - Jun 2026</p>
+            <p class="desc">Developing a retail-specialized RAG framework with retail environment simulation.</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="tl-icon"><i class="fas fa-comments"></i></div>
+          <div class="tl-content">
+            <h3>Multimodal Agentic Platform for Conflict Mediation</h3>
+            <p class="when">Research Team Member · Ministry of Science and ICT (IITP) · Oct 2025 - Present</p>
+            <p class="desc">Developing a multimodal agentic AI for real-time conflict mediation using text, speech, and vision signals.</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="tl-icon"><i class="fas fa-globe"></i></div>
+          <div class="tl-content">
+            <h3>Korea-Canada Joint Research (KAIST-GIST-UBC)</h3>
+            <p class="when">Research Team Member · IITP · Sep 2024 - Present</p>
+            <p class="desc">Building value-aligned benchmark datasets for language, math, and medical domains.</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="tl-icon"><i class="fas fa-shield-halved"></i></div>
+          <div class="tl-content">
+            <h3>Language Model Reliability Enhancement System</h3>
+            <p class="when">Research Team Member · National Research Foundation of Korea (NRF) · Apr 2024 - Present</p>
+            <p class="desc">Developing evaluation systems for AI-generated text and reducing hallucinations in LLMs.</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="tl-icon"><i class="fas fa-flask"></i></div>
+          <div class="tl-content">
+            <h3>Scientific Information RAG System</h3>
+            <p class="when">Project Manager · KISTI · Jun 2025 - Dec 2025</p>
+            <p class="desc">Optimized RAG pipeline for scientific domains, maximizing performance while reducing latency.</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="tl-icon"><i class="fas fa-database"></i></div>
+          <div class="tl-content">
+            <h3>Korean Scientific RAG Framework Development</h3>
+            <p class="when">Project Manager · KISTI · Jun 2024 - Dec 2024</p>
+            <p class="desc">Developed and evaluated a RAG framework optimized for Korean scientific domains.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="contact">
+      <div class="section-header"><h2>Contact</h2></div>
+      <div class="contact-card">
+        <h3>Email</h3>
+        <div class="contact-row"><i class="fas fa-envelope"></i><span>hwani.choi@kaist.ac.kr</span></div>
+        <h3>Elsewhere</h3>
+        <div class="contact-row"><i class="fas fa-link"></i><span>
+          <a href="https://scholar.google.com/citations?user=0DwYO7IAAAAJ" class="lnk">Google Scholar</a> ·
+          <a href="https://github.com/hwaaaaanii" class="lnk">GitHub</a> ·
+          <a href="https://www.linkedin.com/in/hwaaaaanii" class="lnk">LinkedIn</a> ·
+          <a href="https://disl-lab.github.io" class="lnk">DISL Lab</a> ·
+          <a href="blog/" class="lnk">Blog</a>
+        </span></div>
+      </div>
+    </section>
+
+  </div>
+</div>
+</div>
+</main>
+
+<footer>
+  <p>&copy; <span id="y"></span> Jeonghwan Choi. All rights reserved.</p>
+  <p style="margin-top:.5rem">Design adapted from <a href="https://github.com/yihangtao/AcaNova-X">AcaNova-X</a> · Blog powered by <a href="https://github.com/cotes2020/jekyll-theme-chirpy">Chirpy</a></p>
+</footer>
+
+<script>
+document.getElementById('y').textContent = new Date().getFullYear();
+var secs = [].slice.call(document.querySelectorAll('section[id]'));
+var items = [].slice.call(document.querySelectorAll('.nav-item[href^="#"]'));
+window.addEventListener('scroll', function(){
+  var y = window.scrollY + 120, cur = '';
+  secs.forEach(function(s){ if(s.offsetTop <= y) cur = s.id; });
+  items.forEach(function(a){
+    var on = a.getAttribute('href') === '#'+cur;
+    if(on && !a.classList.contains('active')){
+      var strip = a.closest('.nav-links');
+      if(strip && strip.scrollWidth > strip.clientWidth){
+        strip.scrollTo({left: a.offsetLeft - strip.clientWidth/2 + a.offsetWidth/2, behavior:'smooth'});
+      }
+    }
+    a.classList.toggle('active', on);
+  });
+});
+</script>
+</body>
+</html>

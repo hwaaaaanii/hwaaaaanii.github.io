@@ -25,3 +25,8 @@ package-lock.json
 # Misc
 _sass/vendors
 #assets/js/dist
+
+# paper figure originals used to generate homepage thumbnails (kept local)
+papers/
+homepage-src/node_modules/
+homepage-src/template*.html

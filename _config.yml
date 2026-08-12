@@ -127,6 +127,9 @@ pwa:
 
 paginate: 10
 
+# The blog listing lives at /blog/, so pagination has to follow it there.
+paginate_path: "/blog/page:num"
+
 # The base URL of your site
 baseurl: ""
 
