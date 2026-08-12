@@ -16,8 +16,18 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 TPL = os.path.join(HERE, 'template.html')
 THUMBS = os.path.join(HERE, 'thumbs')
 
-PLACEHOLDER = ('<div class="pub-thumb-placeholder">'
-               '<i class="fas fa-image"></i>thumbnail</div>')
+# A paper with no figure gets a typographic tile with its short name instead of
+# an empty image frame, which read as a broken image. Add an entry here when a
+# new paper has no figure yet; without one the stem is used as the label.
+FALLBACK_LABELS = {
+    '02-socrates': 'SoCRATES',
+    '10-bridge': 'BRIDGE',
+}
+
+
+def fallback(stem):
+    label = FALLBACK_LABELS.get(stem) or stem.split('-', 1)[-1].replace('-', ' ').title()
+    return '<div class="pub-thumb-fallback"><span>%s</span></div>' % label
 
 html = open(TPL, encoding='utf-8').read()
 tokens = re.findall(r'__THUMB_([0-9A-Za-z\-]+)__', html)
@@ -34,7 +44,7 @@ for stem in tokens:
                 'src="data:image/jpeg;base64,%s">' % b64)
         filled += 1
     else:
-        repl = PLACEHOLDER
+        repl = fallback(stem)
         empty.append(stem)
     html = html.replace('__THUMB_%s__' % stem, repl)
 
@@ -43,4 +53,4 @@ open(TPL, 'w', encoding='utf-8').write(html)
 
 print('  thumbnails inlined: %d / %d' % (filled, len(tokens)))
 if empty:
-    print('  still placeholder : %s' % ', '.join(empty))
+    print('  name tile instead : %s' % ', '.join(empty))

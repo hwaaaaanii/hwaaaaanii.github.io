@@ -128,8 +128,9 @@ cd src && ./build.sh
    ACL 2026, BRIDGE에 PDF/arXiv 링크가 아직 없음. 나오는 대로 `pub-line-4`에
    `<a class="pub-link-btn">` 추가.
 
-3. **논문 썸네일 2건 미비**. 12편 중 10편은 채웠고 `02-socrates`, `10-bridge`만
-   아직 플레이스홀더로 남아 있음 (Under Review라 공개 보류). 아래 10절 참고.
+3. **논문 썸네일 2건 미비**. 12편 중 10편은 채웠고 `02-socrates`, `10-bridge`는
+   figure 대신 논문 약칭을 세리프로 조판한 타이틀 카드가 들어감. 나중에
+   `papers/`에 그림을 넣고 다시 빌드하면 자동으로 그림으로 바뀜. 아래 10절 참고.
 
 4. **저장소의 CV PDF 갱신**. CV 버튼은 상대경로 `CV_JeonghwanChoi.pdf`로 링크함.
    처음엔 루트 절대경로 `/CV_JeonghwanChoi.pdf`였는데, 그러면 미리보기 HTML을
