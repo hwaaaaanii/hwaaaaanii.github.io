@@ -20,6 +20,9 @@
 :root{
   --ink:#1a1a1a; --body:#333; --soft:#666; --faint:#8a8a8a;
   --rule:#dcdcdc; --rule-soft:#ebebeb; --link:#14507a; --page:#fff;
+  /* one extra colour, reserved for venue names. deliberately not the link
+     blue, so a coloured venue never reads as something clickable */
+  --venue:#8c3131;
   --serif:Charter,"Bitstream Charter","Sitka Text",Cambria,Georgia,serif;
   --sans:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
   --mono:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;
@@ -125,7 +128,9 @@ section{scroll-margin-top:5rem}
 /* the venue is what a reader scans for, so it gets the heading serif at full
    ink rather than sitting quieter than the author list */
 .pub-venue-tag{font-family:var(--serif);font-style:italic;font-size:1rem;font-weight:600;
-  color:var(--ink);white-space:nowrap}
+  color:var(--venue);white-space:nowrap}
+/* Under Review is a status, not a venue, so it stays out of the venue colour */
+.tag-under-review{color:var(--faint);font-weight:400}
 .pub-badge-highlight{font-size:.76rem;font-weight:600;color:var(--faint);letter-spacing:.03em;
   white-space:nowrap}
 .pub-badge-highlight::before{content:"[ "}
