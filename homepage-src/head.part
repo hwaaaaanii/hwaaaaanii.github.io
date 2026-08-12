@@ -13,6 +13,64 @@
 <link rel="shortcut icon" href="/assets/img/favicons/favicon.ico">
 <link rel="manifest" href="/assets/img/favicons/site.webmanifest">
 <meta name="theme-color" content="#ffffff">
+<link rel="canonical" href="https://hwaaaaanii.github.io/">
+<!-- link previews in Slack, Twitter, KakaoTalk and the like -->
+<meta property="og:type" content="profile">
+<meta property="og:site_name" content="Jeonghwan Choi">
+<meta property="og:title" content="Jeonghwan Choi">
+<meta property="og:description" content="Ph.D. student at the Data Intelligence System Lab, KAIST. Retrieval-Augmented Generation, LLM evaluation, human-AI alignment, LLM agent simulation, and Physical AI.">
+<meta property="og:url" content="https://hwaaaaanii.github.io/">
+<meta property="og:image" content="https://hwaaaaanii.github.io/assets/img/og-card.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Jeonghwan Choi, Ph.D. student at KAIST Data Intelligence System Lab">
+<meta property="profile:first_name" content="Jeonghwan">
+<meta property="profile:last_name" content="Choi">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Jeonghwan Choi">
+<meta name="twitter:description" content="Ph.D. student at the Data Intelligence System Lab, KAIST. Retrieval-Augmented Generation, LLM evaluation, human-AI alignment, LLM agent simulation, and Physical AI.">
+<meta name="twitter:image" content="https://hwaaaaanii.github.io/assets/img/og-card.jpg">
+<!-- machine-readable identity. the sameAs links are what let a search engine
+     tie this page to the right Jeonghwan Choi among the namesakes -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Jeonghwan Choi",
+  "givenName": "Jeonghwan",
+  "familyName": "Choi",
+  "jobTitle": "Ph.D. Student",
+  "email": "mailto:hwani.choi@kaist.ac.kr",
+  "url": "https://hwaaaaanii.github.io/",
+  "image": "https://hwaaaaanii.github.io/assets/img/og-card.jpg",
+  "affiliation": {
+    "@type": "CollegeOrUniversity",
+    "name": "Korea Advanced Institute of Science and Technology",
+    "alternateName": "KAIST",
+    "department": {
+      "@type": "Organization",
+      "name": "Data Intelligence System Lab, Department of Industrial and Systems Engineering"
+    }
+  },
+  "alumniOf": [
+    {"@type": "CollegeOrUniversity", "name": "Korea Advanced Institute of Science and Technology"},
+    {"@type": "CollegeOrUniversity", "name": "Yonsei University"}
+  ],
+  "knowsAbout": [
+    "Retrieval-Augmented Generation",
+    "Large Language Model Evaluation",
+    "Human-AI Alignment",
+    "LLM Agent Simulation",
+    "Physical AI"
+  ],
+  "sameAs": [
+    "https://scholar.google.com/citations?user=0DwYO7IAAAAJ",
+    "https://www.semanticscholar.org/author/Jeonghwan-Choi/2335598802",
+    "https://www.linkedin.com/in/hwaaaaanii",
+    "https://github.com/hwaaaaanii"
+  ]
+}
+</script>
 <style>
 /* No webfonts and no icon font. System stacks only: it loads instantly, and the
    Georgia/Helvetica pairing reads as a document rather than a product page.
