@@ -124,8 +124,8 @@ cd src && ./build.sh
    - 2025.10 WSDM 2026 (추정)
    - 2025.06 Findings of ACL 2025 (추정)
 
-2. **논문 링크 보강**. 아직 공개 링크가 없는 것은 Reliability-Aware (Findings of
-   EMNLP 2026), RAQE (COLM 2026), BRIDGE, Agentic RAG for Retail 네 편.
+2. **논문 링크 보강**. 아직 공개 링크가 없는 것은 RAQE (COLM 2026), BRIDGE,
+   Agentic RAG for Retail, Reliability-Aware 네 편.
    나오는 대로 `pub-line-4`에 `<a class="pub-link-btn">` 추가.
 
 3. **논문 썸네일 2건 미비**. 12편 중 10편은 채웠고 `02-socrates`, `10-bridge`는
