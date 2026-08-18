@@ -505,9 +505,14 @@
 </div>
 </main>
 
+<!-- The page structure and CSS class vocabulary (pub-list-item, pub-line-*,
+     news-item, honor-item, grid-layout and so on) are adapted from AcaNova-X
+     by Yihang Tao, released under the MIT License.
+     https://github.com/yihangtao/AcaNova-X
+     The visual design, colour, typography and layout here are a rewrite. -->
 <footer>
   <p>&copy; <span id="y"></span> Jeonghwan Choi. All rights reserved.</p>
-  <p style="margin-top:.5rem">Design adapted from <a href="https://github.com/yihangtao/AcaNova-X">AcaNova-X</a></p>
+  <p style="margin-top:.4rem">Last updated __LAST_UPDATED__</p>
 </footer>
 
 <script>

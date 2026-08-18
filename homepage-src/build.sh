@@ -21,6 +21,9 @@ python3 annotate_counts.py
 echo "==> inlining paper thumbnails"
 python3 inline_thumbs.py
 
+echo "==> last updated date"
+python3 inject_date.py
+
 echo "==> analytics"
 python3 inject_analytics.py
 
