@@ -93,6 +93,8 @@
     <section id="news">
       <div class="section-header"><h2>Latest News</h2></div>
       <div class="news-list">
+        <div class="news-item"><div class="news-date">2026.08</div>
+          <div class="news-content"><strong>Towards Robust RAG via Reliability-Aware Adaptive Evidence Selection</strong> accepted to <span class="nv">Findings of EMNLP 2026</span>.</div></div>
         <div class="news-item"><div class="news-date">2026.07</div>
           <div class="news-content"><strong>Three papers</strong> accepted to <span class="nv">COLM 2026</span>.
             <span class="news-sub">RetailSim · Q-CARE · RAQE</span></div></div>
@@ -164,20 +166,20 @@
               <div class="pub-line-4"><a href="https://arxiv.org/abs/2606.05563" class="pub-link-btn">arXiv</a></div>
             </div>
           </li>
-          <li class="pub-list-item">
-            <div class="pub-thumbnail-box">__THUMB_03-reliability-aware__</div>
-            <div class="pub-content-wrapper">
-              <div class="pub-line-1"><span class="pub-title-text">Towards Robust Retrieval-Augmented Generation via Reliability-Aware Adaptive Evidence Selection</span></div>
-              <div class="pub-line-2">Minkyu Che, Jihwan Oh, <strong>Jeonghwan Choi</strong>, Jeesu Jung, Hwanjun Song</div>
-              <div class="pub-line-3"><span class="pub-venue-tag tag-under-review">Under Review · 2026</span></div>
-            </div>
-          </li>
         </ul>
       </div>
 
       <div class="pub-year-group">
         <div class="pub-year-header">2026</div>
         <ul class="pub-list-ul">
+          <li class="pub-list-item">
+            <div class="pub-thumbnail-box">__THUMB_03-reliability-aware__</div>
+            <div class="pub-content-wrapper">
+              <div class="pub-line-1"><span class="pub-title-text">Towards Robust Retrieval-Augmented Generation via Reliability-Aware Adaptive Evidence Selection</span></div>
+              <div class="pub-line-2">Minkyu Che, Jihwan Oh, <strong>Jeonghwan Choi</strong>, Jeesu Jung, Hwanjun Song</div>
+              <div class="pub-line-3"><span class="pub-venue-tag tag-conference">Findings of EMNLP 2026</span></div>
+            </div>
+          </li>
           <li class="pub-list-item">
             <div class="pub-thumbnail-box">__THUMB_04-what-makes-a-sale__</div>
             <div class="pub-content-wrapper">
