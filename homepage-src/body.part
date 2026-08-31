@@ -446,9 +446,8 @@
       <div class="timeline">
         <div class="timeline-item">
           <div class="tl-content">
-            <h3>Self-Evolving Physical AI: Toward a Continuously Evolving Agent via Real-World Experience</h3>
+            <h3>Self-Evolving Physical AI</h3>
             <p class="when">Principal Investigator · National Research Foundation of Korea · Sep 2026 - Aug 2028</p>
-            <p class="desc">Building SEAL, a framework in which a physical agent accumulates real-world experience, retrieves it through experience-grounded RAG, and consolidates the most valuable episodes into the model without catastrophic forgetting.</p>
           </div>
         </div>
         <div class="timeline-item">
