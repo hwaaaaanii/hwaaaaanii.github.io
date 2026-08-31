@@ -373,7 +373,7 @@
       <div class="section-header"><h2>Honors &amp; Awards</h2></div>
       <div class="honors-list">
         <div class="honor-item"><div class="honor-year">2026</div>
-          <div class="honor-content"><h3>Doctoral Student Research Grant</h3><p>National Research Foundation of Korea (NRF), Ministry of Education · Principal Investigator · KRW 50M, Sep 2026 to Aug 2028</p></div></div>
+          <div class="honor-content"><h3>Doctoral Student Research Grant</h3><p>National Research Foundation of Korea (NRF), Ministry of Education · Principal Investigator</p></div></div>
         <div class="honor-item"><div class="honor-year">2025</div>
           <div class="honor-content"><h3>Best Paper</h3><p>Korea Software Congress (KSC)</p></div></div>
         <div class="honor-item"><div class="honor-year">2025</div>
@@ -448,6 +448,7 @@
           <div class="tl-content">
             <h3>Self-Evolving Physical AI</h3>
             <p class="when">Principal Investigator · National Research Foundation of Korea · Sep 2026 - Aug 2028</p>
+            <p class="desc">Developing agents that continually learn from real-world experience after deployment. Doctoral Student Research Grant, KRW 50,000,000 over two years.</p>
           </div>
         </div>
         <div class="timeline-item">
