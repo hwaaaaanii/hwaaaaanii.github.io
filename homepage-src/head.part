@@ -191,6 +191,8 @@ section{scroll-margin-top:5rem}
 .pub-list-item{display:flex;gap:1.4rem;align-items:flex-start;line-height:1.5}
 .pub-content-wrapper{flex:1 1 auto;min-width:0}
 .pub-line-1{display:flex;flex-wrap:wrap;align-items:baseline;gap:.5rem;margin-bottom:.3rem}
+.pub-num{font-family:var(--sans);font-size:.82rem;font-weight:600;color:var(--faint);
+  font-variant-numeric:tabular-nums;margin-right:.15rem}
 .pub-title-text{font-family:var(--serif);font-weight:600;color:var(--ink);font-size:1.05rem;line-height:1.35}
 /* co-authors sit back so the one bold name carries real contrast. bold alone
    against near-black neighbours was not enough to catch the eye */

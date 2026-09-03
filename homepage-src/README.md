@@ -156,6 +156,7 @@ cd src && ./build.sh
 ```
 
 `head.part`(HTML head + 전체 CSS) + `body.part`(본문) 를 합쳐 `template.html`을 만들고,
+`annotate_counts.py`가 연도 헤더에 논문 수를 붙이고 각 논문 제목 앞에 CV와 같은 역순 번호 `[N]`..`[1]`을 넣은 뒤(둘 다 마크업에서 자동 계산, body.part에는 번호가 없음),
 `inline_thumbs.py`가 `__THUMB_*__` 토큰을 논문 썸네일로 치환하고,
 `inline_icons.py`가 Font Awesome `<i>` 태그를 SVG 스프라이트로 치환한 뒤,
 `profile.b64`를 `__PROFILE_B64__` 자리에 넣어 최종 단일 HTML을 뱉음.
