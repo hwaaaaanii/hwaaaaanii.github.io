@@ -296,17 +296,10 @@
           <li class="pub-list-item">
             <div class="pub-content-wrapper">
               <div class="pub-line-1"><span class="pub-title-text">A Query Decompositional Framework for Fine-grained RAG Assessment</span>
-                <span class="pub-badge-highlight">First Author</span></div>
-              <div class="pub-line-2"><strong>Jeonghwan Choi</strong>, Minjeong Ban, Taewon Yun, Jihwan Oh, Yuho Lee, Hwanjun Song</div>
-              <div class="pub-line-3"><span class="pub-venue-tag tag-journal">KTCP 2026 · Journal</span><span class="pub-note">Extended version of KSC 2025 Best Paper</span></div>
-            </div>
-          </li>
-          <li class="pub-list-item">
-            <div class="pub-content-wrapper">
-              <div class="pub-line-1"><span class="pub-title-text">A Query Decompositional Framework for Fine-grained RAG Assessment</span>
+                <span class="pub-badge-highlight">First Author</span>
                 <span class="pub-badge-highlight">Best Paper</span></div>
-              <div class="pub-line-2"><strong>Jeonghwan Choi</strong>, Minjeong Ban, Nicole Hee-Yeon Kim, Taewon Yun, Yuho Lee, Hwanjun Song</div>
-              <div class="pub-line-3"><span class="pub-venue-tag tag-conference">KSC 2025</span></div>
+              <div class="pub-line-2"><strong>Jeonghwan Choi</strong>, Minjeong Ban, Taewon Yun, Jihwan Oh, Yuho Lee, Hwanjun Song</div>
+              <div class="pub-line-3"><span class="pub-venue-tag tag-journal">KTCP 2026 · Journal</span><span class="pub-note">Extended from KSC 2025, Best Paper</span></div>
             </div>
           </li>
           <li class="pub-list-item">
