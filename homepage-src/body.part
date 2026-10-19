@@ -151,6 +151,14 @@
         <div class="pub-year-header">Under Review</div>
         <ul class="pub-list-ul">
           <li class="pub-list-item">
+            <div class="pub-thumbnail-box">__THUMB_13-ready2blend__</div>
+            <div class="pub-content-wrapper">
+              <div class="pub-line-1"><span class="pub-title-text">Ready2Blend: From Natural-Language Instructions to Composable Alignment Prompts</span></div>
+              <div class="pub-line-2">Jeesu Jung, Hwan Chang, Juseon Do, <strong>Jeonghwan Choi</strong>, Jinho Choo, Sungwoo Nam, S. K. Hong, Hwanjun Song</div>
+              <div class="pub-line-3"><span class="pub-venue-tag tag-under-review">Under Review · 2026</span></div>
+            </div>
+          </li>
+          <li class="pub-list-item">
             <div class="pub-thumbnail-box">__THUMB_01-agentic-rag-retail__</div>
             <div class="pub-content-wrapper">
               <div class="pub-line-1"><span class="pub-title-text">Toward Agentic Retrieval-Augmented Generation for Enterprise Retail Workflows over Heterogeneous Data Sources</span>
