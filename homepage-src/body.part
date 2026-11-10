@@ -181,7 +181,7 @@
             <div class="pub-content-wrapper">
               <div class="pub-line-1"><span class="pub-title-text">Toward Agentic Retrieval-Augmented Generation for Enterprise Retail Workflows over Heterogeneous Data Sources</span>
                 <span class="pub-badge-highlight">First Author</span></div>
-              <div class="pub-line-2"><strong>Jeonghwan Choi</strong>, Jibin Hwang, HaYoon Park, Hyeonjae Cheon, Hwanjun Song</div>
+              <div class="pub-line-2"><strong>Jeonghwan Choi</strong>*, Jibin Hwang*, HaYoon Park, Hyeonjae Cheon, Hwanjun Song</div>
               <div class="pub-line-3"><span class="pub-venue-tag tag-conference">KDD 2027 · Datasets and Benchmarks Track</span></div>
               <div class="pub-line-4"><a href="https://arxiv.org/abs/2610.25096" class="pub-link-btn">arXiv</a> <a href="https://github.com/DISL-Lab/RetailBridge" class="pub-link-btn">code</a></div>
             </div>
