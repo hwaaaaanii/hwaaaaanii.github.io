@@ -298,17 +298,25 @@
         <ul class="pub-list-ul">
           <li class="pub-list-item">
             <div class="pub-content-wrapper">
-              <div class="pub-line-1"><span class="pub-title-text">Simulating Seller-Buyer Retail Interactions and Sales Strategies with LLM Agents</span>
+              <div class="pub-line-1"><span class="pub-title-text">A Hallucination Type-wise Corrective Training Framework for EEG-to-Text</span>
                 <span class="pub-badge-highlight">First Author</span></div>
-              <div class="pub-line-2"><strong>Jeonghwan Choi</strong>, Jibin Hwang, Gyeonghun Sun, Minjeong Ban, Taewon Yun, Hwanjun Song</div>
-              <div class="pub-line-3"><span class="pub-venue-tag tag-conference">KCC 2026</span></div>
+              <div class="pub-line-2">Yeeun Choi*, <strong>Jeonghwan Choi</strong>*, Hwanjun Song</div>
+              <div class="pub-line-3"><span class="pub-venue-tag tag-conference">KSC 2026 · Oral</span></div>
             </div>
           </li>
           <li class="pub-list-item">
             <div class="pub-content-wrapper">
               <div class="pub-line-1"><span class="pub-title-text">Toward Low-Cost Query Expansion: Label-Free Reward Design via Reranker Scores</span></div>
               <div class="pub-line-2">Gyeonghun Sun, <strong>Jeonghwan Choi</strong>, Sundong Kim, Hwanjun Song</div>
-              <div class="pub-line-3"><span class="pub-venue-tag tag-conference">KCC 2026</span></div>
+              <div class="pub-line-3"><span class="pub-venue-tag tag-conference">KCC 2026 · Oral</span></div>
+            </div>
+          </li>
+          <li class="pub-list-item">
+            <div class="pub-content-wrapper">
+              <div class="pub-line-1"><span class="pub-title-text">Simulating Seller-Buyer Retail Interactions and Sales Strategies with LLM Agents</span>
+                <span class="pub-badge-highlight">First Author</span></div>
+              <div class="pub-line-2"><strong>Jeonghwan Choi</strong>, Jibin Hwang, Gyeonghun Sun, Minjeong Ban, Taewon Yun, Hwanjun Song</div>
+              <div class="pub-line-3"><span class="pub-venue-tag tag-conference">KCC 2026 · Oral</span></div>
             </div>
           </li>
           <li class="pub-list-item">
@@ -325,14 +333,14 @@
               <div class="pub-line-1"><span class="pub-title-text">A Benchmark Dataset for Retrieval-Augmented Generation Considering Performance Alignment between Retrieval and Generation</span>
                 <span class="pub-badge-highlight">Best Presentation</span></div>
               <div class="pub-line-2">Minjeong Ban*, <strong>Jeonghwan Choi</strong>*, Hyangsuk Min*, Taewon Yun, Jihwan Oh, Hwanjun Song</div>
-              <div class="pub-line-3"><span class="pub-venue-tag tag-conference">KCC 2025</span></div>
+              <div class="pub-line-3"><span class="pub-venue-tag tag-conference">KCC 2025 · Oral</span></div>
             </div>
           </li>
           <li class="pub-list-item">
             <div class="pub-content-wrapper">
               <div class="pub-line-1"><span class="pub-title-text">Robust Dataset Condensation via Semi-Supervised Learning</span></div>
               <div class="pub-line-2">Hee-yeon Kim, <strong>Jeonghwan Choi</strong>, Yuho Lee, Hwanjun Song</div>
-              <div class="pub-line-3"><span class="pub-venue-tag tag-conference">KCC 2025</span></div>
+              <div class="pub-line-3"><span class="pub-venue-tag tag-conference">KCC 2025 · Oral</span></div>
             </div>
           </li>
           <li class="pub-list-item">
@@ -347,7 +355,7 @@
               <div class="pub-line-1"><span class="pub-title-text">Training Summary Evaluation Model with Fine-Grained LLM Feedback</span>
                 <span class="pub-badge-highlight">Best Presentation</span></div>
               <div class="pub-line-2">Jihwan Oh, <strong>Jeonghwan Choi</strong>, Taewon Yun, Hyangsuk Min, Hwanjun Song</div>
-              <div class="pub-line-3"><span class="pub-venue-tag tag-conference">KSC 2024</span></div>
+              <div class="pub-line-3"><span class="pub-venue-tag tag-conference">KSC 2024 · Oral</span></div>
             </div>
           </li>
           <li class="pub-list-item">
@@ -355,7 +363,7 @@
               <div class="pub-line-1"><span class="pub-title-text">Improving the Text Summary Quality Through Understanding the Hallucination Level of Summarization Using Large Language Models</span>
                 <span class="pub-badge-highlight">Best Presentation</span></div>
               <div class="pub-line-2">Jihwan Oh, <strong>Jeonghwan Choi</strong>, Nicole Hee-Yeon Kim, Hwanjun Song</div>
-              <div class="pub-line-3"><span class="pub-venue-tag tag-conference">KCC 2024</span></div>
+              <div class="pub-line-3"><span class="pub-venue-tag tag-conference">KCC 2024 · Oral</span></div>
             </div>
           </li>
         </ul>
