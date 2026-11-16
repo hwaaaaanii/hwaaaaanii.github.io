@@ -151,6 +151,7 @@ section{scroll-margin-top:5rem}
 .section-header{margin-bottom:1.25rem;padding-bottom:.4rem;border-bottom:1px solid var(--rule);
   display:flex;justify-content:space-between;align-items:baseline;gap:1rem}
 .section-header h2{font-size:1.3rem;font-weight:600}
+.view-all-group{display:flex;gap:1rem;flex-wrap:wrap;justify-content:flex-end}
 .view-all{font-size:.82rem;color:var(--link);white-space:nowrap;text-decoration:underline;
   text-decoration-thickness:1px;text-underline-offset:2px}
 .formal-font{font-size:1rem;line-height:1.7;color:var(--body)}
