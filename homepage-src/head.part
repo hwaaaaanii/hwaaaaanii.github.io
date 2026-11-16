@@ -206,6 +206,7 @@ section{scroll-margin-top:5rem}
 .pub-link-btn:hover{text-decoration-thickness:2px}
 /* the venue is what a reader scans for, so it gets the heading serif at full
    ink rather than sitting quieter than the author list */
+.eq-mark{color:var(--venue);font-weight:700}
 .pub-venue-tag{font-family:var(--serif);font-style:italic;font-size:1rem;font-weight:600;
   color:var(--venue);white-space:nowrap}
 /* Under Review is a status, not a venue, so it stays out of the venue colour */
